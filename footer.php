@@ -1,7 +1,7 @@
  <footer class="footer bg-bg-dark md:py-[60px] sm:py-[30px] py-[30px]">
      <div class="container flex md:justify-between items-start justify-start md:flex-nowrap gap-[30px] flex-wrap text-white">
          <a class="md:w-auto w-full" href="/">
-             <img class="" src="./src/img/img/logo-footer.svg" alt="Logo">
+             <img class="" src="<?php echo get_template_directory_uri(); ?>src/img/img/logo-footer.svg" alt="Logo">
          </a>
          <div class="md:order-1 order-3">
              <ul class="flex flex-col">
@@ -182,22 +182,22 @@
              <ul class="grid md:grid-cols-4 grid-cols-2 md:pt-[50px] pt-[22px] gap-[12px]">
                  <li>
                      <a href="">
-                         <img src="/src/img/img/cber.png" alt="">
+                         <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/cber.png" alt="">
                      </a>
                  </li>
                  <li>
                      <a href="">
-                         <img src="src/img/img/prim.png" alt="">
+                         <img src="<?php echo get_template_directory_uri(); ?>src/img/img/prim.png" alt="">
                      </a>
                  </li>
                  <li>
                      <a href="">
-                         <img src="src/img/img/vtb.png" alt="">
+                         <img src="<?php echo get_template_directory_uri(); ?>src/img/img/vtb.png" alt="">
                      </a>
                  </li>
                  <li>
                      <a href="">
-                         <img src="src/img/img/dvb.png" alt="">
+                         <img src="<?php echo get_template_directory_uri(); ?>src/img/img/dvb.png" alt="">
                      </a>
                  </li>
              </ul>

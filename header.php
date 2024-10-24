@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Инвест Сити</title>
+
     <?php wp_head(); ?>
 
 </head>
@@ -17,7 +18,7 @@
 
                 <div>
                     <a href="index.html">
-                        <img class="m-auto md:w-[140px] sm:w-[70x] w-[94px]" src="./src/img/icons/logo-main.svg" alt="Logo">
+                        <img class="m-auto md:w-[140px] sm:w-[70x] w-[94px]" src="<?php echo get_template_directory_uri(); ?>/src/img/icons/logo-main.svg" alt="Logo">
                     </a>
                 </div>
 
@@ -55,8 +56,8 @@
 
                     <div class="flex flex-col justify-between max-h-[300px] vertical__line">
                         <ul class="gap-2 mt-[30px]">
-                            <li class="px-4 mb-[18px]"><a class="text-white">г. Уссурийск, ул. Советскую, 149</a></li>
-                            <li class="px-4 mb-[18px]"><a class="text-white font-medium" href="tel:+79146504455">+7 (914) 650 44 55,</a> <a class="text-white font-medium" href="tel:+79241204050">+7 (924) 120 40 50</a></li>
+                            <li class="px-4 mb-[18px]"><a class="text-white">г. Уссурийск, ул. Советская, 128</a></li>
+                            <li class="px-4 mb-[18px]"><a class="text-white font-medium" href="tel:+79143424684">+7 (914) 342 46 84,</a> <a class="text-white font-medium" href="tel:+84234384455">+8 (4234) 38-44-55</a></li>
                             <li class="px-4 mb-[18px]"><a class="text-white font-medium" href='mailto:invest-sity21@bk.ru'>invest-sity21@bk.ru</a></li>
                         </ul>
 
@@ -66,9 +67,9 @@
 
 
                 <ul class="gap-2 pl-36 hidden md:flex">
-                    <li class="mr-2"><a class="text-white">г. Уссурийск, ул. Советскую, 149</a></li>
-                    <li class="mr-2"><a class="text-white" href="tel:+79146504455">+7 (914) 650 44 55,</a></li>
-                    <li class="mr-2"><a class="text-white" href="tel:+79241204050">+7 (924) 120 40 50</a></li>
+                    <li class="mr-2"><a class="text-white">г. Уссурийск, ул. Советская, 128</a></li>
+                    <li class="mr-2"><a class="text-white" href="tel:+79143424684">+7 (914) 342 46 84,</a></li>
+                    <li class="mr-2"><a class="text-white" href="tel:+84234384455">8 (4234) 38-44-55</a></li>
                     <li class="mr-2"><a class="text-white" href='mailto:invest-sity21@bk.ru'>invest-sity21@bk.ru</a></li>
 
                     <div class="btn__menu up md:flex hidden">
@@ -105,8 +106,8 @@
                     </ul>
 
                     <ul class="gap-2 mt-[30px]">
-                        <li class="px-4 mb-[18px]"><a class="text-white">г. Уссурийск, ул. Советскую, 149</a></li>
-                        <li class="px-4 mb-[18px]"><a class="text-white font-medium" href="tel:+79146504455">+7 (914) 650 44 55,</a> <a class="text-white font-medium" href="tel:+79241204050">+7 (924) 120 40 50</a></li>
+                        <li class="px-4 mb-[18px]"><a class="text-white">г. Уссурийск, ул. Советская, 128</a></li>
+                        <li class="px-4 mb-[18px]"><a class="text-white font-medium" href="tel:+79143424684">+7 914 342 46 84,</a> <a class="text-white font-medium" href="tel:+84234384455">8 (4234) 38-44-55</a></li>
                         <li class="px-4 mb-[18px]"><a class="text-white font-medium" href='mailto:invest-sity21@bk.ru'>invest-sity21@bk.ru</a></li>
                     </ul>
 

@@ -37,8 +37,9 @@
             </div>
         </div>
     </section>
+
     <section id="info-section-1" class="info-bg relative">
-        <img src="./src/img/img/pattern_1.png" class="pattern_1 wow fadeInRight" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_1.png" class="pattern_1 wow fadeInRight" alt="" data-wow-delay="1s">
 
         <div class="container">
             <div class="flex justify-between md:gap-[75] gap-[30px] md:flex-row flex-col">
@@ -68,19 +69,18 @@
 
                 <div class="md:order-2 order-0">
                     <div class="relative w-full">
-                        <img src="./src/img/img/info_1.png" class="relative z-[2]" style="z-index: 1;" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/info_1.png" class="relative z-[2]" style="z-index: 1;" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <section id="map_img">
     </section>
 
     <section id="info-section-2" class="relative">
-        <img src="./src/img/img/pattern_3.png" class="pattern_3 wow fadeInLeft" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_3.png" class="pattern_3 wow fadeInLeft" alt="" data-wow-delay="1s">
         <div class="container relative" style="z-index: 2;">
 
             <div class="flex md:flex-row flex-col justify-between md:items-center items-baseline md:pb-[80px] sm:pb-[40px] pb-[30px] md:pt-[55px] sm:pt-[50px] pt-[0px]">
@@ -340,7 +340,7 @@
                         </g>
                     </g>
                     <defs>
-                        <image id="image_svg--main__svg" href="./src/img/img/main__map.png" width="1920" height="1200"></image>
+                        <image id="image_svg--main__svg" href="<?php echo get_template_directory_uri(); ?>/src/img/img/main__map.png" width="1920" height="1200"></image>
 
                         <circle id="circle--main__svg" cx="40" cy="40" r="40" />
 
@@ -444,7 +444,7 @@
 
 
     <section id="ticker" class="after relative">
-        <img src="./src/img/img/pattern_2.png" class="pattern_2 wow fadeInRight" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_2.png" class="pattern_2 wow fadeInRight" alt="" data-wow-delay="1s">
         <div class="ticker">
             <div class="ticker__in">
                 <div class="ticker__item">
@@ -466,14 +466,14 @@
         <div class="container">
 
 
-            <img src="./src/img/img/pattern_4.png" class="pattern_4 wow fadeInLeft" alt="" data-wow-delay="1s">
+            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_4.png" class="pattern_4 wow fadeInLeft" alt="" data-wow-delay="1s">
 
             <div class="grid md:grid-cols-3 grid-col-1 md:gap-[30px] gap-[15px] relative z-[2]">
                 <div class=" md:order-0 order-0 flex flex-col md:gap-[76px] gap-[30px] floating ff5">
                     <h2 class="md:text-[80px] sm:text-[40px] text-[31px] uppercase relative z-[2]">АРХИТЕКТУРА</h2>
                     <div class="img-wrapper">
-                        <img class="md:block hidden" src="./src/img/img/comfort4.png" alt="">
-                        <img class="md:hidden block" src="./src/img/img/Крыша 2-s.png" alt="">
+                        <img class="md:block hidden" src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort4.png" alt="">
+                        <img class="md:hidden block" src="<?php echo get_template_directory_uri(); ?>/src/img/img/Крыша 2-s.png" alt="">
 
                     </div>
                     <p class="md:text-[24px] text-[14px] w-full md:max-w-[560px] max-w-[260px]">На эксплуатируемой кровле здания предусмотрено открытое южному солнцу, <span class="font-bold">благоустроенное пространство</span> внутреннего двора с детскими и спортивными площадками и озеленением</p>
@@ -489,8 +489,8 @@
                 <div class="md:order-0 order-2 flex flex-col items-end md:gap-[76px] gap-[30px] floating ff5">
                     <p class="md:order-0 order-2 text-end md:text-[24px] text-[14px] font-normal w-full md:max-w-[560px] max-w-[260px]">Светлые оттенки на фасаде здания подчеркивают легкость и динамичность архитектуры. Сочетание прозрачного структурного остекления и фасадных плит создают пластичность фасада. Использование витражного остекления в интерьерных решениях играет роль связующего звена между внутренним и внешним пространством. <span class="font-bold">Видовые квартиры с панорамным остеклением</span></p>
                     <div class="img-wrapper md:order-3 md:order-0">
-                        <img class="md:block hidden" src="./src/img/img/Атриум.png" alt="">
-                        <img class="md:hidden block" src="./src/img/img/Атриум-s.png" alt="">
+                        <img class="md:block hidden" src="<?php echo get_template_directory_uri(); ?>/src/img/img/Атриум.png" alt="">
+                        <img class="md:hidden block" src="<?php echo get_template_directory_uri(); ?>/src/img/img/Атриум-s.png" alt="">
 
                     </div>
                 </div>
@@ -499,84 +499,84 @@
         </div>
     </section>
 
-    <!-- <section id="all_for_comfort" class=" overflow-hidden relative">
+    <section id="all_for_comfort" class=" overflow-hidden relative">
         <div class="container">
             <h2 class="md:text-[60px] sm:text-[40px] text-[31px] uppercase md:pt-[60px] md:pb-[60px] sm:pt-[30px] sm:pb-[30px] pt-[30px] pb-[30px] relative z-[2]">Все необходимое для комфортной жизни в одном месте</h2>
 
             <div class="comfort-wrapper">
-                    <div class="relative">
-                        <div style="width: -webkit-fill-available;">
-                            <div class="w-full md:h-[389px] h-[250px]">
-                                <img src="src/img/img/comfort3.png" class="object-cover h-full w-full" alt="">
-                            </div>
-
-                            <div class="p-[30px] h-[311px]">
-                                <div class="bg-biege p-[30px] h-full">
-                                    <p>В жилом комплексе предусмотрено <span class="font-bold">наличие супермаркета, магазинов, офисных помещений, фитнес центра, спортивных площадок и зон для отдыха</span></p>
-                                </div>
-                            </div>
+                <div class="relative">
+                    <div style="width: -webkit-fill-available;">
+                        <div class="w-full md:h-[389px] h-[250px]">
+                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort3.png" class="object-cover h-full w-full" alt="">
                         </div>
-                    </div>
 
-                    <div class="relative">
-                        <div style="width: -webkit-fill-available;">
-                            <div class="w-full md:h-[389px] h-[250px]">
-                                <img src="src/img/img/comfort5.png" class="object-cover h-full w-full" alt="">
-                            </div>
-
-                            <div class="p-[30px] h-[311px]">
-                                <div class="bg-biege p-[30px] h-full">
-                                    <p>А так же на территории комплекса будет расположен <span class="font-bold">центр развития детей дошкольного возраста</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="relative">
-                        <div style="width: -webkit-fill-available;">
-                            <div class="w-full md:h-[389px] h-[250px]">
-                                <img src="src/img/img/comfort6.png" class="object-cover h-full w-full" alt="">
-                            </div>
-
-                            <div class="p-[30px] h-[311px]">
-                                <div class="bg-biege p-[30px] h-full">
-                                    <p class="font-bold">Подземный двухуровневый паркинг</p>
-                                    <p class="pt-[10px]"><span class="font-bold">Кладовые помещения</span> «сити-боксы» под ваши вещи, которые позволяют освободить пространство для жизни</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="relative">
-                        <div style="width: -webkit-fill-available;">
-                            <div class="w-full md:h-[389px] h-[250px]">
-                                <img src="src/img/img/comfort1.png" class="object-cover h-full w-full" alt="">
-                            </div>
-
-                            <div class="p-[30px] h-[311px]">
-                                <div class="bg-biege p-[30px] h-full">
-                                    <p class="pt-[10px]">Собственный <span class="font-bold">центральный парк 1 Га с променадом</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="relative">
-                        <div style="width: -webkit-fill-available;">
-                            <div class="w-full md:h-[389px] h-[250px]">
-                                <img src="src/img/img/comfort7.png" class="object-cover h-full w-full" alt="">
-                            </div>
-
-                            <div class="p-[30px] h-[311px]">
-                                <div class="bg-biege p-[30px] h-full">
-                                    <p class="pt-[10px]">Одним из удобств, которое доступно жильцам ЖК Атриум является <span class="font-bold">фитнес-центр</span>. Который позволит вам постоянно находится в тонусе и хорошей форме</span></p>
-                                </div>
+                        <div class="p-[30px] h-[311px]">
+                            <div class="bg-biege p-[30px] h-full">
+                                <p>В жилом комплексе предусмотрено <span class="font-bold">наличие супермаркета, магазинов, офисных помещений, фитнес центра, спортивных площадок и зон для отдыха</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
-        </div>    
-    </section> -->
+
+                <div class="relative">
+                    <div style="width: -webkit-fill-available;">
+                        <div class="w-full md:h-[389px] h-[250px]">
+                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort5.png" class="object-cover h-full w-full" alt="">
+                        </div>
+
+                        <div class="p-[30px] h-[311px]">
+                            <div class="bg-biege p-[30px] h-full">
+                                <p>А так же на территории комплекса будет расположен <span class="font-bold">центр развития детей дошкольного возраста</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div style="width: -webkit-fill-available;">
+                        <div class="w-full md:h-[389px] h-[250px]">
+                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort6.png" class="object-cover h-full w-full" alt="">
+                        </div>
+
+                        <div class="p-[30px] h-[311px]">
+                            <div class="bg-biege p-[30px] h-full">
+                                <p class="font-bold">Подземный двухуровневый паркинг</p>
+                                <p class="pt-[10px]"><span class="font-bold">Кладовые помещения</span> «сити-боксы» под ваши вещи, которые позволяют освободить пространство для жизни</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div style="width: -webkit-fill-available;">
+                        <div class="w-full md:h-[389px] h-[250px]">
+                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort1.png" class="object-cover h-full w-full" alt="">
+                        </div>
+
+                        <div class="p-[30px] h-[311px]">
+                            <div class="bg-biege p-[30px] h-full">
+                                <p class="pt-[10px]">Собственный <span class="font-bold">центральный парк 1 Га с променадом</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div style="width: -webkit-fill-available;">
+                        <div class="w-full md:h-[389px] h-[250px]">
+                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort7.png" class="object-cover h-full w-full" alt="">
+                        </div>
+
+                        <div class="p-[30px] h-[311px]">
+                            <div class="bg-biege p-[30px] h-full">
+                                <p class="pt-[10px]">Одним из удобств, которое доступно жильцам ЖК Атриум является <span class="font-bold">фитнес-центр</span>. Который позволит вам постоянно находится в тонусе и хорошей форме</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="variants">
         <div class="container">
@@ -593,18 +593,18 @@
                 </div>
 
                 <div class="relative z-[2] floating ff5">
-                    <img src="./src/img/img/Bitmap.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/Bitmap.png" alt="">
                 </div>
             </div>
 
-            <img src="./src/img/img/pattern_5.png" class="pattern_5 wow fadeInRight" alt="" data-wow-delay="1s">
+            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_5.png" class="pattern_5 wow fadeInRight" alt="" data-wow-delay="1s">
 
         </div>
     </section>
 
     <section id="ticker" class="relative z-[2]">
-        <img src="./src/img/img/pattern_8.png" class="pattern_8 wow fadeInLeft" alt="" data-wow-delay="1s">
-        <img src="./src/img/img/pattern_6.png" class="pattern_6 wow fadeInLeft" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_8.png" class="pattern_8 wow fadeInLeft" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_6.png" class="pattern_6 wow fadeInLeft" alt="" data-wow-delay="1s">
         <div class="ticker">
             <div class="ticker__in">
                 <div class="ticker__item">
@@ -666,7 +666,7 @@
                 </div>
 
                 <div class="md:p-[110px] p-[20px] bg-white">
-                    <img src="./src/img/img/map__type.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/map__type.png" alt="">
                     <div class="text-center pt-[20px]">
                         <button class="button_main button_main--watch w-full">Посмотреть квартиры данного типа</button>
                     </div>
@@ -704,21 +704,21 @@
                 <div class="program-item">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide ">
-                            <div style="background-image: url('src/img/img/swiper1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
                                 <p>Проектное финансирование <br> от сбербанка</p>
                                 <button class="button_main button_main__podrobnee">Узнать подробнее</button>
                             </div>
                         </div>
 
                         <div class="swiper-slide ">
-                            <div style="background-image: url('src/img/img/swiper1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
                                 <p>Проектное финансирование <br> от сбербанка</p>
                                 <button class="button_main button_main__podrobnee">Узнать подробнее</button>
                             </div>
                         </div>
 
                         <div class="swiper-slide ">
-                            <div style="background-image: url('src/img/img/swiper1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
                                 <p>Проектное финансирование <br> от сбербанка</p>
                                 <button class="button_main button_main__podrobnee">Узнать подробнее</button>
                             </div>
@@ -750,7 +750,7 @@
             </div>
 
         </div>
-        <img src="./src/img/img/pattern_7.png" class="pattern_7 wow fadeInRight" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_7.png" class="pattern_7 wow fadeInRight" alt="" data-wow-delay="1s">
     </section>
 
     <section id="location" class="relative">
@@ -841,7 +841,7 @@
                 </div>
             </div>
         </div>
-        <img src="./src/img/img/pattern_9.png" class="pattern_9 wow fadeInRight" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_9.png" class="pattern_9 wow fadeInRight" alt="" data-wow-delay="1s">
     </section>
 
     <section id="contacts" class="relative">

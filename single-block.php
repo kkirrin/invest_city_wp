@@ -1540,7 +1540,7 @@
     </section>
 
     <section id="ticker" class="after relative">
-        <img src="./src/img/img/pattern_2.png" class="pattern_2 wow fadeInRight" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_2.png" class="pattern_2 wow fadeInRight" alt="" data-wow-delay="1s">
         <div class="ticker">
             <div class="ticker__in">
                 <div class="ticker__item">
@@ -1646,7 +1646,7 @@
                 </div>
             </div>
         </div>
-        <img src="./src/img/img/pattern_9.png" class="pattern_9 wow fadeInRight" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_9.png" class="pattern_9 wow fadeInRight" alt="" data-wow-delay="1s">
     </section>
 
     <section id="contacts" class="relative">
