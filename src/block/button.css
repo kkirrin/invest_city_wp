@@ -1,0 +1,215 @@
+.circle__wrapper button {
+    font-size: clamp(0.75rem, 0.75vw + 0.6rem, 1.5rem);
+    font-weight: 700;
+    font-family: 'Bahnschrift';
+    text-transform: uppercase;
+    border-radius: 100%;
+    background-color: var(--brown-light);
+    color: var(--white);
+    width: 200px;
+    height: 200px;
+    transition: all 0.4s ease-in-out;
+}
+
+.circle__wrapper .circle__btn.circle__btn--contacts {
+    background-color: var(--brown-custom);
+}
+
+.circle__wrapper button:hover {
+    background-color: var(--biege);
+    color: var(--brown-light);
+}
+
+.circle__wrapper button:active {
+    background-color: var(--biege-dark);
+    color: var(--white);
+}
+
+.button_main_variant {
+    padding: 20px;
+    border: 1px solid var(--biege);
+    width: -webkit-fill-available;
+    max-width: 400px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.button_main_variant:hover > *, .button_main_variant:hover > :nth-child(2) {
+    color: white;
+}
+
+.button_main_variant:hover  {
+    background-color: var(--brown-light);
+}
+
+.button_main_variant:active  {
+    background-color: var(--biege);
+}
+
+.button_main_variant:active::before {
+    background-color: var(--biege) !important;
+
+}
+
+.button_main_variant:hover::before { 
+    background-color: var(--brown-light);
+    top: 3px;
+    height: calc(94% + 0px);
+}
+
+.button_main_variant > :nth-child(2) {
+    color: var(--brown-light);
+}
+
+.button_main_variant > *{
+    position: relative;
+    color: var(--black);
+    transition: all 0.2s ease-in-out;
+
+}
+
+.button_main_variant::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 300px;
+    height: calc(100% + 0px);
+    background-color: var(--bg); 
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.button_main_variant.active {
+    position: relative;
+    background-color: var(--brown-light);
+    color: var(--white);
+}
+
+
+
+.button_main {
+    background: rgba(148, 118, 91, 1);
+    color: white;
+    max-width: 430px;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px 90px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+}
+
+.button_main.button_main--pdf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+    background-color: inherit;
+    border: 1px solid var(--brown-light);
+    color: var(--brown-light);
+}
+
+.button_main:hover {
+    background-color: var(--biege);
+    color: var(--brown-light);
+}
+
+.button_main:active {
+    background-color: var(--biege-dark);
+    color: var(--white);
+}
+
+.button_main.button_main--watch {
+    font-size: clamp(0.75rem, 0.375vw + 0.675rem, 1.125rem);
+    max-width: 500px;
+    width: -webkit-fill-available;
+    padding: 13px 50px;
+}
+
+.circle__wrapper button.button-popup {
+    text-align: center;
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+}
+
+
+.button_main.button_main__podrobnee {
+    width: fit-content;
+}
+
+.program-slide-next svg {
+    transition: all 0.2s ease-in-out;
+} 
+
+.program-slide-next svg circle {
+    transition: all 0.2s ease-in-out;
+}
+
+.program-slide-next:hover svg {
+    fill:  var(--biege);
+}
+
+.program-slide-next:active svg {
+    fill:  var(--biege-dark);
+}
+
+.program-slide-next:active svg circle{
+    stroke: var(--biege);
+
+}
+
+.button_main--bron {
+    font-size: 18px;
+}
+
+.program-slide-next:active svg path{
+    fill:  var(--biege);
+}
+
+
+@media screen and (max-width: 480px) {
+    .main-section__wrapper .circle__wrapper {
+        padding-top: 50px;
+        padding-bottom: 30px;
+
+    }
+    .circle__wrapper button.button-popup {
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+    .circle__wrapper button.button-popup {
+        width:  130px;
+        height: 130px;
+    }
+    .circle__wrapper button {
+        width:  130px;
+        height: 130px;
+    }
+    .button_main.button_main--watch {
+        max-width: 471px;
+        width: -webkit-fill-available;
+        padding: 13px;
+    }
+    .button_main.button_main__podrobnee {
+        padding: 15px 70px;
+    }
+    .button_main--bron {
+        padding: 15px;
+        font-size: 12px;
+    }
+   
+}
+
+@media screen and (max-width: 375px) {
+    .button_main {
+        padding: 15px 45px;
+    }
+}

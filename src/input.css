@@ -1,0 +1,852 @@
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+
+/* Импорт кастомных стилей для компонентов */
+@import './block/menu-button.css';
+@import './block/menu.css';
+@import './block/scrool-top.css';
+@import './block/popup.css';
+@import './block/main-section.css';
+@import './block/animateSocialsBtn.css';
+@import './block/button.css';
+@import './block/info-section.css';
+@import './block/ticker.css';
+@import './block/parallax.css';
+
+/* Импорт TailWind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../src/fonts/TTNorms-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../src/fonts/TTNorms-Medium.woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('../src/fonts/TTNorms-Bold.woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+    --black: #393D46;
+    --white: #fff;
+    --brown-light: #94765B;
+    --brown-dark: #816F67;
+    --brown-custom: #756B63;
+    --biege: #D7CDC9;
+    --biege-dark: #9E918C;
+    --bg: #E8E4E2;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: var(--brown-light) var(--biege);
+        font-family: 'Involve';
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: 'TT Norms', sans-serif;
+        color: #262626;
+        background: var(--bg);
+        font-weight: 400;
+    }
+
+    h2, h3 {
+        font-family: 'Bahnschrift';
+        line-height: 85px;
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1440px]
+    }
+}
+
+/* Директивы классов */
+
+
+
+
+
+/* Прочие классы */
+
+.lock {
+    overflow: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.important {
+    background-image: url('../src/img/pattern-3.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.pattern_1 {
+    position: absolute;
+    top: 50px;
+    right: -250px;
+    z-index: 1;
+}
+
+.pattern_2 {
+    position: absolute;
+    top: 25%;
+    right: 0px;
+    z-index: 0;
+}
+.pattern_3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.pattern_4 {
+    position: absolute;
+    top: 28%;
+    left: 0px;
+    z-index: 1;
+}
+
+.pattern_5 {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    z-index: 1;
+}
+
+.pattern_6 {
+    position: absolute;
+    top: -25%;
+    left: 0;
+    z-index: 0;
+}
+
+.pattern_7 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.pattern_8 {
+    position: absolute;
+    top: -22%;
+    left: -90px;
+    scale: 1.4;
+    z-index: 3;
+    width: 23.9%;
+    height: 70px;
+}
+
+.pattern_9 {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    scale: 1.4;
+    z-index: 1;
+}
+
+
+.main__svg {
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 767px) {
+    .important {
+        background-image: none;
+    }
+}
+
+@media (max-width: 1023px) {
+    .hero-bg img {
+        display: none;
+    }
+}
+
+.header-fix {
+    /* background: rgba(20, 19, 19, 0.8); */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    padding-bottom: 10px;
+}
+
+.title {
+    line-height: 85px !important;
+}
+
+#main-section {
+    height: 100vh;
+}
+
+
+#main-section {
+    background-image: url('../src/img/img/bg-main-b.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: top center;
+
+}
+
+#map_img {
+    height: 100vh;
+    width: -webkit-fill-available;
+}
+
+#map_img {
+    background-image: url('../src/img/img/map.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: top center;
+}
+
+#architecture {
+    padding: 60px 0px 120px 0;
+    position: relative;
+}
+
+#architecture .container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: var(--biege);
+}
+
+#all_for_comfort {
+    padding: 60px 0px 120px 0;
+    position: relative;
+}
+
+#all_for_comfort .comfort-wrapper div:first-child{
+    border: 1px solid var(--biege);
+}
+
+.comfort-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.comfort-wrapper > div {
+    min-width: 400px;
+}
+
+
+#variants {
+    position: relative;
+    background: #383737;
+    padding: 120px 0;
+}
+
+#variants .container::after {
+    content: '';
+    position: absolute;
+    max-width: 1440px;
+    width: -webkit-fill-available;
+    bottom: 0;
+    top: 100px;
+    height: 2px;
+    background-color: var(--brown-dark);
+}
+
+#type {
+    padding: 60px;
+}
+
+#type h2::before {
+    content: '';
+    position: absolute;
+    max-width: 1440px;
+    width: -webkit-fill-available;
+    bottom: 0;
+    top: 0px;
+    height: 1px;
+    background-color: var(--biege);
+}
+
+#programs {
+    padding: 0px 0px 140px 0;
+}
+
+#programs .container::after {
+    content: '';
+    max-width: 1440px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 2px;
+    background-color: var(--biege);
+}
+
+.program-item p {
+    position: relative;
+    font-weight: 700;
+    color: white;
+    font-size: clamp(1.125rem, 0.125vw + 0.9rem, 2rem);
+    font-family: 'Bahnschrift';
+    text-transform: uppercase;
+}
+
+.program-item p::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 100%;
+    left: 0;
+    height: 40px;
+    background-color: var(--white);
+}
+
+#location {
+    padding: 60px 0;
+    background-color: #383737;
+    overflow-x: hidden;
+}
+
+#location h2::before {
+    content: '';
+    max-width: 1440px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 2px;
+    background-color: #57504A;
+}
+
+#contacts {
+    padding: 60px 0;
+    background-color: #383737 ;
+}
+
+#contacts .container::before{
+    content: '';
+    max-width: 1440px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 2px;
+    background-color: #57504A;
+}
+
+
+
+
+.custom__text--type {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    z-index: 6;
+    border: 1px solid #756B63;
+  }
+  
+  .custom__text--type::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 90%;
+    height: calc(100% + 4px);
+    background-color: #383737;
+    transition: all 0.2s ease-in-out;
+  }
+
+.custom__text {
+    position: relative;
+    z-index: 1;
+}
+
+.custom__text > * {
+    position: relative;
+    z-index: 1;
+}
+
+.custom__text--contacts {
+    padding: 10px 30px;
+    border: 1px solid #57504A;
+    z-index: 4;
+}
+
+.custom__text--contacts::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    height: calc(100% + 4px);
+    background-color: #383737; 
+    transition: all 0.2s ease-in-out;
+}
+
+.info__map {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background-color: var(--biege);
+    padding: 30px;
+    z-index: 1000;
+    max-width: 300px;
+    width: 100%;
+}
+
+.info__map ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    font-size: 14px;
+    color: #393D46;
+}
+
+#single-block-section {
+    padding: 120px 0 60px 0;
+}
+
+nav.single-block ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav.single-block ul li{
+    display: flex;
+    gap: 20px;
+}
+
+nav.single-block ul li button{
+    padding: 15px 30px;
+    border: 1px solid var(--biege);
+    border-radius: 50px;
+    color: var(--brown-light);
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Bahnschrift';
+    background-color: inherit;
+    transition: all 0.5s ease-in-out;
+}
+
+nav.single-block ul li button.active{
+    padding: 15px 30px;
+    border: 1px solid var(--biege);
+    color: var(--white);
+    background-color: var(--brown-light);
+}
+
+.single-block-checkbox {
+    padding-top: 50px;
+}
+
+.single-block-checkbox {
+    display: flex;
+    gap: 20px;
+}
+
+.single-block-checkbox div label{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.number__agent {
+    width: 100%;
+    background-color: inherit;
+    margin-bottom: 30px;
+}
+
+.single-apart-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Bahnschrift';
+}
+
+.number__agent input {
+    width: -webkit-fill-available;
+    background-color: inherit;
+    color: #BBA590 !important;
+    padding: 15px 15px;
+    border: 1px solid #BBA590;
+    border-radius: 30px;
+}
+
+.single-apart-list li {
+    display: flex;
+    padding-bottom: 30px;
+    gap: 10px;
+
+}
+
+.single-apart-list li p:first-of-type {
+    color: #BBA590;
+}
+
+.single-apart-list:first-of-type {
+    position: relative;
+}
+
+.single-apart-list:first-of-type::before {
+    position: absolute;
+    top: -20px;
+    content: '';
+    background-color: var(--biege);
+    width: 100%;
+    height: 1px;
+
+}
+
+.svg__main__wrapper svg{
+    width: 1920px;
+}
+
+.use_hover ~ defs g use {
+    transition: fill .5s ease-in-out;
+}
+
+path.use_hover {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    fill: #54453EB2;
+}
+
+#g_05_info__inner,
+#g_06_info__inner,
+#g_07_info__inner,
+#g_08_info__inner,
+#g_09_info__inner,
+#g_10_info__inner,
+#g_11_info__inner,
+#g_12_info__inner
+
+{
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    /* transform: animation transform_to_bottom 1s ease-in-out; */
+}
+
+
+@keyframes transform_to_bottom {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.use_hover[href='#g_05']:hover,
+.use_hover[href='#g_06']:hover,
+.use_hover[href='#g_07']:hover,
+.use_hover[href='#g_08']:hover,
+.use_hover[href='#g_09']:hover,
+.use_hover[href='#g_10']:hover,
+.use_hover[href='#g_11']:hover,
+.use_hover[href='#g_12']:hover {
+    opacity: 1;
+}
+
+.use_hover[href='#g_05']:hover #g_05_info__inner, 
+.use_hover[href='#g_06']:hover #g_06_info__inner, 
+.use_hover[href='#g_07']:hover #g_07_info__inner, 
+.use_hover[href='#g_08']:hover #g_08_info__inner, 
+.use_hover[href='#g_09']:hover #g_09_info__inner, 
+.use_hover[href='#g_10']:hover #g_10_info__inner, 
+.use_hover[href='#g_11']:hover #g_11_info__inner, 
+.use_hover[href='#g_12']:hover #g_12_info__inner 
+{
+    opacity: 1;
+}
+
+.g_05_info__title,
+.g_06_info__title,
+.g_07_info__title,
+.g_08_info__title,
+.g_09_info__title,
+.g_10_info__title,
+.g_11_info__title,
+.g_12_info__title 
+
+{
+    font-family: 'Bahnschrift';
+    font-size: 30px;
+    fill: var(--brown-light);
+    font-weight: 700;
+}
+
+.g_05_info__text,
+.g_06_info__text,
+.g_07_info__text,
+.g_08_info__text,
+.g_09_info__text,
+.g_10_info__text,
+.g_11_info__text,
+.g_12_info__text
+
+{
+    fill: var(--biege);
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.g_05_info__subtitle,
+.g_06_info__subtitle,
+.g_07_info__subtitle,
+.g_08_info__subtitle,
+.g_09_info__subtitle,
+.g_10_info__subtitle,
+.g_11_info__subtitle,
+.g_12_info__subtitle 
+
+{
+    font-family: 'Bahnschrift';
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+
+path.use_hover[href='#g_05']:hover use.use_hover[href='#g_05'],
+path.use_hover[href='#g_06']:hover use.use_hover[href='#g_06'],
+path.use_hover[href='#g_07']:hover use.use_hover[href='#g_07'],
+path.use_hover[href='#g_08']:hover use.use_hover[href='#g_08'],
+path.use_hover[href='#g_09']:hover use.use_hover[href='#g_09'],
+path.use_hover[href='#g_10']:hover use.use_hover[href='#g_10'],
+path.use_hover[href='#g_11']:hover use.use_hover[href='#g_11'],
+path.use_hover[href='#g_12']:hover use.use_hover[href='#g_12']
+
+{
+    fill: red !important;
+}
+
+
+path.use_hover[href='#g_05']:hover ~ use.use_hover,
+path.use_hover[href='#g_06']:hover ~ use.use_hover,
+path.use_hover[href='#g_07']:hover ~ use.use_hover,
+path.use_hover[href='#g_08']:hover ~ use.use_hover,
+path.use_hover[href='#g_09']:hover ~ use.use_hover,
+path.use_hover[href='#g_10']:hover ~ use.use_hover,
+path.use_hover[href='#g_11']:hover ~ use.use_hover,
+path.use_hover[href='#g_12']:hover ~ use.use_hover
+
+{
+    fill: red;
+}
+
+path.use_hover[href='#g_05']:hover ~ #g_05_info__inner,
+path.use_hover[href='#g_06']:hover ~ #g_06_info__inner,
+path.use_hover[href='#g_07']:hover ~ #g_07_info__inner,
+path.use_hover[href='#g_08']:hover ~ #g_08_info__inner,
+path.use_hover[href='#g_09']:hover ~ #g_09_info__inner,
+path.use_hover[href='#g_10']:hover ~ #g_10_info__inner,
+path.use_hover[href='#g_11']:hover ~ #g_11_info__inner,
+path.use_hover[href='#g_12']:hover ~ #g_12_info__inner
+
+{
+        opacity: 1;
+
+}
+
+header {
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 10;
+}
+
+@media screen and (max-width: 769px) {
+    #main-section {
+        background-image: url('../src/img/img/bg-main-m.png');    
+    }
+    #architecture {
+        padding: 30px 0px 80px 0;
+    }
+
+    
+    #map_img {
+        background-image: url('../src/img/img/map-m.png');
+        height: 100%
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #main-section {
+        background-image: url('../src/img/img/bg-main-s.png');
+    }
+    
+    #map_img {
+        background-attachment: inherit;
+        width: -webkit-fill-available;
+        padding: 30px 0;
+        height: 50vh;
+        background-image: url('../src/img/img/map-s.png');
+        background-size: contain;
+        background-position: center;
+    }
+    .pattern_1 {
+        position: absolute;
+        top: 30px;
+        right: 0px;
+        z-index: 1;
+        scale: 1;
+        width: 150px;
+    }
+    .pattern_2 {
+        width: 300px;
+        height: 82px;
+        top: 27%;
+    }
+    .pattern_3 {
+        position: absolute;
+        top: -2.8%;
+        left: -0px;
+        z-index: 1;
+        height: 250px;
+        width: 82px;
+    }
+    .pattern_4 {
+        top: 6%;
+        width: 150px;
+        height: 300px;
+    }
+    .pattern_5 {
+        width: 150px;
+        height: 300px;
+        right: 0;
+    }
+    .pattern_6 {
+        width: 130px;
+        height: 120px;
+        left: 0;
+        top: 0;
+    }
+    .pattern_7 {
+        display: none;
+    }
+    .pattern_8{
+        width: 110px;
+        height: 40px;
+        left: 0;
+        top: -48px;
+    }
+    .pattern_9 {
+        width: 180px;
+        height: 300px;
+
+    }
+    
+    #architecture {
+        padding: 0px 0px 60px 0;
+    }
+    #architecture .img-wrapper {
+        height: 200px;
+        width: 100%;
+    }
+
+    #architecture .img-wrapper img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    h2, h3 {
+        font-family: 'Bahnschrift';
+        line-height: 33px;
+    }
+
+    #all_for_comfort {
+        padding: 30px 0px 60px 0;
+        position: relative;
+    }
+    #type {
+        padding: 0px;
+    }
+    #programs {
+        padding: 0px 0px 60px 0;
+    }
+    #location iframe {
+        height: 70vh;
+    }
+    #location {
+        padding: 30px 0;
+    }
+    .custom__text--contacts {
+       height: 66px;
+    }
+    .info__map {
+        padding: 20px;
+        bottom: 0;
+        left: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .info__map ul {
+       margin-bottom: 5px;
+    }
+    nav.single-block ul li button {
+        font-size: 18px;
+        padding: 15px 10px;
+    }
+    nav.single-block ul li button.active {
+        font-size: 18px;
+        padding: 15px 10px;
+    }
+    #single-block-section {
+        padding: 90px 0px 30px 0;
+    }
+    .svg__main__wrapper {
+        overflow-x: auto;
+    }
+    .svg__main__wrapper svg {
+        width: auto;
+    }
+
+
+}
+
+
+
+
