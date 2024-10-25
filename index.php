@@ -39,7 +39,7 @@
     </section>
 
     <section id="info-section-1" class="info-bg relative">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_1.png" class="pattern_1 wow fadeInRight floating ff5" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_1.webp" class="pattern_1 wow fadeInRight floating ff5" alt="" data-wow-delay="1s">
 
         <div class="container">
             <div class="flex justify-between md:gap-[75] gap-[30px] md:flex-row flex-col">
@@ -69,7 +69,7 @@
 
                 <div class="md:order-2 order-0">
                     <div class="relative w-full">
-                        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/info_1.png" class="relative z-[2]" style="z-index: 1;" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/info_1.webp" class="relative z-[2]" style="z-index: 1;" alt="">
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
     </section>
 
     <section id="info-section-2" class="relative">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_3.png" class="pattern_3 wow fadeInLeft" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_3.webp" class="pattern_3 wow fadeInLeft" alt="" data-wow-delay="1s">
         <div class="container relative" style="z-index: 2;">
 
             <div class="flex md:flex-row flex-col justify-between md:items-center items-baseline md:pb-[80px] sm:pb-[40px] pb-[30px] md:pt-[55px] sm:pt-[50px] pt-[0px]">
@@ -150,7 +150,7 @@
                     <use href="#image_svg--main__svg" x="0" y="0" />
 
 
-                    <a href="?block=05&page_id=10">
+                    <a href="?page_id=10&block=05">
                         <g id="g_05_info">
                             <path class="use_hover" href="#g_05" d="M 439 1046 l-56 -718 l85 -83 l188 8 l10 637 l-60 82 h-58 l-43 79 с10 20 10 40 10 50  z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_05" x="550" y="400" />
@@ -175,7 +175,7 @@
                         </g>
                     </a>
 
-                    <a href="?block=08&page_id=10">
+                    <a href="?page_id=10&block=08">
                         <g id="g_08_info">
                             <path class="use_hover" href="#g_08" d="M819 275 l29 -20 200 18 -10 290 -197 -17 0 -24 -20 43 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_08" x="912" y="369" />
@@ -203,7 +203,7 @@
                         </g>
                     </a>
 
-                    <a href="?block=07&page_id=10">
+                    <a href="?page_id=10&block=07">
                         <g id="g_07_info">
 
                             <path class="use_hover" href="#g_07" d="M571 123 l 40 -39 160 12 0 10 2 38 41 12 2 384 -48 125 -20 -532 z" fill="#54453EB2" opacity="1" />
@@ -230,7 +230,7 @@
                         </g>
                     </a>
 
-                    <a href="?block=06&page_id=10">
+                    <a href="?page_id=10&block=06">
                         <g id="g_06_info">
                             <path class="use_hover" href="#g_06" d="M474 240 l 101 -122 179 9 21 579 -115 199 -39 -657 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_06" x="656" y="291" />
@@ -255,7 +255,7 @@
                         </g>
                     </a>
 
-                    <a href="?block=09&page_id=10">
+                    <a href="?page_id=10&block=09">
                         <g id="g_09_info">
                             <path class="use_hover" href="#g_09" d="M1050 270 l187 18 -4 288 -188 -18 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_09" x="1094" y="384" />
@@ -280,7 +280,7 @@
                         </g>
                     </a>
 
-                    <a href="?block=10&page_id=10">
+                    <a href="?page_id=10&block=10">
                         <g id="g_10_info">
                             <path class="use_hover" href="#g_10" d="M 1240 287 l237 17 -1 10 -12 41 -12 -1 -11 55 -83 -5 -15 66 0 146 -119 -17 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_10" x="1272" y="392" />
@@ -305,7 +305,7 @@
                         </g>
                     </a>
 
-                    <a href="?block=11&page_id=10">
+                    <a href="?page_id=10&block=11">
                         <g id="g_11_info">
                             <path class="use_hover" href="#g_11" d="M 1521 280 l-19 5 17 -70 164 10 -3 60 57 7 -11 162 -67 -7 4 -73 -113 -10 0 -12 -80 -10 15 -66 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_11" x="1546" y="264" />
@@ -331,7 +331,7 @@
                         </g>
                     </a>
 
-                    <a href="?block=12&page_id=10">
+                    <a href="?page_id=10&block=12">
                         <g id="g_12_info">
                             <path class="use_hover" href="#g_12" d="M1343 469 l23 -68 77 10 17 -68 88 7 0 14 120 9 -12 120 -70 643 -280 -46 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_12" x="1540" y="443" />
@@ -359,7 +359,7 @@
                     </a>
 
                     <defs>
-                        <image id="image_svg--main__svg" href="<?php echo get_template_directory_uri(); ?>/src/img/img/main__map.png" width="1920" height="1200"></image>
+                        <image id="image_svg--main__svg" href="<?php echo get_template_directory_uri(); ?>/src/img/img/main__map.webp" width="1920" height="1200"></image>
 
                         <circle id="circle--main__svg" cx="40" cy="40" r="40" />
 
@@ -456,7 +456,7 @@
 
 
     <section id="ticker" class="after relative">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_2.png" class="pattern_2 wow fadeInRight" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_2.webp" class="pattern_2 wow fadeInRight" alt="" data-wow-delay="1s">
         <div class="ticker">
             <div class="ticker__in">
                 <div class="ticker__item">
@@ -486,14 +486,14 @@
         <div class="container">
 
 
-            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_4.png" class="pattern_4 wow fadeInLeft" alt="" data-wow-delay="1s">
+            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_4.webp" class="pattern_4 wow fadeInLeft" alt="" data-wow-delay="1s">
 
             <div class="grid md:grid-cols-3 grid-col-1 md:gap-[30px] gap-[15px] relative z-[2]">
                 <div class=" md:order-0 order-0 flex flex-col md:gap-[76px] gap-[30px] floating ff5">
                     <h2 class="md:text-[80px] sm:text-[40px] text-[31px] uppercase relative z-[2]">АРХИТЕКТУРА</h2>
                     <div class="img-wrapper">
-                        <img class="md:block hidden" src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort4.png" alt="">
-                        <img class="md:hidden block" src="<?php echo get_template_directory_uri(); ?>/src/img/img/Крыша 2-s.png" alt="">
+                        <img class="md:block hidden" src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort4.webp" alt="">
+                        <img class="md:hidden block" src="<?php echo get_template_directory_uri(); ?>/src/img/img/Крыша 2-s.webp" alt="">
 
                     </div>
                     <p class="md:text-[24px] text-[14px] w-full md:max-w-[560px] max-w-[260px]">На эксплуатируемой кровле здания предусмотрено открытое южному солнцу, <span class="font-bold">благоустроенное пространство</span> внутреннего двора с детскими и спортивными площадками и озеленением</p>
@@ -509,8 +509,8 @@
                 <div class="md:order-0 order-2 flex flex-col items-end md:gap-[76px] gap-[30px] floating ff5">
                     <p class="md:order-0 order-2 text-end md:text-[24px] text-[14px] font-normal w-full md:max-w-[560px] max-w-[260px]">Светлые оттенки на фасаде здания подчеркивают легкость и динамичность архитектуры. Сочетание прозрачного структурного остекления и фасадных плит создают пластичность фасада. Использование витражного остекления в интерьерных решениях играет роль связующего звена между внутренним и внешним пространством. <span class="font-bold">Видовые квартиры с панорамным остеклением</span></p>
                     <div class="img-wrapper md:order-3 md:order-0">
-                        <img class="md:block hidden" src="<?php echo get_template_directory_uri(); ?>/src/img/img/Атриум.png" alt="">
-                        <img class="md:hidden block" src="<?php echo get_template_directory_uri(); ?>/src/img/img/Атриум-s.png" alt="">
+                        <img class="md:block hidden" src="<?php echo get_template_directory_uri(); ?>/src/img/img/Атриум.webp" alt="">
+                        <img class="md:hidden block" src="<?php echo get_template_directory_uri(); ?>/src/img/img/Атриум-s.webp" alt="">
 
                     </div>
                 </div>
@@ -527,7 +527,7 @@
                 <div class="relative">
                     <div style="width: -webkit-fill-available;">
                         <div class="w-full md:h-[389px] h-[250px]">
-                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort3.png" class="object-cover h-full w-full" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort3.webp" class="object-cover h-full w-full" alt="">
                         </div>
 
                         <div class="p-[30px] h-[311px]">
@@ -541,7 +541,7 @@
                 <div class="relative">
                     <div style="width: -webkit-fill-available;">
                         <div class="w-full md:h-[389px] h-[250px]">
-                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort5.png" class="object-cover h-full w-full" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort5.webp" class="object-cover h-full w-full" alt="">
                         </div>
 
                         <div class="p-[30px] h-[311px]">
@@ -555,7 +555,7 @@
                 <div class="relative">
                     <div style="width: -webkit-fill-available;">
                         <div class="w-full md:h-[389px] h-[250px]">
-                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort6.png" class="object-cover h-full w-full" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort6.webp" class="object-cover h-full w-full" alt="">
                         </div>
 
                         <div class="p-[30px] h-[311px]">
@@ -570,7 +570,7 @@
                 <div class="relative">
                     <div style="width: -webkit-fill-available;">
                         <div class="w-full md:h-[389px] h-[250px]">
-                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort1.png" class="object-cover h-full w-full" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort1.webp" class="object-cover h-full w-full" alt="">
                         </div>
 
                         <div class="p-[30px] h-[311px]">
@@ -584,7 +584,7 @@
                 <div class="relative">
                     <div style="width: -webkit-fill-available;">
                         <div class="w-full md:h-[389px] h-[250px]">
-                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort7.png" class="object-cover h-full w-full" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort7.webp" class="object-cover h-full w-full" alt="">
                         </div>
 
                         <div class="p-[30px] h-[311px]">
@@ -613,18 +613,18 @@
                 </div>
 
                 <div class="relative z-[2] floating ff5">
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/Bitmap.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/Bitmap.webp" alt="">
                 </div>
             </div>
 
-            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_5.png" class="pattern_5 wow fadeInRight" alt="" data-wow-delay="1s">
+            <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_5.webp" class="pattern_5 wow fadeInRight" alt="" data-wow-delay="1s">
 
         </div>
     </section>
 
     <section id="ticker" class="relative z-[2]">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_8.png" class="pattern_8 wow fadeInLeft" alt="" data-wow-delay="1s">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_6.png" class="pattern_6 wow fadeInLeft" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_8.webp" class="pattern_8 wow fadeInLeft" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_6.webp" class="pattern_6 wow fadeInLeft" alt="" data-wow-delay="1s">
         <div class="ticker">
             <div class="ticker__in">
                 <div class="ticker__item">
@@ -686,7 +686,7 @@
                 </div>
 
                 <div class="md:p-[110px] p-[20px] bg-white">
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/map__type.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/map__type.webp" alt="">
                     <div class="text-center pt-[20px]">
                         <button class="button_main button_main--watch w-full">Посмотреть квартиры данного типа</button>
                     </div>
@@ -724,21 +724,21 @@
                 <div class="program-item">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide ">
-                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
                                 <p>Проектное финансирование <br> от сбербанка</p>
                                 <button class="button_main button_main__podrobnee">Узнать подробнее</button>
                             </div>
                         </div>
 
                         <div class="swiper-slide ">
-                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
                                 <p>Проектное финансирование <br> от сбербанка</p>
                                 <button class="button_main button_main__podrobnee">Узнать подробнее</button>
                             </div>
                         </div>
 
                         <div class="swiper-slide ">
-                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
                                 <p>Проектное финансирование <br> от сбербанка</p>
                                 <button class="button_main button_main__podrobnee">Узнать подробнее</button>
                             </div>
@@ -770,7 +770,7 @@
             </div>
 
         </div>
-        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_7.png" class="pattern_7 wow fadeInRight" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_7.webp" class="pattern_7 wow fadeInRight" alt="" data-wow-delay="1s">
     </section>
 
     <section id="location" class="relative">
@@ -861,7 +861,7 @@
                 </div>
             </div>
         </div>
-        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_9.png" class="pattern_9 wow fadeInRight" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_9.webp" class="pattern_9 wow fadeInRight" alt="" data-wow-delay="1s">
     </section>
 
     <section id="contacts" class="relative">

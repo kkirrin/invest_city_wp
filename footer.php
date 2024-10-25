@@ -182,22 +182,22 @@
              <ul class="grid md:grid-cols-4 grid-cols-2 md:pt-[50px] pt-[22px] gap-[12px]">
                  <li>
                      <a href="">
-                         <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/cber.png" alt="">
+                         <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/cber.webp" alt="">
                      </a>
                  </li>
                  <li>
                      <a href="">
-                         <img src="<?php echo get_template_directory_uri(); ?>src/img/img/prim.png" alt="">
+                         <img src="<?php echo get_template_directory_uri(); ?>src/img/img/prim.webp" alt="">
                      </a>
                  </li>
                  <li>
                      <a href="">
-                         <img src="<?php echo get_template_directory_uri(); ?>src/img/img/vtb.png" alt="">
+                         <img src="<?php echo get_template_directory_uri(); ?>src/img/img/vtb.webp" alt="">
                      </a>
                  </li>
                  <li>
                      <a href="">
-                         <img src="<?php echo get_template_directory_uri(); ?>src/img/img/dvb.png" alt="">
+                         <img src="<?php echo get_template_directory_uri(); ?>src/img/img/dvb.webp" alt="">
                      </a>
                  </li>
              </ul>

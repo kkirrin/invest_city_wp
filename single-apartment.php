@@ -1,6 +1,6 @@
 <?php
 /*
-    Template Name: карточка блока
+    Template Name: карточка квартиры
     */
 ?>
 
@@ -38,7 +38,7 @@
         <div class="container">
             <div class="flex md:flex-row flex-col justify-between items-start gap-[40px]">
                 <div class="md:w-[50%] w-full p-[30px] bg-white">
-                    <img src="<?php echo get_template_directory_uri(); ?>src/img/img/map__type.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>src/img/img/map__type.webp" alt="">
                 </div>
 
                 <div class="flex flex-col md:w-1/2 w-full">
@@ -144,7 +144,7 @@
     </section>
 
     <section id="ticker" class="after relative">
-        <img src="<?php echo get_template_directory_uri(); ?>src/img/img/pattern_2.png" class="pattern_2 wow fadeInRight" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>src/img/img/pattern_2.webp" class="pattern_2 wow fadeInRight" alt="" data-wow-delay="1s">
         <div class="ticker">
             <div class="ticker__in">
                 <div class="ticker__item">
@@ -250,7 +250,7 @@
                 </div>
             </div>
         </div>
-        <img src="<?php echo get_template_directory_uri(); ?>src/img/img/pattern_9.png" class="pattern_9 wow fadeInRight" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>src/img/img/pattern_9.webp" class="pattern_9 wow fadeInRight" alt="" data-wow-delay="1s">
     </section>
 
     <section id="contacts" class="relative">

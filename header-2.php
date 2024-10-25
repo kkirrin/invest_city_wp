@@ -17,7 +17,7 @@
             <div class="container md:gap-5 items-center justify-between flex md:pt-[30px] pt-[12px]">
 
                 <div>
-                    <a href="index.html">
+                    <a href="/">
                         <img class="m-auto md:w-[140px] sm:w-[70x] w-[94px]" src="<?php echo get_template_directory_uri(); ?>/src/img/icons/dark-logo.svg" alt="Logo">
                     </a>
                 </div>

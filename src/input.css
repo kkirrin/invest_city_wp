@@ -106,7 +106,7 @@
 }
 
 .important {
-    background-image: url('../src/img/pattern-3.png');
+    background-image: url('../src/img/pattern-3.webp');
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -212,7 +212,7 @@
 
 
 #main-section {
-    background-image: url('../src/img/img/bg-main-b.png');
+    background-image: url('../src/img/img/bg-main-b.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover; 
@@ -228,7 +228,7 @@
 }
 
 #map_img {
-    background-image: url('../src/img/img/map.png');
+    background-image: url('../src/img/img/map.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover; 
@@ -696,7 +696,7 @@ header {
 
 @media screen and (max-width: 769px) {
     #main-section {
-        background-image: url('../src/img/img/bg-main-m.png');    
+        background-image: url('../src/img/img/bg-main-m.webp');    
     }
     #architecture {
         padding: 30px 0px 80px 0;
@@ -704,14 +704,14 @@ header {
 
     
     #map_img {
-        background-image: url('../src/img/img/map-m.png');
+        background-image: url('../src/img/img/map-m.webp');
         height: 100%
     }
 }
 
 @media screen and (max-width: 480px) {
     #main-section {
-        background-image: url('../src/img/img/bg-main-s.png');
+        background-image: url('../src/img/img/bg-main-s.webp');
     }
     
     #map_img {
@@ -719,7 +719,7 @@ header {
         width: -webkit-fill-available;
         padding: 30px 0;
         height: 50vh;
-        background-image: url('../src/img/img/map-s.png');
+        background-image: url('../src/img/img/map-s.webp');
         background-size: contain;
         background-position: center;
     }

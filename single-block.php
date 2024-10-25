@@ -1,7 +1,6 @@
 <?php
 /*
-    Template Name: карточка квартиры
-    Template Post Type: post
+    Template Name: карточка блока
     */
 ?>
 
@@ -23,30 +22,29 @@
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <button>Блок 5</button>
-                    </li>
-                    <li>
-                        <button>Блок 6</button>
-                    </li>
-                    <li>
-                        <button>Блок 7</button>
-                    </li>
-                    <li>
-                        <button>Блок 8</button>
-                    </li>
-                    <li>
-                        <button>Блок 9</button>
-                    </li>
-                    <li>
-                        <button>Блок 10</button>
-                    </li>
-                    <li>
-                        <button>Блок 11</button>
-                    </li>
-                    <li>
-                        <button>Блок 12</button>
-                    </li>
+
+                    <?php
+                    $block = $_GET['block'];
+
+                    echo $block;
+
+                    // 05
+
+                    $all_categories = get_categories();
+
+                    echo '<pre>';
+                    var_dump($all_categories);
+                    echo '</pre>';
+
+                    // foreach ($all_categories as $category) {
+                    //     $category_name = get_cat_name($category);
+                    //     $category_id = get_cat_ID($category);
+                    //     echo '<li>';
+                    //     echo '    <button class="active">' . $category_name . '</button>';
+                    //     echo '</li>';
+                    // }
+                    ?>
+
                 </ul>
             </nav>
 
@@ -1541,7 +1539,7 @@
     </section>
 
     <section id="ticker" class="after relative">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_2.png" class="pattern_2 wow fadeInRight" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_2.webp" class="pattern_2 wow fadeInRight" alt="" data-wow-delay="1s">
         <div class="ticker">
             <div class="ticker__in">
                 <div class="ticker__item">
@@ -1647,7 +1645,7 @@
                 </div>
             </div>
         </div>
-        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_9.png" class="pattern_9 wow fadeInRight" alt="" data-wow-delay="1s">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_9.webp" class="pattern_9 wow fadeInRight" alt="" data-wow-delay="1s">
     </section>
 
     <section id="contacts" class="relative">
