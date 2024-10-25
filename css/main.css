@@ -2743,8 +2743,8 @@ nav.single-block ul li{
   gap: 20px;
 }
 
-nav.single-block ul li button{
-  padding: 15px 30px;
+nav.single-block ul li .block_link{
+  padding: 15px 23px;
   border: 1px solid var(--biege);
   border-radius: 50px;
   color: var(--brown-light);
@@ -2753,9 +2753,10 @@ nav.single-block ul li button{
   font-family: 'Bahnschrift';
   background-color: inherit;
   transition: all 0.5s ease-in-out;
+  text-decoration: none;
 }
 
-nav.single-block ul li button.active{
+nav.single-block ul li .block_link.active{
   padding: 15px 30px;
   border: 1px solid var(--biege);
   color: var(--white);

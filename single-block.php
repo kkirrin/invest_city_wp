@@ -26,24 +26,27 @@
                     <?php
                     $block = $_GET['block'];
 
-                    echo $block;
+                    $all_categories = get_categories(array(
+                        'hide_empty' => false,
+                    ));
 
-                    // 05
+                    if (is_array($all_categories)) {
+                        foreach ($all_categories as $category) {
+                            $category_id = $category->term_id;
+                            $category_name = get_cat_name($category_id);
 
-                    $all_categories = get_categories();
-
-                    echo '<pre>';
-                    var_dump($all_categories);
-                    echo '</pre>';
-
-                    // foreach ($all_categories as $category) {
-                    //     $category_name = get_cat_name($category);
-                    //     $category_id = get_cat_ID($category);
-                    //     echo '<li>';
-                    //     echo '    <button class="active">' . $category_name . '</button>';
-                    //     echo '</li>';
-                    // }
+                            if ($category_name != 'Без рубрики') {
+                                echo '<li>';
+                                // echo '    <a href="?page_id=10&' . 'block=' . preg_replace('/[^0-9]/', '',  $category_name) . '" class="block_link ' . ($category_name == 'Блок ' . $block ? 'active' : '') . '">' . $category_name . '</a>';
+                                echo '    <a href="?page_id=10&' . 'block=' . end(explode(' ', $category_name)) . '" class="block_link ' . ($category_name == 'Блок ' . $block ? 'active' : '') . '">' . $category_name . '</a>';
+                                echo '</li>';
+                            }
+                        }
+                    } else {
+                        echo "Ошибка: Невозможно получить категории.";
+                    }
                     ?>
+
 
                 </ul>
             </nav>
