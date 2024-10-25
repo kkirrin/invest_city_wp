@@ -1,10 +1,6 @@
 export const initHorizontalScroll = () => {
 
     const widthWindow = window.innerWidth;
-
-
-        // if(widthWindow >= 480) {
-
     
         const pinSection = document.querySelector('#all_for_comfort');
         const pinWrapper = document.querySelector('.comfort-wrapper');

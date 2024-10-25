@@ -1608,6 +1608,8 @@ html {
   scrollbar-color: var(--brown-light) var(--biege);
   font-family: 'Involve';
   overflow-x: hidden;
+  margin-top: 0px !important;
+
 }
 
 body {
@@ -2075,7 +2077,7 @@ h2, h3 {
 }
 
 .bg-\[\#\#BBA590\]{
-  background-color: ##BBA590;
+  background-color: #BBA590;
 }
 
 .bg-\[\#BBA590\]{
@@ -2618,7 +2620,7 @@ h2, h3 {
   content: '';
   position: absolute;
   width: 1px;
-  top: 100%;
+  top: 140%;
   left: 0;
   height: 40px;
   background-color: var(--white);

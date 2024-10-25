@@ -67,7 +67,7 @@
 
 
                 <ul class="gap-2 pl-36 hidden md:flex">
-                    <li class="mr-2"><a class="text-white">г. Уссурийск, ул. Советская, 128</a></li>
+                    <li class="mr-2"><a class="text-white">г. Уссурийск, ул. Советская, 149</a></li>
                     <li class="mr-2"><a class="text-white" href="tel:+79143424684">+7 (914) 342 46 84,</a></li>
                     <li class="mr-2"><a class="text-white" href="tel:+84234384455">8 (4234) 38-44-55</a></li>
                     <li class="mr-2"><a class="text-white" href='mailto:invest-sity21@bk.ru'>invest-sity21@bk.ru</a></li>

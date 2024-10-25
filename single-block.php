@@ -1,6 +1,7 @@
 <?php
 /*
     Template Name: карточка квартиры
+    Template Post Type: post
     */
 ?>
 

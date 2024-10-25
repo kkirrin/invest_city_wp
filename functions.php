@@ -14,8 +14,10 @@ function theme_add_scripts()
 
     wp_enqueue_style('animate', get_template_directory_uri() . '/css/animate.css');
     wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css');
-    wp_enqueue_script('swiper-bundle.min', get_template_directory_uri() . '/js/swiper-bundle.min.js');
+    wp_enqueue_style('swiper', get_template_directory_uri() . '/css/swiper-bundle.min.css');
 }
+
+
 
 function add_menu()
 {

@@ -1,4 +1,4 @@
-export const initProgrammSlider = () => {
+export const initProgramSlider = () => {
     const generalSlider = document.querySelector('.program-item');
 
     if (generalSlider) {

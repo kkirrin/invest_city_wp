@@ -1,6 +1,4 @@
 export const initCounterAnimation = () => {
-    // const counterList = document.querySelector('.counter-list');
-
     const counterAnimation = (el, initialNum, finalNum) => {
 
             if (Number.isInteger(finalNum)) {
@@ -8,7 +6,7 @@ export const initCounterAnimation = () => {
                     el.innerHTML = initialNum;
                     (initialNum >= finalNum) ? clearInterval(interval) : '';
                     initialNum++;
-                }, 50);
+                }, 100);
             }
             else {
                 let intInitialNum = Math.floor(initialNum);
@@ -20,7 +18,7 @@ export const initCounterAnimation = () => {
                         el.innerHTML = `${finalNum.toString().replace('.', ',')}`;
                     }
                     intInitialNum++;
-                }, 50);
+                }, 100);
             }
         }
 

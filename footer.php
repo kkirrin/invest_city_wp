@@ -1,12 +1,12 @@
  <footer class="footer bg-bg-dark md:py-[60px] sm:py-[30px] py-[30px]">
      <div class="container flex md:justify-between items-start justify-start md:flex-nowrap gap-[30px] flex-wrap text-white">
          <a class="md:w-auto w-full" href="/">
-             <img class="" src="<?php echo get_template_directory_uri(); ?>src/img/img/logo-footer.svg" alt="Logo">
+             <img class="" src="<?php echo get_template_directory_uri(); ?>/src/img/img/logo-footer.svg" alt="Logo">
          </a>
          <div class="md:order-1 order-3">
              <ul class="flex flex-col">
                  <li class="md:text-[18px] text-[12px] md:pb-[18px] pb-[9px] flex items-center gap-4">
-                     г. Уссурийск, ул. Советскую, 149
+                     г. Уссурийск, ул. Советская, 128
                  </li>
 
                  <li class="md:text-[18px] text-[12px] md:pb-[18px] pb-[9px] flex items-center gap-4">
@@ -14,11 +14,11 @@
                  </li>
 
                  <li class="md:pb-[18px] pb-[9px] flex items-center gap-4">
-                     <a href="tel:+79146504455," class="md:text-[18px] text-[12px] font-bold">
-                         +7 (914) 650 44 55,
+                     <a href="tel:+tel:+79143424684" class="md:text-[18px] text-[12px] font-bold">
+                         +7 (914) 342 46 84,
                      </a>
-                     <a href="tel:+79241204050" class="md:text-[18px] text-[12px] font-bold">
-                         +7 (924) 120 40 50
+                     <a href="tel:+84234384455" class="md:text-[18px] text-[12px] font-bold">
+                         8 (4234) 38-44-55
                      </a>
                  </li>
 
