@@ -1,0 +1,73 @@
+
+.floating {
+  
+  --float-range: 10vh;
+  --float-factor: 1;
+  --float-start: calc( var(--float-factor) * var(--float-range) );
+  --float-end: calc( -1 * var(--float-factor) * var(--float-range) );
+  
+  animation: floating forwards ease-in-out;
+  animation-timeline: view();
+  animation-reveal: entry-crossing 0% exit-crossing 100%;
+  
+
+}
+ .floating.reverse {
+    animation: floating-reverse forwards ease-in-out;
+    animation-timeline: view();
+    animation-reveal: entry-crossing 0% exit-crossing 100%;
+    transform: translateY( var(--float-end) );
+  }
+  
+  @keyframes floating {
+    from {
+      transform: translateY( var(--float-start) );
+    }
+    to {
+      transform: translateY( var(--float-end) );
+    }
+  }
+  
+  @keyframes floating-reverse {
+    from {
+      transform: translateY( var(--float-end) );
+    }
+    to {
+      transform: translateY( var(--float-start) );
+    }
+  }
+
+
+.ff0 { --float-factor: 0; }
+.ff1 { --float-factor: 0.1; }
+.ff2 { --float-factor: 0.2; }
+.ff3 { --float-factor: 0.3; }
+.ff4 { --float-factor: 0.4; }
+.ff5 { --float-factor: 0.5; }
+.ff6 { --float-factor: 0.6; }
+.ff7 { --float-factor: 0.7; }
+.ff8 { --float-factor: 0.8; }
+.ff9 { --float-factor: 0.9; }
+.ff10 { --float-factor: 1; }
+
+
+
+
+@media screen and (max-width: 480px) {
+  .ff5 { --float-factor: 0.1; }
+
+  .floating {
+  
+    --float-range: 3vh;
+    --float-factor: 1;
+    --float-start: calc( var(--float-factor) * var(--float-range) );
+    --float-end: calc( -1 * var(--float-factor) * var(--float-range) );
+    
+    animation: floating forwards ease-in-out;
+    animation-timeline: view();
+    animation-reveal: entry-crossing 50% exit-crossing 100%;
+    
+  }
+
+
+}

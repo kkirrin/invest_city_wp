@@ -1,0 +1,104 @@
+.mobile-menu {
+    width: -webkit-fill-available;
+    background: rgba(56, 55, 55, 1);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    transition: opacity 0.8s ease;
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 20%;
+    left: 0%;
+    padding: 20px;
+    overflow: auto;
+}
+
+
+
+div.vertical__line {
+    position: relative;
+}
+
+div.vertical__line::before {
+    content: '';
+    position: absolute;
+    height: -webkit-fill-available;
+    z-index: 1000;
+    width: 2px;
+    top: 0;
+    left: -10%;
+    background: #BEC5D2;
+}
+
+
+
+.mobile-menu.is-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+
+.menu {
+    background: rgba(56, 55, 55, 1);
+    transition: opacity 0.8s ease;
+    position: fixed;
+    right: -1000px;
+    top: 0;
+    padding: 20px;
+    width: 794px;
+    height: 100vh;
+    transition: all 1s ease-in-out;
+    z-index: 2;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+
+.menu.is-active {
+    right: 0px;
+}
+
+
+.mask {
+    background-color: rgba(0, 0, 0, 0.40);
+    transition: opacity 0.8s ease;
+    position: fixed;
+    right: -2000px;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+
+.menu.is-active ~ .mask{
+    right: 0px;
+}
+
+@media screen and (max-width: 769px) {
+    .mobile-menu {
+        height: 100vh;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-menu {
+        flex-direction: column;
+        justify-content: normal;
+
+    }
+    div.vertical__line::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        z-index: 1000;
+        width: -webkit-fill-available;
+        left: 16px;
+        background:W #BEC5D2;
+    }
+}

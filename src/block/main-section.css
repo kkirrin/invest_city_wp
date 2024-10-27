@@ -1,0 +1,94 @@
+.main-section__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+}
+
+.main-section__wrapper .main__desc {
+    position: relative;
+}
+
+.main-section__wrapper .main__desc::before {
+    position: absolute;
+    content: '';
+    height: 53px;
+    background: var(--white);
+    width: 1px;
+    bottom: -60%;
+}
+
+
+.main-section__wrapper div:first-of-type {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main-section__wrapper div:nth-child(2) {
+   display: flex;
+   align-items: end;
+   justify-content: end;
+}
+
+.main-section__wrapper .title {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: clamp(3.125rem, 4.375vw + 2.25rem, 7.5rem);
+}
+
+.main-section__wrapper .main__desc {
+    color: white;
+    font-weight: 500;
+    font-size: clamp(0.875rem, 0.625vw + 0.75rem, 1.5rem);
+}
+
+.main-section__wrapper .main__title {
+    text-align: end;
+    color: var(--biege);
+    font-family: 'Bahnschrift';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: clamp(3.125rem, 3.375vw + 2.25rem, 7.5rem);
+    line-height: 120px;
+}
+
+.main-section__wrapper div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-section__wrapper .circle__wrapper {
+  padding-top: 70px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .main-section__wrapper {
+        flex-direction: column;
+
+    }
+    .main-section__wrapper div:first-of-type {
+        gap: 0px;
+    }
+    .main-section__wrapper .main__title {
+        line-height: 51px;
+    }
+    .main-section__wrapper .main__desc::before {
+        position: absolute;
+        content: '';
+        height: 30px;
+        background: var(--white);
+        width: 1px;
+        bottom: -50%;
+    }
+} 
+
+@media screen and (max-width: 375px) {
+    .main-section__wrapper .main__title {
+        line-height: 51px;
+    }
+}
