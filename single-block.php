@@ -105,10 +105,13 @@
                 </div> -->
 
 
-                <?php 
+                
+                <?php
 
-                   foreach($all_child_cat_of_current as $child_cat) {
-                        $child_cat_name = $child_cat -> name;
+                    foreach ($all_child_cat_of_current as $child_cat) {
+                        $child_cat_ids[] = $child_cat->term_id; 
+                        $child_cat_name = $child_cat->name;
+                        
                         echo '<div class="flex flex-col gap-[20px]">';
                         echo '   <div class="p-[10px] text-center bg-[#BBA590] text-white uppercase font-medium">';
                         echo '    <span>';
@@ -118,13 +121,76 @@
 
                         echo '   <div class="bg-white p-[40px]">';
                         echo '      <div class="flex flex-col">';
-                        
+                        echo '         <div class="flex gap-[10px] text-whites pb-[8px]">';
+                        echo '             <div class="flex flex-row gap-[10px]">';
+                        echo '                <div>';
+                        $args = array(
+                            'post_type' => 'apartments',
+                            'order' => 'DESC',
+                            'limit' => -1, 
+                            'tax_query' => array(
+                                array(
+                                    'taxonomy' => 'category',
+                                    'field' => 'term_id',
+                                    'terms' => array($child_cat->term_id)
+                                )
+                            )
+                        );
+
+                        $apartments = new WP_Query($args);
+
+                        if ($apartments->have_posts()) { 
+                            while ($apartments->have_posts()) { 
+                                $apartments->the_post();
+
+                                $status = get_field('status');
+                                $name_of_the_apart = get_field('name_of_apartment');
+                                $number = get_field('number');
+                                $date = get_field('date');
+                                $area = get_field('area');
+                                $rooms = get_field('number_of_rooms');
+                                $entrance = get_field('number_of_entrance');
+                                $ceilings = get_field('ceilings');
+                                $price = get_field('price');
+
+                                echo '<span>';
+                                echo $status, $name_of_the_apart, $number, $date, $area, $rooms, $entrance, $ceilings, $price; 
+                                switch ($status):
+                                    case 'Cвободна':
+                                        break;
+
+                                    case 'Забронирована':
+                                        break;
+
+                                    case 'Продана':
+                                        break;
+
+                                    case 'Акция':
+                                        break;
+
+                                    case 'Квартира + машина': 
+                                        break;
+
+                                
+
+
+                                echo '</span>';
+
+                            }
+                            wp_reset_postdata(); 
+                        } 
+
+                        echo '                  </div>';
+                        echo '              </div>';
+                        echo '          </div>';
                         echo '      </div>';
                         echo '   </div>';
                         echo '</div>';
-                   }
+                    }
 
-                ?>
+                    ?>
+
+
 
                 <div class="flex flex-col gap-[20px]">
                     <div class="p-[10px] text-center bg-[#BBA590] text-white uppercase font-medium">

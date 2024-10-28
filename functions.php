@@ -25,12 +25,12 @@ function add_menu()
     register_nav_menu('lk', 'Навигация ЛК');
 }
 
-add_action('init', 'create_news_type');
+add_action('init', 'create_new_type_posts');
 
-function create_news_type()
+function create_new_type_posts()
 {
     register_post_type(
-        'trands',
+        'apartments',
         array(
             'public' => true,
             'has_archive' => true,
@@ -40,10 +40,10 @@ function create_news_type()
                 'with_front' => false,
             ),
             'labels' => array(
-                'name' => 'Трендовые товары баннеры',
-                'singular_name' => 'Трендовые товары баннеры',
-                'menu_name' => 'Трендовые товары баннеры',
-                'all_items' => 'Все трендовые товары баннеры',
+                'name' => 'Квартиры',
+                'singular_name' => 'Квартиры',
+                'menu_name' => 'Квартиры',
+                'all_items' => 'Все квартиры',
             ),
             'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes'),
             'taxonomies' => array('category')
