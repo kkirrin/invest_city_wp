@@ -26,12 +26,16 @@
                     <?php
                     $block = $_GET['block'];
 
-                    $all_categories = get_categories(array(
+                    $current_cat_name = 'Блок ' . $block;
+                    $current_cat_id = get_cat_ID($current_cat_name);
+
+                    $all_parent_cat = get_categories(array(
                         'hide_empty' => false,
+                        'parent' => 0,
                     ));
 
-                    if (is_array($all_categories)) {
-                        foreach ($all_categories as $category) {
+                    if (is_array($all_parent_cat)) {
+                        foreach ($all_parent_cat as $category) {
                             $category_id = $category->term_id;
                             $category_name = get_cat_name($category_id);
 
@@ -45,6 +49,15 @@
                     } else {
                         echo "Ошибка: Невозможно получить категории.";
                     }
+
+                    $all_child_cat_of_current = get_categories(array(
+                        'parent' => $current_cat_id,
+                        'hide_empty' => false,
+                    ));
+
+
+
+
                     ?>
 
 
@@ -81,7 +94,7 @@
 
             <div class="grid md:grid-cols-3 grid-cols-1 gap-[20px]">
 
-                <div class="flex flex-col gap-[20px]">
+                <!-- <div class="flex flex-col gap-[20px]">
                     <div class="p-[10px] text-center bg-[#BBA590] text-white uppercase font-medium">
                         1 Подъезд
                     </div>
@@ -89,7 +102,29 @@
                     <div class="bg-white p-[40px]">
 
                     </div>
-                </div>
+                </div> -->
+
+
+                <?php 
+
+                   foreach($all_child_cat_of_current as $child_cat) {
+                        $child_cat_name = $child_cat -> name;
+                        echo '<div class="flex flex-col gap-[20px]">';
+                        echo '   <div class="p-[10px] text-center bg-[#BBA590] text-white uppercase font-medium">';
+                        echo '    <span>';
+                        echo        $child_cat_name;
+                        echo '    </span>';
+                        echo '   </div>';
+
+                        echo '   <div class="bg-white p-[40px]">';
+                        echo '      <div class="flex flex-col">';
+                        
+                        echo '      </div>';
+                        echo '   </div>';
+                        echo '</div>';
+                   }
+
+                ?>
 
                 <div class="flex flex-col gap-[20px]">
                     <div class="p-[10px] text-center bg-[#BBA590] text-white uppercase font-medium">
