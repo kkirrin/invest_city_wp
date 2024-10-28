@@ -92,24 +92,10 @@
     <section id="">
         <div class="container">
 
-            <div class="grid md:grid-cols-3 grid-cols-1 gap-[20px]">
-
-                <!-- <div class="flex flex-col gap-[20px]">
-                    <div class="p-[10px] text-center bg-[#BBA590] text-white uppercase font-medium">
-                        1 Подъезд
-                    </div>
-
-                    <div class="bg-white p-[40px]">
-
-                    </div>
-                </div> -->
-
-
-                
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-[20px]">                
                 <?php
 
                     foreach ($all_child_cat_of_current as $child_cat) {
-                        $child_cat_ids[] = $child_cat->term_id; 
                         $child_cat_name = $child_cat->name;
                         
                         echo '<div class="flex flex-col gap-[20px]">';
@@ -118,12 +104,13 @@
                         echo        $child_cat_name;
                         echo '    </span>';
                         echo '   </div>';
-
+                        
+                        
                         echo '   <div class="bg-white p-[40px]">';
                         echo '      <div class="flex flex-col">';
-                        echo '         <div class="flex gap-[10px] text-whites pb-[8px]">';
-                        echo '             <div class="flex flex-row gap-[10px]">';
-                        echo '                <div>';
+                        
+                        
+                        
                         $args = array(
                             'post_type' => 'apartments',
                             'order' => 'DESC',
@@ -143,55 +130,129 @@
                             while ($apartments->have_posts()) { 
                                 $apartments->the_post();
 
-                                $status = get_field('status');
-                                $name_of_the_apart = get_field('name_of_apartment');
-                                $number = get_field('number');
-                                $date = get_field('date');
-                                $area = get_field('area');
-                                $rooms = get_field('number_of_rooms');
-                                $entrance = get_field('number_of_entrance');
-                                $ceilings = get_field('ceilings');
-                                $price = get_field('price');
-
-                                echo '<span>';
-                                echo $status, $name_of_the_apart, $number, $date, $area, $rooms, $entrance, $ceilings, $price; 
-                                switch ($status):
-                                    case 'Cвободна':
-                                        break;
-
-                                    case 'Забронирована':
-                                        break;
-
-                                    case 'Продана':
-                                        break;
-
-                                    case 'Акция':
-                                        break;
-
-                                    case 'Квартира + машина': 
-                                        break;
-
+                   
+                                $floor = get_field('number_of_floor');
+                                       
                                 
-
-
-                                echo '</span>';
+                                // Тут записываю в массив, чтобы сделать отображение квартир по этажам
+                                $apartments_by_floor[$floor][] = array(
+                                    'post_title' => get_the_title(),
+                                    'post_link' => get_the_permalink(),
+                                    'area' => get_field('area'),
+                                    'price' => get_field('price'),
+                                    'status' => get_field('status'),
+                                    'name_of_the_apart' => get_field('name_of_apartment'),
+                                    'number' => get_field('number'),
+                                    'date' => get_field('date'),
+                                    'area' => get_field('area'),
+                                    'floor' => get_field('number_of_floor'),
+                                    'rooms' => get_field('number_of_rooms'),
+                                    'entrance' => get_field('number_of_entrance'),
+                                    'ceilings' => get_field('ceilings'),
+                                    'price' => get_field('price')
+                                );
 
                             }
+
+                            foreach ($apartments_by_floor as $floor => $apartments_on_floor) {
+                                echo '         <div class="flex gap-[10px] text-black pb-[8px]">';
+                                echo '<div class="flex flex-row gap-[10px]">';
+                                echo '  <div>';
+                                echo '    <div class="flex gap-[4px] font-Bahnschrift">';
+                                echo '      <span class="font-medium ">';
+                                echo          $floor;
+                                echo '      </span>';
+                                echo '      <span class="font-normal">';
+                                echo '          этаж';
+                                echo '      </span>';
+                                echo '    </div>';
+                                echo '  </div>';
+                                
+                                foreach($apartments_on_floor as $apartment) {
+                                   
+                                    switch ($apartment['status']):
+                                        case 'Свободна':
+                                            echo '  <button style="background-color: green;" class="w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
+                                            echo '      <div class="bg-[#86BD8E] flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
+                                            echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
+                                            echo '              <span class="text-xs font-medium">'. $rooms.'</span>'; 
+                                            echo '          </span>'; 
+                                            echo '      </div>'; 
+                                            echo '  </button>'; 
+                                                break;
+
+                                        case 'Забронирована':
+                                            echo '  <button style="background-color: yellow;" class="w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
+                                            echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
+                                            echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
+                                            echo '              <span class="text-xs font-medium">'. $rooms .'</span>'; 
+                                            echo '          </span>'; 
+                                            echo '      </div>'; 
+                                            echo '  </button>'; 
+
+                                            break;
+
+                                        case 'Продана':
+                                            echo '  <button style="background-color: red;" class="w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
+                                            echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
+                                            echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
+                                            echo '              <span class="text-xs font-medium">'. $rooms .'</span>'; 
+                                            echo '          </span>'; 
+                                            echo '      </div>'; 
+                                            echo '  </button>'; 
+                                            break;
+
+                                        case 'Акция':
+                                            echo '  <button style="background-color: blue;" class="w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
+                                            echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
+                                            echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
+                                            echo '              <span class="text-xs font-medium">'. $rooms .'</span>'; 
+                                            echo '          </span>'; 
+                                            echo '      </div>'; 
+                                            echo '  </button>'; 
+                                            break;
+
+                                        case 'Квартира + машина': 
+                                            echo '  <button style="background-color: orange;" class="w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
+                                            echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
+                                            echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
+                                            echo '              <span class="text-xs font-medium">'. $rooms .'</span>'; 
+                                            echo '          </span>'; 
+                                            echo '      </div>'; 
+                                            echo '  </button>'; 
+                                                break;
+                                                                        
+                                    endswitch;
+                                }
+                                                      echo '     </div>';
+                                                      echo ' </div>';
+                                
+                            }
+
                             wp_reset_postdata(); 
+                        echo '      </div>';
+                        echo '          </div>';
                         } 
 
-                        echo '                  </div>';
-                        echo '              </div>';
-                        echo '          </div>';
-                        echo '      </div>';
+
+                        
+
+                        // Далее идет flex flex-col
+
+
+                        // Закрылся flex flex-col
+
+
+                        // Закрылся bg-white
+
                         echo '   </div>';
                         echo '</div>';
+                        
                     }
 
                     ?>
 
-
-
+<!-- 
                 <div class="flex flex-col gap-[20px]">
                     <div class="p-[10px] text-center bg-[#BBA590] text-white uppercase font-medium">
                         2 Подъезд
@@ -1560,7 +1621,7 @@
                         </div>
 
                     </div>
-                </div>
+                </div> -->
 
                 <div class="flex flex-col bg-white p-[30px]">
                     <div class="flex justify-between items-center">
@@ -1637,7 +1698,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </section>
