@@ -3420,3 +3420,28 @@ header {
 
 
 
+
+.btn__apart {
+  position: relative;
+}
+
+.btn__apart:hover > .apartment-item {
+    opacity: 1;
+    display: block;
+    position: fixed;
+
+}
+
+.apartment-item {
+  display: none;
+  opacity: 0;
+  top: 20px;
+  background-color: var(--white);
+  padding: 20px;
+  height: 200px;
+  color: black !important;
+  width: 500px;
+  max-width: 310px;
+  height: 180px;
+  transition: all 0.3s ease-in;
+}
