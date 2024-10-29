@@ -2210,6 +2210,10 @@ h2, h3 {
   padding-top: 30px;
 }
 
+.pt-\[40px\] {
+  padding-top: 40px;
+}
+
 .pr-3{
   padding-right: 0.75rem;
 }
@@ -2735,6 +2739,7 @@ h2, h3 {
 
 nav.single-block ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -3425,10 +3430,14 @@ header {
   position: relative;
 }
 
-.btn__apart:hover > .apartment-item {
+.btn__apart:hover {
+  z-index: 1000;
+}
+
+.btn__apart:hover ~ .apartment-item {
     opacity: 1;
     display: block;
-    position: fixed;
+    transition: all 0.3s ease-in;
 
 }
 
@@ -3436,6 +3445,9 @@ header {
   display: none;
   opacity: 0;
   top: 20px;
+  position: absolute;
+  left: 50%;
+  /* top: 40%; */
   background-color: var(--white);
   padding: 20px;
   height: 200px;
@@ -3444,4 +3456,21 @@ header {
   max-width: 310px;
   height: 180px;
   transition: all 0.3s ease-in;
+  z-index: 1000;
+}
+
+.apartment-item > .wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.apartment-item > .wrapper::before {
+  position: absolute;
+  content: '';
+  top: 40px;
+  background-color: var(--biege);
+  height: 1px;
+  width: 100%;
 }
