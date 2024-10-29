@@ -301,98 +301,98 @@
 
 
                 <?php 
+                    foreach($apartments_by_floor as $floor => $apartments_on_floor) {
+                        foreach($apartments_on_floor as $apartment) {
+                            
+                            if($apartment['photo'] == '' || $apartment['photo'] == false || $apartment['photo'] == NULL) {
+                                $apartment['photo'] = 'https://cz-invest-city.ru/wp-content/themes/invest_city/src/img/img/map__type.webp';
+                            }
 
-                    foreach($apartments_on_floor as $apartment) {
-                        
-                        if($apartment['photo'] == '' || $apartment['photo'] == false || $apartment['photo'] == NULL) {
-                            $apartment['photo'] = 'https://cz-invest-city.ru/wp-content/themes/invest_city/src/img/img/map__type.webp';
+                            echo ' <div id="'. $apartment['post_id'] .'" class="flex flex-col bg-white p-[30px] detail__apart">    '; 
+                            echo '      <div>';
+                            echo '          <img style="object-fit: cover; width: 100%; height: 100%;" src="'. $apartment['photo'] .'">';
+                            echo '      </div>';
+                            echo '     <div class="flex justify-between items-center">';
+                            echo '         <div>';
+                            echo '             <h3 class="">'. $apartment['name_of_the_apart'] .'</h3>';
+                            echo '         </div>';
+
+                            echo '         <div>';
+                            echo '             № '. $apartment['number'] .'';
+                            echo '         </div>';
+                            echo '     </div>';
+
+                            echo '     <ul class="single-apart-list columns-2 pt-[20px]"> ';
+                            echo '         <li> ';
+
+                            echo '             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> ';
+                            echo '                 <path d="M3 9V20C3 20.2652 3.10536 20.5196 3.29289 20.7071C3.48043 20.8946 3.73478 21 4 21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V9M3 9H21M3 9V5C3 4.73478 3.10536 4.48043 3.29289 4.29289C3.48043 4.10536 3.73478 4 4 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5V9" stroke="#BBA590" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> ';
+                            echo '                 <path d="M16 3V6M8 3V6" stroke="#BBA590" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> ';
+                            echo '             </svg> ';
+                            echo '             <p></p> ';
+                            echo '             <p>'. $apartment['date'] .'</p> ';
+                            echo '         </li> ';
+                            echo '        <li> ';
+                            echo '            <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">';
+                            echo '                <path d="M11.0068 0.600142C10.901 0.598851 10.7967 0.625532 10.7045 0.677486L1.10449 6.07749C1.01203 6.12989 0.935115 6.20587 0.88159 6.29768C0.828065 6.3895 0.799844 6.49386 0.799805 6.60014V17.4001C0.799844 17.5064 0.828065 17.6108 0.88159 17.7026C0.935115 17.7944 1.01203 17.8704 1.10449 17.9228L10.7045 23.3228C10.7946 23.3736 10.8963 23.4004 10.9998 23.4004C11.1033 23.4004 11.205 23.3736 11.2951 23.3228L20.8951 17.9228C20.9876 17.8704 21.0645 17.7944 21.118 17.7026C21.1715 17.6108 21.1998 17.5064 21.1998 17.4001V6.60014C21.1998 6.49386 21.1715 6.3895 21.118 6.29768C21.0645 6.20587 20.9876 6.12989 20.8951 6.07749L11.2951 0.677486C11.2071 0.627874 11.1079 0.601272 11.0068 0.600142ZM10.9998 1.8892L19.374 6.60014L10.9998 11.3111L2.62559 6.60014L10.9998 1.8892ZM1.9998 7.62671L10.3998 12.3517V21.7736L1.9998 17.0486V7.62671ZM19.9998 7.62671V17.0486L11.5998 21.7736V12.3517L19.9998 7.62671Z" fill="#BBA590" />';
+                            echo '            </svg>';
+
+                            echo '            <p></p>';
+                            echo '            <p>'. $apartment['area'] .' м²</p>'; 
+
+                            echo '        </li>';
+                            echo '    </ul>';
+
+                            echo '     <ul class="single-apart-list columns-2"> ';
+                            echo '         <li> ';
+                            echo '             <p>Комнат:</p> ';
+                            echo '             <p>'. $apartment['rooms'] .'</p> ';
+                            echo '         </li> ';
+                            echo '         <li> ';
+                            echo '             <p>Площадь:</p> ';
+                            echo '             <p>'. $apartment['area'] .' м²</p> ';
+                            echo '         </li> ';
+                            echo '         <li>';
+                            echo '             <p>Подъезд:</p> ';
+                            echo '             <p>'. $apartment['entrance'] .' м²</p> ';
+                            echo '         </li> ';
+                            echo '         <li> ';
+                            echo '             <p>Этаж: </p> ';
+                            echo '             <p>'. $apartment['floor'] .'</p> ';
+                            echo '         </li> ';
+                            echo '         <li> ';
+                            echo '             <p>Потолки: </p> ';
+                            echo '             <p>'. $apartment['ceilings'] .' м</p> ';
+                            echo '         </li> ';
+                            echo '         <li> ';
+                            echo '             <p>Корпус: </p> ';
+                            echo '             <p>'. $apartment['corpus'] .'</p> ';
+                            echo '         </li> ';
+                            echo '         <li> ';
+                            echo '             <p>Отделка: </p> ';
+                            echo '             <p>'. $apartment['finishing'] .'</p> ';
+                            echo '         </li> ';
+                            echo '         <li> ';
+                            echo '             <p> Цена: </p> ';
+                            echo '             <p>'. $apartment['price'] .'</p> ';
+                            echo '         </li> ';
+                            echo '     </ul> ';
+
+
+                            echo '     <div class="flex flex-col pb-[30px] gap-[30px] items-center">';
+                            echo '         <a href="'. get_permalink($apartment['post_id']) .'" class="link__watch md:text-[18px] text-[16px] font-medium text-black">';
+                            echo '             СМОТРЕТЬ';
+                            echo '         </a>';
+
+                            echo '         <div>';
+                            echo '             <a href="#popup3" class="popup-link uppercase font-bold text-brown-dark">';
+                            echo '                 Рассчитать стоимость';
+                            echo '             </a>';
+                            echo '         </div>';
+                            echo '     </div>';
+                            echo ' </div>';
                         }
-
-                        echo ' <div id="'. $apartment['post_id'] .'" class="flex flex-col bg-white p-[30px] detail__apart">    '; 
-                        echo '      <div>';
-                        echo '          <img style="object-fit: cover; width: 100%; height: 100%;" src="'. $apartment['photo'] .'">';
-                        echo '      </div>';
-                        echo '     <div class="flex justify-between items-center">';
-                        echo '         <div>';
-                        echo '             <h3 class="">'. $apartment['name_of_the_apart'] .'</h3>';
-                        echo '         </div>';
-
-                        echo '         <div>';
-                        echo '             № '. $apartment['number'] .'';
-                        echo '         </div>';
-                        echo '     </div>';
-
-                        echo '     <ul class="single-apart-list columns-2 pt-[20px]"> ';
-                        echo '         <li> ';
-
-                        echo '             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> ';
-                        echo '                 <path d="M3 9V20C3 20.2652 3.10536 20.5196 3.29289 20.7071C3.48043 20.8946 3.73478 21 4 21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V9M3 9H21M3 9V5C3 4.73478 3.10536 4.48043 3.29289 4.29289C3.48043 4.10536 3.73478 4 4 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5V9" stroke="#BBA590" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> ';
-                        echo '                 <path d="M16 3V6M8 3V6" stroke="#BBA590" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> ';
-                        echo '             </svg> ';
-                        echo '             <p></p> ';
-                        echo '             <p>'. $apartment['date'] .'</p> ';
-                        echo '         </li> ';
-                        echo '        <li> ';
-                        echo '            <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">';
-                        echo '                <path d="M11.0068 0.600142C10.901 0.598851 10.7967 0.625532 10.7045 0.677486L1.10449 6.07749C1.01203 6.12989 0.935115 6.20587 0.88159 6.29768C0.828065 6.3895 0.799844 6.49386 0.799805 6.60014V17.4001C0.799844 17.5064 0.828065 17.6108 0.88159 17.7026C0.935115 17.7944 1.01203 17.8704 1.10449 17.9228L10.7045 23.3228C10.7946 23.3736 10.8963 23.4004 10.9998 23.4004C11.1033 23.4004 11.205 23.3736 11.2951 23.3228L20.8951 17.9228C20.9876 17.8704 21.0645 17.7944 21.118 17.7026C21.1715 17.6108 21.1998 17.5064 21.1998 17.4001V6.60014C21.1998 6.49386 21.1715 6.3895 21.118 6.29768C21.0645 6.20587 20.9876 6.12989 20.8951 6.07749L11.2951 0.677486C11.2071 0.627874 11.1079 0.601272 11.0068 0.600142ZM10.9998 1.8892L19.374 6.60014L10.9998 11.3111L2.62559 6.60014L10.9998 1.8892ZM1.9998 7.62671L10.3998 12.3517V21.7736L1.9998 17.0486V7.62671ZM19.9998 7.62671V17.0486L11.5998 21.7736V12.3517L19.9998 7.62671Z" fill="#BBA590" />';
-                        echo '            </svg>';
-
-                        echo '            <p></p>';
-                        echo '            <p>'. $apartment['area'] .' м²</p>'; 
-
-                        echo '        </li>';
-                        echo '    </ul>';
-
-                        echo '     <ul class="single-apart-list columns-2"> ';
-                        echo '         <li> ';
-                        echo '             <p>Комнат:</p> ';
-                        echo '             <p>'. $apartment['rooms'] .'</p> ';
-                        echo '         </li> ';
-                        echo '         <li> ';
-                        echo '             <p>Площадь:</p> ';
-                        echo '             <p>'. $apartment['area'] .' м²</p> ';
-                        echo '         </li> ';
-                        echo '         <li>';
-                        echo '             <p>Подъезд:</p> ';
-                        echo '             <p>'. $apartment['entrance'] .' м²</p> ';
-                        echo '         </li> ';
-                        echo '         <li> ';
-                        echo '             <p>Этаж: </p> ';
-                        echo '             <p>'. $apartment['floor'] .'</p> ';
-                        echo '         </li> ';
-                        echo '         <li> ';
-                        echo '             <p>Потолки: </p> ';
-                        echo '             <p>'. $apartment['ceilings'] .' м</p> ';
-                        echo '         </li> ';
-                        echo '         <li> ';
-                        echo '             <p>Корпус: </p> ';
-                        echo '             <p>'. $apartment['corpus'] .'</p> ';
-                        echo '         </li> ';
-                        echo '         <li> ';
-                        echo '             <p>Отделка: </p> ';
-                        echo '             <p>'. $apartment['finishing'] .'</p> ';
-                        echo '         </li> ';
-                        echo '         <li> ';
-                        echo '             <p> Цена: </p> ';
-                        echo '             <p>'. $apartment['price'] .'</p> ';
-                        echo '         </li> ';
-                        echo '     </ul> ';
-
-
-                        echo '     <div class="flex flex-col pb-[30px] gap-[30px] items-center">';
-                        echo '         <a href="'. get_permalink($apartment['post_id']) .'" class="link__watch md:text-[18px] text-[16px] font-medium text-black">';
-                        echo '             СМОТРЕТЬ';
-                        echo '         </a>';
-
-                        echo '         <div>';
-                        echo '             <a href="#popup3" class="popup-link uppercase font-bold text-brown-dark">';
-                        echo '                 Рассчитать стоимость';
-                        echo '             </a>';
-                        echo '         </div>';
-                        echo '     </div>';
-                        echo ' </div>';
                     }
-
                   
                 ?>
             </div>
