@@ -183,8 +183,10 @@
                                    
                                     switch ($apartment['status']):
                                         case 'Свободна':
-                                            echo '  <button style="background-color: #FFFFFF;" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
-                                            
+                                            $color_of_status = '#FFFFFF';
+                                            $color_of_text_status = '#000';
+
+                                            echo '  <button style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
                                             echo '      <div class="bg-[#86BD8E] flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
                                             echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
                                             echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
@@ -192,32 +194,13 @@
                                             echo '      </div>'; 
                                             echo '  </button>'; 
 
-                                            echo '      <div class="apartment-item">';
-                                            echo '           <div class="wrapper">';
-                                            echo '              <div class="flex gap-[5px] items-start">';
-                                            echo '              <div style="color: 000; text-align: center; background-color: #FFFFFF; width: 20px; height: 18px; border-radius: 5px;">'. $apartment['rooms'] .'</div>';
-                                            echo '              <p>Квартира</p>';
-                                            echo '              </div>';
-
-                                            echo '              <p>' . $apartment['number'] . '</p>';
-                                            echo '          </div>';
-                                            
-                                            echo '          <div class="flex justify-between items-center pt-[40px]">';
-                                            echo '              <div style="width: 180px; height: 80px;">';
-                                            echo '                  <img style="object-fit: cover; width: 100%; height: 100%;" src="'. $apartment['photo'] .'">';
-                                            echo '              </div>';
-                                            echo '              <div class="flex flex-col gap-[10px]">';
-                                            echo '                  <p>' . $apartment['name_of_the_apart'] . '</p>';
-                                            echo '                  <p>' . $apartment['area'] . '</p>';
-                                            echo '              </div>';
-                                            echo '           </div>';
-                                            echo '      </div>'; 
-                                            
                                             break;
 
                                         case 'Забронирована':
-                                            echo '  <button style="background-color: #CDBFB9;" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
-                                            
+                                            $color_of_status = '#CDBFB9';
+                                            $color_of_text_status = '#fff';
+
+                                            echo '  <button style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
                                             echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
                                             echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
                                             echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
@@ -225,33 +208,13 @@
                                             echo '      </div>'; 
                                             echo '  </button>'; 
 
-
-                                            echo '      <div class="apartment-item">';
-                                            echo '           <div class="wrapper">';
-                                            echo '              <div class="flex gap-[5px]">';
-                                            echo '              <div style="color: white; text-align: center; background-color: #CDBFB9; width: 20px; height: 18px; border-radius: 5px;">'. $apartment['rooms'] .'</div>';
-                                            echo '              <p>Квартира</p>';
-                                            echo '              </div>';
-
-                                            echo '              <p>' . $apartment['number'] . '</p>';
-                                            echo '          </div>';
-                                            
-                                            echo '          <div class="flex justify-between items-center pt-[40px]">';
-                                            echo '              <div style="width: 180px; height: 80px;">';
-                                            echo '                  <img style="object-fit: cover; width: 100%; height: 100%;" src="'. $apartment['photo'] .'">';
-                                            echo '              </div>';
-                                            echo '              <div class="flex flex-col gap-[10px]">';
-                                            echo '                  <p>' . $apartment['name_of_the_apart'] . '</p>';
-                                            echo '                  <p>' . $apartment['area'] . '</p>';
-                                            echo '              </div>';
-                                            echo '           </div>';
-                                            echo '      </div>'; 
-
                                             break;
 
                                         case 'Продана':
-                                            echo '  <button style="background-color: #E8E4E2;" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
-                                            
+                                            $color_of_status = '#E8E4E2';
+                                            $color_of_text_status = '#fff';
+
+                                            echo '  <button style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
                                             echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
                                             echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
                                             echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
@@ -259,92 +222,34 @@
                                             echo '      </div>'; 
                                             echo '  </button>';
                                             
-                                            echo '      <div class="apartment-item">';
-                                            echo '           <div class="wrapper">';
-                                            echo '              <div class="flex gap-[5px]">';
-                                            echo '              <div style="color: white; text-align: center; background-color: #E8E4E2; width: 20px; height: 18px; border-radius: 5px;">'. $apartment['rooms'] .'</div>';
-                                            echo '              <p>Квартира</p>';
-                                            echo '              </div>';
-
-                                            echo '              <p>' . $apartment['number'] . '</p>';
-                                            echo '          </div>';
-                                            
-                                            echo '          <div class="flex justify-between items-center pt-[40px]">';
-                                            echo '              <div style="width: 180px; height: 80px;">';
-                                            echo '                  <img style="object-fit: cover; width: 100%; height: 100%;" src="'. $apartment['photo'] .'">';
-                                            echo '              </div>';
-                                            echo '              <div class="flex flex-col gap-[10px]">';
-                                            echo '                  <p>' . $apartment['name_of_the_apart'] . '</p>';
-                                            echo '                  <p>' . $apartment['area'] . '</p>';
-                                            echo '              </div>';
-                                            echo '           </div>';
-                                            echo '      </div>';  
-
                                             break;
 
                                         case 'Акция':
-                                            echo '  <button style="background-color: #86BD8E;" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
-                                            
+                                            $color_of_status = '#86BD8E';
+                                            $color_of_text_status = '#fff';
+
+
+                                            echo '  <button style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
                                             echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
                                             echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
                                             echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
                                             echo '          </span>'; 
                                             echo '      </div>'; 
                                             echo '  </button>'; 
-                                            
-                                            echo '      <div class="apartment-item">';
-                                            echo '           <div class="wrapper">';
-                                            echo '              <div class="flex gap-[5px]">';
-                                            echo '              <div style="color: white; text-align: center; background-color: #86BD8E; width: 20px; height: 18px; border-radius: 5px;">'. $apartment['rooms'] .'</div>';
-                                            echo '              <p>Квартира</p>';
-                                            echo '              </div>';
-
-                                            echo '              <p>' . $apartment['number'] . '</p>';
-                                            echo '          </div>';
-                                            
-                                            echo '          <div class="flex justify-between items-center pt-[40px]">';
-                                            echo '              <div style="width: 180px; height: 80px;">';
-                                            echo '                  <img style="object-fit: cover; width: 100%; height: 100%;" src="'. $apartment['photo'] .'">';
-                                            echo '              </div>';
-                                            echo '              <div class="flex flex-col gap-[10px]">';
-                                            echo '                  <p>' . $apartment['name_of_the_apart'] . '</p>';
-                                            echo '                  <p>' . $apartment['area'] . '</p>';
-                                            echo '              </div>';
-                                            echo '           </div>';
-                                            echo '      </div>'; 
 
                                             break;
 
                                         case 'Квартира + машина': 
-                                            echo '  <button style="background-color: #E16E61;" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
-                                            
+                                            $color_of_status = '#E16E61';
+                                            $color_of_text_status = '#fff';
+
+                                            echo '  <button style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
                                             echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
                                             echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
                                             echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
                                             echo '          </span>'; 
                                             echo '      </div>'; 
                                             echo '  </button>'; 
-
-                                            echo '      <div class="apartment-item">';
-                                            echo '           <div class="wrapper">';
-                                            echo '              <div class="flex gap-[5px]">';
-                                            echo '              <div style="color: white; text-align: center; background-color: #E16E61; width: 20px; height: 18px; border-radius: 5px;">'. $apartment['rooms'] .'</div>';
-                                            echo '              <p>Квартира</p>';
-                                            echo '              </div>';
-
-                                            echo '              <p>' . $apartment['number'] . '</p>';
-                                            echo '          </div>';
-                                            
-                                            echo '          <div class="flex justify-between items-center pt-[40px]">';
-                                            echo '              <div style="width: 180px; height: 80px;">';
-                                            echo '                  <img style="object-fit: cover; width: 100%; height: 100%;" src="'. $apartment['photo'] .'">';
-                                            echo '              </div>';
-                                            echo '              <div class="flex flex-col gap-[10px]">';
-                                            echo '                  <p>' . $apartment['name_of_the_apart'] . '</p>';
-                                            echo '                  <p>' . $apartment['area'] . '</p>';
-                                            echo '              </div>';
-                                            echo '           </div>';
-                                            echo '      </div>'; 
 
                                             break;
                                                               
@@ -352,6 +257,27 @@
                                                 
                                                 
                                     endswitch;
+
+                                            echo '      <div class="apartment-item">';
+                                            echo '           <div class="wrapper">';
+                                            echo '              <div class="flex gap-[5px]">';
+                                            echo '              <div style="color: '. $color_of_text_status .'; text-align: center; background-color: '. $color_of_status .'; width: 20px; height: 18px; border-radius: 5px;">'. $apartment['rooms'] .'</div>';
+                                            echo '              <p>Квартира</p>';
+                                            echo '              </div>';
+
+                                            echo '              <p>' . $apartment['number'] . '</p>';
+                                            echo '          </div>';
+                                            
+                                            echo '          <div class="flex justify-between items-center pt-[40px]">';
+                                            echo '              <div style="width: 180px; height: 80px;">';
+                                            echo '                  <img style="object-fit: cover; width: 100%; height: 100%;" src="'. $apartment['photo'] .'">';
+                                            echo '              </div>';
+                                            echo '              <div class="flex flex-col gap-[10px]">';
+                                            echo '                  <p>' . $apartment['name_of_the_apart'] . '</p>';
+                                            echo '                  <p>' . $apartment['area'] . '</p>';
+                                            echo '              </div>';
+                                            echo '           </div>';
+                                            echo '      </div>'; 
 
                                 }
                                    echo '     </div>';
