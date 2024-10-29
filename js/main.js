@@ -4,7 +4,7 @@ import { initProgramSlider } from './module/sliders.js';
 import { initHorizontalScroll } from './module/horizontalScroll.js';
 import { initCounterAnimation } from './module/counter-animation.js';
 import { initAllComfortSlider } from './module/sliders.js';
-
+import { initBtnOpenCardApart } from './module/btn-apart.js';
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initHorizontalScroll();
     initCounterAnimation();
     initAllComfortSlider();
+    initBtnOpenCardApart();
 
     const wow = new WOW({
         boxClass: 'wow',
