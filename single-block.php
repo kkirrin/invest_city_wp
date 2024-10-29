@@ -380,7 +380,7 @@
 
 
                             echo '     <div class="flex flex-col pb-[30px] gap-[30px] items-center">';
-                            echo '         <a href="'. get_permalink($apartment['post_id']) .'" class="link__watch md:text-[18px] text-[16px] font-medium text-black">';
+                            echo '         <a href="/?page_id=12&apart_id='. $apartment['post_id'] .'" class="link__watch md:text-[18px] text-[16px] font-medium text-black">';
                             echo '             СМОТРЕТЬ';
                             echo '         </a>';
 
