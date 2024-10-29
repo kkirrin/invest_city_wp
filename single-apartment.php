@@ -41,6 +41,27 @@
                     <img src="<?php echo get_template_directory_uri(); ?>src/img/img/map__type.webp" alt="">
                 </div>
 
+
+
+                <?php
+                    $apart_id = $_GET['apart_id'];
+
+                    $apart = get_post($apart_id);
+
+                    if ($apart) {
+                        // Получен пост
+                        echo '<pre>';
+                        var_dump($apart);
+                        echo '</pre>';
+                    } else {
+                        // Пост не найден
+                        echo 'Пост с ID ' . $apart_id . ' не найден.';
+                    }
+                ?>
+
+
+
+
                 <div class="flex flex-col md:w-1/2 w-full">
 
                     <div class="flex justify-between items-center">
