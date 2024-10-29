@@ -92,7 +92,7 @@
     <section id="">
         <div class="container">
             <div class="flex justify-between my-auto flex-1 pb-2 gap-[10px]">
-                <div class="grid md:grid-cols-3 grid-cols-1 gap-[20px]">                
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-[20px]">                
                     <?php
 
                         foreach ($all_child_cat_of_current as $child_cat) {

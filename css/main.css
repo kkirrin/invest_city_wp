@@ -3477,11 +3477,13 @@ header {
 }
 
 .detail__apart {
+  position: relative;
+  max-width: 400px;
   display: none;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.5s ease-in-out;
-  right: -1000;
+  transition: all 1s ease-in-out;
+  transform: translateX(100%);
 }
 
 
@@ -3489,7 +3491,7 @@ header {
   display: block;
   opacity: 1;
   visibility: visible;
-  right: 0;
+  transform: translateX(0%);
 }
 
 .detail__apart.active.ready__in {
