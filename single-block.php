@@ -91,286 +91,310 @@
 
     <section id="">
         <div class="container">
+            <div class="flex justify-between my-auto flex-1 pb-2 gap-[10px]">
+                <div class="grid md:grid-cols-3 grid-cols-1 gap-[20px]">                
+                    <?php
 
-            <div class="grid md:grid-cols-3 grid-cols-1 gap-[20px]">                
-                <?php
+                        foreach ($all_child_cat_of_current as $child_cat) {
+                            $child_cat_name = $child_cat->name;
+                            
+                            echo '<div class="flex flex-col gap-[20px]">';
+                            echo '   <div class="p-[10px] text-center bg-[#BBA590] text-white uppercase font-medium">';
+                            echo '    <span>';
+                            echo        $child_cat_name;
+                            echo '    </span>';
+                            echo '   </div>';
+                        
+                            echo '   <div class="bg-white p-[40px]">';
+                            echo '      <div class="flex flex-col">';
 
-                    foreach ($all_child_cat_of_current as $child_cat) {
-                        $child_cat_name = $child_cat->name;
-                        
-                        echo '<div class="flex flex-col gap-[20px]">';
-                        echo '   <div class="p-[10px] text-center bg-[#BBA590] text-white uppercase font-medium">';
-                        echo '    <span>';
-                        echo        $child_cat_name;
-                        echo '    </span>';
-                        echo '   </div>';
-                    
-                        echo '   <div class="bg-white p-[40px]">';
-                        echo '      <div class="flex flex-col">';
-
-                        // НЕ ТРОГАТЬ 3 ЭТИ DIV           
-                        
-                        
-                        $args = array(
-                            'post_type' => 'apartments',
-                            'order' => 'DESC',
-                            'limit' => -1, 
-                            'posts_per_page' => -1,
-                            'tax_query' => array(
-                                array(
-                                    'taxonomy' => 'category',
-                                    'field' => 'term_id',
-                                    'terms' => array($child_cat->term_id)
+                            // НЕ ТРОГАТЬ 3 ЭТИ DIV           
+                            
+                            $args = array(
+                                'post_type'         => 'apartments',
+                                'order'             => 'DESC',
+                                'limit'             => -1, 
+                                'posts_per_page'    => -1,
+                                'tax_query'         => array(
+                                    array(
+                                        'taxonomy'  => 'category',
+                                        'field'     => 'term_id',
+                                        'terms'     => array($child_cat->term_id)
+                                    )
                                 )
-                            )
-                        );
+                            );
 
-                        $apartments = new WP_Query($args);
-
-                        // var_dump ($apartments);
-
-                        
-                        if ($apartments->have_posts()) { 
-                            while ($apartments->have_posts()) { 
-                                $apartments->the_post();
-                                
-                                $floor = get_field('number_of_floor');
+                            $apartments = new WP_Query($args);
+                            
+                            if ($apartments->have_posts()) { 
+                                while ($apartments->have_posts()) { 
+                                    $apartments->the_post();
+                                    
+                                    $floor = get_field('number_of_floor');
+                                        
+                                    // Тут записываю в массив, чтобы сделать отображение квартир по этажам
+                                    $apartments_by_floor[$floor][] = array(
+                                        'post_id'           =>          get_the_ID(),
+                                        'post_title'        =>          get_the_title(),
+                                        'post_link'         =>          get_the_permalink(),
+                                        'area'              =>          get_field('area'),
+                                        'price'             =>          get_field('price'),
+                                        'status'            =>          get_field('status'),
+                                        'name_of_the_apart' =>          get_field('name_of_apartment'),
+                                        'number'            =>          get_field('number'),
+                                        'date'              =>          get_field('date'),
+                                        'floor'             =>          get_field('number_of_floor'),
+                                        'rooms'             =>          get_field('number_of_room'),
+                                        'entrance'          =>          get_field('number_of_entrance'),
+                                        'ceilings'          =>          get_field('ceilings'),
+                                        'photo'             =>          get_field('photo'),
+                                        'finishing'         =>          get_field('finishing'),
+                                        'corpus'            =>          get_field('corpus')
                                        
-                                // Тут записываю в массив, чтобы сделать отображение квартир по этажам
-                                $apartments_by_floor[$floor][] = array(
-                                    'post_title' => get_the_title(),
-                                    'post_link' => get_the_permalink(),
-                                    'area' => get_field('area'),
-                                    'price' => get_field('price'),
-                                    'status' => get_field('status'),
-                                    'name_of_the_apart' => get_field('name_of_apartment'),
-                                    'number' => get_field('number'),
-                                    'date' => get_field('date'),
-                                    'floor' => get_field('number_of_floor'),
-                                    'rooms' => get_field('number_of_room'),
-                                    'entrance' => get_field('number_of_entrance'),
-                                    'ceilings' => get_field('ceilings'),
-                                    'photo' => get_field('photo')
-                                );
 
-                            }
-
-                    //         // Сортировка по убыванию
-                            krsort($apartments_by_floor);
-
-                            foreach ($apartments_by_floor as $floor => $apartments_on_floor) {
-                                echo '<div class="flex gap-[10px] text-black pb-[8px]">';
-                                echo '   <div class="flex flex-row gap-[10px] relative">';
-                                echo '       <div>';
-                                echo '           <div class="flex gap-[4px] font-Bahnschrift" style="min-width:70px; width: 100%;">';
-                                echo '               <span class="font-medium ">';
-                                echo                     $floor;
-                                echo '               </span>';
-                                echo '               <span class="font-normal">';
-                                echo '                   этаж';
-                                echo '               </span>';
-                                echo '           </div>';
-                                echo '       </div>';
-
-                                
-                                foreach($apartments_on_floor as $apartment) {
-                                    // var_dump ($apartment['photo']);
-
-                                    if($apartment['photo'] == '' || $apartment['photo'] == false || $apartment['photo'] == NULL) {
-                                        $apartment['photo'] = 'https://cz-invest-city.ru/wp-content/themes/invest_city/src/img/img/map__type.webp';
-                                        // echo  $apartment['photo'] ;
-                                    }
-                                   
-                                    switch ($apartment['status']):
-                                        case 'Свободна':
-                                            $color_of_status = '#FFFFFF';
-                                            $color_of_text_status = '#000';
-
-                                            echo '  <button style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
-                                            echo '      <div class="bg-[#86BD8E] flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
-                                            echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
-                                            echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
-                                            echo '          </span>'; 
-                                            echo '      </div>'; 
-                                            echo '  </button>'; 
-
-                                            break;
-
-                                        case 'Забронирована':
-                                            $color_of_status = '#CDBFB9';
-                                            $color_of_text_status = '#fff';
-
-                                            echo '  <button style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
-                                            echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
-                                            echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
-                                            echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
-                                            echo '          </span>'; 
-                                            echo '      </div>'; 
-                                            echo '  </button>'; 
-
-                                            break;
-
-                                        case 'Продана':
-                                            $color_of_status = '#E8E4E2';
-                                            $color_of_text_status = '#fff';
-
-                                            echo '  <button style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
-                                            echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
-                                            echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
-                                            echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
-                                            echo '          </span>'; 
-                                            echo '      </div>'; 
-                                            echo '  </button>';
-                                            
-                                            break;
-
-                                        case 'Акция':
-                                            $color_of_status = '#86BD8E';
-                                            $color_of_text_status = '#fff';
-
-
-                                            echo '  <button style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
-                                            echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
-                                            echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
-                                            echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
-                                            echo '          </span>'; 
-                                            echo '      </div>'; 
-                                            echo '  </button>'; 
-
-                                            break;
-
-                                        case 'Квартира + машина': 
-                                            $color_of_status = '#E16E61';
-                                            $color_of_text_status = '#fff';
-
-                                            echo '  <button style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
-                                            echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
-                                            echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
-                                            echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
-                                            echo '          </span>'; 
-                                            echo '      </div>'; 
-                                            echo '  </button>'; 
-
-                                            break;
-                                                              
-                                                
-                                                
-                                                
-                                    endswitch;
-
-                                            echo '      <div class="apartment-item">';
-                                            echo '           <div class="wrapper">';
-                                            echo '              <div class="flex gap-[5px]">';
-                                            echo '              <div style="color: '. $color_of_text_status .'; text-align: center; background-color: '. $color_of_status .'; width: 20px; height: 18px; border-radius: 5px;">'. $apartment['rooms'] .'</div>';
-                                            echo '              <p>Квартира</p>';
-                                            echo '              </div>';
-
-                                            echo '              <p>' . $apartment['number'] . '</p>';
-                                            echo '          </div>';
-                                            
-                                            echo '          <div class="flex justify-between items-center pt-[40px]">';
-                                            echo '              <div style="width: 180px; height: 80px;">';
-                                            echo '                  <img style="object-fit: cover; width: 100%; height: 100%;" src="'. $apartment['photo'] .'">';
-                                            echo '              </div>';
-                                            echo '              <div class="flex flex-col gap-[10px]">';
-                                            echo '                  <p>' . $apartment['name_of_the_apart'] . '</p>';
-                                            echo '                  <p>' . $apartment['area'] . '</p>';
-                                            echo '              </div>';
-                                            echo '           </div>';
-                                            echo '      </div>'; 
+                                    );
 
                                 }
-                                   echo '     </div>';
-                                   echo ' </div>';
-                            }
 
-                       } 
+                                //         // Сортировка по убыванию
+                                krsort($apartments_by_floor);
 
-                        // НЕ ТРОГАТЬ ЭТИ  3 DIV
-                        echo '   </div>';
-                        echo '  </div>';
-                        echo '</div>';
+                                foreach ($apartments_by_floor as $floor => $apartments_on_floor) {
+                                    echo '<div class="flex gap-[10px] text-black pb-[8px]">';
+                                    echo '   <div class="flex flex-row gap-[10px] relative">';
+                                    echo '       <div>';
+                                    echo '           <div class="flex gap-[4px] font-Bahnschrift" style="min-width:70px; width: 100%;">';
+                                    echo '               <span class="font-medium ">';
+                                    echo                     $floor;
+                                    echo '               </span>';
+                                    echo '               <span class="font-normal">';
+                                    echo '                   этаж';
+                                    echo '               </span>';
+                                    echo '           </div>';
+                                    echo '       </div>';
 
+                                    
+                                    foreach($apartments_on_floor as $apartment) {
+                                        // var_dump ($apartment['photo']);
+
+                                        if($apartment['photo'] == '' || $apartment['photo'] == false || $apartment['photo'] == NULL) {
+                                            $apartment['photo'] = 'https://cz-invest-city.ru/wp-content/themes/invest_city/src/img/img/map__type.webp';
+                                        }
+                                    
+                                        switch ($apartment['status']):
+                                            case 'Свободна':
+                                                $color_of_status = '#FFFFFF';
+                                                $color_of_text_status = '#000';
+
+                                                echo '  <button id="'. $apartment['post_id'] .'" style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
+                                                echo '      <div class="bg-[#86BD8E] flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
+                                                echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
+                                                echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
+                                                echo '          </span>'; 
+                                                echo '      </div>'; 
+                                                echo '  </button>'; 
+
+                                                break;
+
+                                            case 'Забронирована':
+                                                $color_of_status = '#CDBFB9';
+                                                $color_of_text_status = '#fff';
+
+                                                echo '  <button id="'. $apartment['post_id'] .'" style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
+                                                echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
+                                                echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
+                                                echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
+                                                echo '          </span>'; 
+                                                echo '      </div>'; 
+                                                echo '  </button>'; 
+
+                                                break;
+
+                                            case 'Продана':
+                                                $color_of_status = '#E8E4E2';
+                                                $color_of_text_status = '#fff';
+
+                                                echo '  <button id="'. $apartment['post_id'] .'" style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
+                                                echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
+                                                echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
+                                                echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
+                                                echo '          </span>'; 
+                                                echo '      </div>'; 
+                                                echo '  </button>';
+                                                
+                                                break;
+
+                                            case 'Акция':
+                                                $color_of_status = '#86BD8E';
+                                                $color_of_text_status = '#fff';
+
+
+                                                echo '  <button id="'. $apartment['post_id'] .'" style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
+                                                echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
+                                                echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
+                                                echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
+                                                echo '          </span>'; 
+                                                echo '      </div>'; 
+                                                echo '  </button>'; 
+
+                                                break;
+
+                                            case 'Квартира + машина': 
+                                                $color_of_status = '#E16E61';
+                                                $color_of_text_status = '#fff';
+
+                                                echo '  <button id="'. $apartment['post_id'] .'" style="background-color:'. $color_of_status .';" class="btn__apart w-5 h-5 relative rounded leading-none overflow-hidden room text-white">'; 
+                                                echo '      <div class="bg-red flex cursor-pointer room__bg py-[3px] px-1 w-full h-full ds:hover:bg-blue ds:hover:text-white transition duration-300 group">'; 
+                                                echo '          <span class="items-center justify-center pointer-events-none flex h-full w-full">'; 
+                                                echo '              <span class="text-xs font-medium">'. $apartment['rooms'] .'</span>'; 
+                                                echo '          </span>'; 
+                                                echo '      </div>'; 
+                                                echo '  </button>'; 
+
+                                                break;
+                                                                
+                                                    
+                                                    
+                                                    
+                                        endswitch;
+
+                                        echo '      <div class="apartment-item">';
+                                        echo '           <div class="wrapper">';
+                                        echo '              <div class="flex gap-[5px]">';
+                                        echo '              <div style="color: '. $color_of_text_status .'; text-align: center; background-color: '. $color_of_status .'; width: 20px; height: 18px; border-radius: 5px;">'. $apartment['rooms'] .'</div>';
+                                        echo '              <p>Квартира</p>';
+                                        echo '              </div>';
+
+                                        echo '              <p>№ ' . $apartment['number'] . '</p>';
+                                        echo '          </div>';
+                                        
+                                        echo '          <div class="flex justify-between items-center pt-[40px]">';
+                                        echo '              <div style="width: 180px; height: 80px;">';
+                                        echo '                  <img style="object-fit: cover; width: 100%; height: 100%;" src="'. $apartment['photo'] .'">';
+                                        echo '              </div>';
+                                        echo '              <div class="flex flex-col gap-[10px]">';
+                                        echo '                  <p style="font-weight: 500;">' . $apartment['name_of_the_apart'] . '</p>';
+                                        echo '                  <p style="font-weight: 500;">' . $apartment['area'] . '</p>';
+                                        echo '              </div>';
+                                        echo '           </div>';
+                                        echo '      </div>'; 
+
+                                    }
+                                    echo '     </div>';
+                                    echo ' </div>';
+                                }
+
+                            } 
+
+                                // НЕ ТРОГАТЬ ЭТИ  3 DIV
+                            echo '   </div>';
+                            echo '  </div>';
+                            echo '</div>';
+
+                                
+                        }
+
+                        ?>
+
+                
+                </div>
+
+
+                <?php 
+
+                    foreach($apartments_on_floor as $apartment) {
+                        
+                        if($apartment['photo'] == '' || $apartment['photo'] == false || $apartment['photo'] == NULL) {
+                            $apartment['photo'] = 'https://cz-invest-city.ru/wp-content/themes/invest_city/src/img/img/map__type.webp';
+                        }
+
+                        echo ' <div id="'. $apartment['post_id'] .'" class="flex flex-col bg-white p-[30px] detail__apart">    '; 
+                        echo '      <div>';
+                        echo '          <img style="object-fit: cover; width: 100%; height: 100%;" src="'. $apartment['photo'] .'">';
+                        echo '      </div>';
+                        echo '     <div class="flex justify-between items-center">';
+                        echo '         <div>';
+                        echo '             <h3 class="">'. $apartment['name_of_the_apart'] .'</h3>';
+                        echo '         </div>';
+
+                        echo '         <div>';
+                        echo '             № '. $apartment['number'] .'';
+                        echo '         </div>';
+                        echo '     </div>';
+
+                        echo '     <ul class="single-apart-list columns-2 pt-[20px]"> ';
+                        echo '         <li> ';
+
+                        echo '             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> ';
+                        echo '                 <path d="M3 9V20C3 20.2652 3.10536 20.5196 3.29289 20.7071C3.48043 20.8946 3.73478 21 4 21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V9M3 9H21M3 9V5C3 4.73478 3.10536 4.48043 3.29289 4.29289C3.48043 4.10536 3.73478 4 4 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5V9" stroke="#BBA590" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> ';
+                        echo '                 <path d="M16 3V6M8 3V6" stroke="#BBA590" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> ';
+                        echo '             </svg> ';
+                        echo '             <p></p> ';
+                        echo '             <p>'. $apartment['date'] .'</p> ';
+                        echo '         </li> ';
+                        echo '        <li> ';
+                        echo '            <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">';
+                        echo '                <path d="M11.0068 0.600142C10.901 0.598851 10.7967 0.625532 10.7045 0.677486L1.10449 6.07749C1.01203 6.12989 0.935115 6.20587 0.88159 6.29768C0.828065 6.3895 0.799844 6.49386 0.799805 6.60014V17.4001C0.799844 17.5064 0.828065 17.6108 0.88159 17.7026C0.935115 17.7944 1.01203 17.8704 1.10449 17.9228L10.7045 23.3228C10.7946 23.3736 10.8963 23.4004 10.9998 23.4004C11.1033 23.4004 11.205 23.3736 11.2951 23.3228L20.8951 17.9228C20.9876 17.8704 21.0645 17.7944 21.118 17.7026C21.1715 17.6108 21.1998 17.5064 21.1998 17.4001V6.60014C21.1998 6.49386 21.1715 6.3895 21.118 6.29768C21.0645 6.20587 20.9876 6.12989 20.8951 6.07749L11.2951 0.677486C11.2071 0.627874 11.1079 0.601272 11.0068 0.600142ZM10.9998 1.8892L19.374 6.60014L10.9998 11.3111L2.62559 6.60014L10.9998 1.8892ZM1.9998 7.62671L10.3998 12.3517V21.7736L1.9998 17.0486V7.62671ZM19.9998 7.62671V17.0486L11.5998 21.7736V12.3517L19.9998 7.62671Z" fill="#BBA590" />';
+                        echo '            </svg>';
+
+                        echo '            <p></p>';
+                        echo '            <p>'. $apartment['area'] .' м²</p>'; 
+
+                        echo '        </li>';
+                        echo '    </ul>';
+
+                        echo '     <ul class="single-apart-list columns-2"> ';
+                        echo '         <li> ';
+                        echo '             <p>Комнат:</p> ';
+                        echo '             <p>'. $apartment['rooms'] .'</p> ';
+                        echo '         </li> ';
+                        echo '         <li> ';
+                        echo '             <p>Площадь:</p> ';
+                        echo '             <p>'. $apartment['area'] .' м²</p> ';
+                        echo '         </li> ';
+                        echo '         <li>';
+                        echo '             <p>Подъезд:</p> ';
+                        echo '             <p>'. $apartment['entrance'] .' м²</p> ';
+                        echo '         </li> ';
+                        echo '         <li> ';
+                        echo '             <p>Этаж: </p> ';
+                        echo '             <p>'. $apartment['floor'] .'</p> ';
+                        echo '         </li> ';
+                        echo '         <li> ';
+                        echo '             <p>Потолки: </p> ';
+                        echo '             <p>'. $apartment['ceilings'] .' м</p> ';
+                        echo '         </li> ';
+                        echo '         <li> ';
+                        echo '             <p>Корпус: </p> ';
+                        echo '             <p>'. $apartment['corpus'] .'</p> ';
+                        echo '         </li> ';
+                        echo '         <li> ';
+                        echo '             <p>Отделка: </p> ';
+                        echo '             <p>'. $apartment['finishing'] .'</p> ';
+                        echo '         </li> ';
+                        echo '         <li> ';
+                        echo '             <p> Цена: </p> ';
+                        echo '             <p>'. $apartment['price'] .'</p> ';
+                        echo '         </li> ';
+                        echo '     </ul> ';
+
+
+                        echo '     <div class="flex flex-col pb-[30px] gap-[30px] items-center">';
+                        echo '         <a href="'. get_permalink($apartment['post_id']) .'" class="link__watch md:text-[18px] text-[16px] font-medium text-black">';
+                        echo '             СМОТРЕТЬ';
+                        echo '         </a>';
+
+                        echo '         <div>';
+                        echo '             <a href="#popup3" class="popup-link uppercase font-bold text-brown-dark">';
+                        echo '                 Рассчитать стоимость';
+                        echo '             </a>';
+                        echo '         </div>';
+                        echo '     </div>';
+                        echo ' </div>';
                     }
 
-                    ?>
-
-                <div class="flex flex-col bg-white p-[30px]">
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <h3 class="">2-х комнатная квартира</h3>
-                        </div>
-
-                        <div>
-                            № 13
-                        </div>
-                    </div>
-
-                    <ul class="single-apart-list columns-2 pt-[20px]">
-                        <li>
-
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 9V20C3 20.2652 3.10536 20.5196 3.29289 20.7071C3.48043 20.8946 3.73478 21 4 21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V9M3 9H21M3 9V5C3 4.73478 3.10536 4.48043 3.29289 4.29289C3.48043 4.10536 3.73478 4 4 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5V9" stroke="#BBA590" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M16 3V6M8 3V6" stroke="#BBA590" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <p></p>
-                            <p>1кв. 2026 г</p>
-                        </li>
-                        <li>
-                            <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.0068 0.600142C10.901 0.598851 10.7967 0.625532 10.7045 0.677486L1.10449 6.07749C1.01203 6.12989 0.935115 6.20587 0.88159 6.29768C0.828065 6.3895 0.799844 6.49386 0.799805 6.60014V17.4001C0.799844 17.5064 0.828065 17.6108 0.88159 17.7026C0.935115 17.7944 1.01203 17.8704 1.10449 17.9228L10.7045 23.3228C10.7946 23.3736 10.8963 23.4004 10.9998 23.4004C11.1033 23.4004 11.205 23.3736 11.2951 23.3228L20.8951 17.9228C20.9876 17.8704 21.0645 17.7944 21.118 17.7026C21.1715 17.6108 21.1998 17.5064 21.1998 17.4001V6.60014C21.1998 6.49386 21.1715 6.3895 21.118 6.29768C21.0645 6.20587 20.9876 6.12989 20.8951 6.07749L11.2951 0.677486C11.2071 0.627874 11.1079 0.601272 11.0068 0.600142ZM10.9998 1.8892L19.374 6.60014L10.9998 11.3111L2.62559 6.60014L10.9998 1.8892ZM1.9998 7.62671L10.3998 12.3517V21.7736L1.9998 17.0486V7.62671ZM19.9998 7.62671V17.0486L11.5998 21.7736V12.3517L19.9998 7.62671Z" fill="#BBA590" />
-                            </svg>
-
-                            <p></p>
-                            <p>66.8 м²</p>
-
-                        </li>
-                    </ul>
-
-                    <ul class="single-apart-list columns-2">
-                        <li>
-                            <p>Комнат:</p>
-                            <p>2</p>
-                        </li>
-                        <li>
-                            <p>Площадь:</p>
-                            <p>66.8 м²</p>
-                        </li>
-                        <li>
-                            <p>Этаж: </p>
-                            <p>4</p>
-                        </li>
-                        <li>
-                            <p>Потолки: </p>
-                            <p>3 м</p>
-                        </li>
-                        <li>
-                            <p>Корпус: </p>
-                            <p>1</p>
-                        </li>
-                        <li>
-                            <p>Отделка: </p>
-                            <p>без отделки</p>
-                        </li>
-                        <li>
-                            <p> Цена: </p>
-                            <p>по запросу</p>
-                        </li>
-                    </ul>
-
-
-                    <div class="flex justify-between items-center pb-[30px]">
-                        <p class="md:text-[18px] text-[16px] font-medium text-black">
-                            Доступна в ипотеку
-                        </p>
-
-                        <div>
-                            <a href="#popup3" class="popup-link uppercase underline font-bold text-brown-dark">
-                                Рассчитать стоимость
-                            </a>
-                        </div>
-                    </div>
-                </div> 
+                  
+                ?>
             </div>
         </div>
     </section>

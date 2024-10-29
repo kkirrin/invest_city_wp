@@ -3431,6 +3431,7 @@ header {
 }
 
 .btn__apart:hover {
+  background-color: var(--brown-light);
   z-index: 1000;
 }
 
@@ -3473,4 +3474,39 @@ header {
   background-color: var(--biege);
   height: 1px;
   width: 100%;
+}
+
+.detail__apart {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  right: -1000;
+}
+
+
+.detail__apart.active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  right: 0;
+}
+
+.detail__apart.active.ready__in {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  right: 0;
+}
+
+.link__watch {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 30px;
+  background-color: var(--brown-light);
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Bahnschrift';
 }
