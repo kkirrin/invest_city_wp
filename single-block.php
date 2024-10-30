@@ -316,7 +316,15 @@
                                 $apartment['photo'] = 'https://cz-invest-city.ru/wp-content/themes/invest_city/src/img/img/map__type.webp';
                             }
 
-                            echo ' <div id="'. $apartment['post_id'] .'" class="flex flex-col bg-white p-[30px] detail__apart">    '; 
+                            echo ' <div id="'. $apartment['post_id'] .'" class="flex flex-col bg-white p-[30px] detail__apart relative">    '; 
+                            echo '      <div class="md:hidden block">';
+                            echo '          <button class="modal__detail__close close__modal__detail" aria-label="Закрыть" tabindex="4"> ';
+                            echo '             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none"> ';
+                            echo '                 <path d="M4 1.45508L19.9099 17.365" stroke="#000" /> ';
+                            echo '                 <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#000" /> ';
+                            echo '             </svg> ';
+                            echo '          </button>';
+                            echo '      </div>';
                             echo '      <div>';
                             echo '          <img style="object-fit: cover; width: 100%; height: 100%;" src="'. $apartment['photo'] .'">';
                             echo '      </div>';

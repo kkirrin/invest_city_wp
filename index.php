@@ -622,9 +622,7 @@
         </div>
     </section>
 
-
     <?php @include 'templates/ticker_buy.php'; ?>
-
 
     <section id="type" class="relative">
         <div class="container">
