@@ -2,17 +2,20 @@ export const initTabs = () => {
     const tab_btn = document.querySelectorAll('.tab_btn');
     const tab_content = document.querySelectorAll('.tab-content');
 
-    tab_btn[0].classList.add('active');
-    tab_content[0].classList.add('active');
 
-    tab_btn.forEach(btn => {
-        btn.addEventListener('click', (e) => {
+    if(tab_btn && tab_content) {
 
-            const current_btn = e.currentTarget;
-            const current_btn_id = current_btn.dataset.targetId;
+        tab_btn[0].classList.add('active');
+        tab_content[0].classList.add('active');
+        
+        tab_btn.forEach(btn => {
+            btn.addEventListener('click', (e) => {
 
-            const matching_tab_content = Array.from(tab_content).find(
-                content => content.dataset.id === current_btn_id
+                const current_btn = e.currentTarget;
+                const current_btn_id = current_btn.dataset.targetId;
+                
+                const matching_tab_content = Array.from(tab_content).find(
+                    content => content.dataset.id === current_btn_id
             );
 
             if (current_btn.classList.contains('active')) {
@@ -20,12 +23,12 @@ export const initTabs = () => {
             } else {
                 tab_btn.forEach(b => b.classList.remove('active'));
                 tab_content.forEach(c => c.classList.remove('active'));
-
-                // Сделайте текущую кнопку и секцию активными
+                
                 current_btn.classList.add('active');
                 matching_tab_content.classList.add('active');
             }
         })
     });
+    }
 };
 

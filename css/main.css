@@ -341,7 +341,7 @@ div.vertical__line::before {
   margin-bottom: 5px;
   border-bottom: 1px solid var(--biege);
   background-color: inherit;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 767px) {
@@ -2771,6 +2771,7 @@ nav.single-block ul li .block_link.active{
 .single-block-checkbox {
   padding-top: 50px;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -3324,6 +3325,10 @@ header {
     padding: 110px;
   }
 
+  .md\:p-\[40px\]{
+    padding: 40px;
+  }
+
   .md\:px-\[30px\]{
     padding-left: 30px;
     padding-right: 30px;
@@ -3442,6 +3447,13 @@ header {
 
 }
 
+@media screen and (max-width: 480px) {
+  .btn__apart:hover ~ .apartment-item {
+    opacity: 0;
+    display: none;
+  }
+}
+
 .apartment-item {
   display: none;
   opacity: 0;
@@ -3548,3 +3560,8 @@ header {
   visibility: visible;
  }
  
+
+
+#single-block-main {
+  padding: 60px 0;
+}
