@@ -2,6 +2,10 @@
 /*
     Template Name: карточка блока
     */
+
+    ini_set('display_errors', 0);
+    ini_set('display_startup_errors', 0);
+    error_reporting(E_ALL);
 ?>
 
 <?php get_header(2); ?>
@@ -301,6 +305,10 @@
 
 
                 <?php 
+
+                if($apartments_by_floor) {
+
+                
                     foreach($apartments_by_floor as $floor => $apartments_on_floor) {
                         foreach($apartments_on_floor as $apartment) {
                             
@@ -393,7 +401,9 @@
                             echo ' </div>';
                         }
                     }
-                  
+                } else {
+                    echo '<div>Квартиры еще не добавили в данный дом.</div>';
+                }
                 ?>
             </div>
         </div>
