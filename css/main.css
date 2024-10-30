@@ -3524,6 +3524,8 @@ header {
   padding: 5px 60px;
   /* max-width: 135px; */
   font-weight: 400;
+  transition: all .6s ease-in-out;
+
 }
 
 
@@ -3535,17 +3537,14 @@ header {
   color: var(--white);
 }
 
-
 .tab-content {
-  display: none;
   opacity: 0;
   visibility: hidden;
   transition: all .6s ease-in-out;
-}
-
-.tab-content.active {
-  display: block;
+ }
+ 
+ .tab-content.active {
   opacity: 1;
   visibility: visible;
-}
-
+ }
+ 
