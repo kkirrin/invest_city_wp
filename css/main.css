@@ -3565,3 +3565,19 @@ header {
 #single-block-main {
   padding: 60px 0;
 }
+
+
+.access_to_ipoteka {
+  position: relative;
+}
+
+.access_to_ipoteka::before {
+  position: absolute;
+  content: '';
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  background-color: #86BD8E;
+  top: 11px;
+  left: -13px;
+}

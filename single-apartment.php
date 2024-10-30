@@ -102,7 +102,7 @@
                     
                     
                     echo '          <div class="flex justify-between items-center pb-[30px]">'; 
-                    echo '              <p class="md:text-[18px] text-[16px] font-medium text-black">'; 
+                    echo '              <p class="md:text-[18px] text-[16px] font-medium text-black access_to_ipoteka">'; 
                     echo '                  Доступна в ипотеку'; 
                     echo '              </p>'; 
 
