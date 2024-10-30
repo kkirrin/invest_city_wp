@@ -101,13 +101,13 @@
                     echo '          </div>'; 
                     
                     
-                    echo '          <div class="flex justify-between items-center pb-[30px]">'; 
-                    echo '              <p class="md:text-[18px] text-[16px] font-medium text-black access_to_ipoteka">'; 
+                    echo '          <div class="flex justify-between items-center pt-[10px] pb-[30px]">'; 
+                    echo '              <p class="md:text-[18px] text-[14px] font-medium text-black access_to_ipoteka">'; 
                     echo '                  Доступна в ипотеку'; 
                     echo '              </p>'; 
 
                     echo '              <div>'; 
-                    echo '                  <a href="#popup3" class="popup-link uppercase underline font-bold text-brown-dark">'; 
+                    echo '                  <a href="#popup3" class="popup-link md:text-[18px] text-[14px] uppercase underline font-bold text-brown-dark">'; 
                     echo '                      Рассчитать стоимость'; 
                     echo '                  </a>'; 
                     echo '              </div>'; 
