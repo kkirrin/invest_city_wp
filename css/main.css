@@ -3040,7 +3040,7 @@ path.use_hover {
   font-weight: 700;
   color: var(--black);
 }
-/* 
+
 path.use_hover[href='#g_05']:hover use.use_hover[href='#g_05'],
 path.use_hover[href='#g_06']:hover use.use_hover[href='#g_06'],
 path.use_hover[href='#g_07']:hover use.use_hover[href='#g_07'],
@@ -3078,7 +3078,7 @@ path.use_hover[href='#g_12']:hover ~ #g_12_info__inner
 
 {
   opacity: 1;
-} */
+}
 
 header {
   position: fixed;

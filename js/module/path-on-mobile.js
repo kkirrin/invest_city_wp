@@ -1,7 +1,7 @@
 export const initPathOnSVGMobile = () => {
     const links = document.querySelectorAll('.svg__main__wrapper a');
-    // const use_hover = document.querySelectorAll('use[href^="#g_"]');
-    // const g_info__inner = document.querySelectorAll('[id^="g_info__inner"]');
+    const use_hover = document.querySelectorAll('use[href^="#g_"]');
+    const g_info__inner = document.querySelectorAll('[id^="g_info__inner"]');
 
     const widthWindow = window.innerWidth;
 
@@ -16,8 +16,21 @@ export const initPathOnSVGMobile = () => {
                 const info = currentLink.querySelector('[id$="_info__inner"]')                
 
 
-                path.classlist.add('active');
-                info.classlist.add('active');
+                path.classList.add('active');
+                info.classList.add('active');
+                console.log(path, info);
+                
+            })
+            link.addEventListener('touchend', (e) => {
+                e.preventDefault();
+                const currentLink = e.currentTarget;
+                const path = currentLink.querySelector('path.use_hover');
+                const info = currentLink.querySelector('[id$="_info__inner"]')                
+
+
+                path.classList.remove('active');
+                info.classList.remove('active');
+                console.log(path, info);
                 
             })
         })
