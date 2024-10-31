@@ -149,7 +149,7 @@
 
         <div class="relative flex justify-center">
             <div class="svg__main__wrapper">
-                <svg class="" viewBox="0 0 1920 1200" height="1200">
+                <svg class="" viewBox="0 0 1920 1200" height="auto">
 
                     <use href="#image_svg--main__svg" x="0" y="0" />
 
@@ -717,18 +717,18 @@
                         </div>
 
                         <div class="swiper-slide ">
-                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
-                                <p>Проектное финансирование <br> от сбербанка</p>
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper2.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
+                                <p>Ипотека <br> по госпрограммам</p>
                                 <button class="button_main button_main__podrobnee">Узнать подробнее</button>
                             </div>
                         </div>
 
-                        <div class="swiper-slide ">
+                        <!-- <div class="swiper-slide ">
                             <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
                                 <p>Проектное финансирование <br> от сбербанка</p>
                                 <button class="button_main button_main__podrobnee">Узнать подробнее</button>
                             </div>
-                        </div>
+                        </div> -->
 
 
 

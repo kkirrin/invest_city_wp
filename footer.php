@@ -119,7 +119,7 @@
 
              <h2 class="text-white uppercase md:text-[34px] sm:text-[30px] text-[30px] text-start">Забронируйте квартиру</h2>
 
-             <div class="flex flex-col md:max-w-[300px] max-w-full">
+             <div class="flex flex-col md:max-w-[300px] max-w-full gap-[30px]">
                  <input class="form__input" placeholder="Введите имя*" />
                  <input class="form__input" placeholder="Введите телефон*" />
 

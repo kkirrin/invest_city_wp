@@ -14,7 +14,7 @@
 
     <div>
         <header>
-            <div class="container md:gap-5 items-center justify-between flex md:pt-[30px] pt-[12px]">
+            <div class="container md:gap-5 items-center justify-between flex md:pt-[20px] pt-[12px]">
 
                 <div>
                     <a href="index.html">
@@ -68,7 +68,7 @@
                 </div>
 
 
-                <ul class="gap-2 pl-36 hidden md:flex">
+                <ul class="gap-2 pl-36 hidden md:flex items-center">
                     <li class="mr-2"><a class="text-white">г. Уссурийск, ул. Советская, 149</a></li>
                     <li class="mr-2"><a class="text-white" href="tel:+79143424684">+7 (914) 342 46 84,</a></li>
                     <li class="mr-2"><a class="text-white" href="tel:+84234384455">8 (4234) 38-44-55</a></li>

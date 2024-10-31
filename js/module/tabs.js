@@ -3,7 +3,10 @@ export const initTabs = () => {
     const tab_content = document.querySelectorAll('.tab-content');
 
 
-    if(tab_btn && tab_content) {
+
+
+    console.log(tab_btn);
+    if(tab_btn.length > 0 && tab_content.length > 0) {
 
         tab_btn[0].classList.add('active');
         tab_content[0].classList.add('active');

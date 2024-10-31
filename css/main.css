@@ -31,7 +31,7 @@
 .btn__menu svg {
   width: 55px;
   height: 40px;
-  top: -10px;
+  top: -1px;
   left: -7px;
   stroke: white;
   stroke-width: 3px;
@@ -350,7 +350,7 @@ div.vertical__line::before {
   margin-bottom: 5px;
   border-bottom: 1px solid var(--biege);
   background-color: inherit;
-  padding-bottom: 10px;
+  padding-bottom: 16px;
 }
 
 @media (max-width: 767px) {
@@ -597,7 +597,8 @@ div.vertical__line::before {
 /*  */
 
 .circle__wrapper button {
-  font-size: clamp(0.75rem, 0.75vw + 0.6rem, 1.5rem);
+  /* font-size: clamp(0.75rem, 0.75vw + 0.6rem, 1.5rem); */
+  font-size: 16px;
   font-weight: 700;
   font-family: 'Bahnschrift';
   text-transform: uppercase;
@@ -775,6 +776,7 @@ div.vertical__line::before {
     right: 0;
     width:  130px;
     height: 130px;
+    font-size: 12px;
   }
 
   .circle__wrapper button {
@@ -2520,10 +2522,16 @@ h2, h3 {
 }
 
 .header-fix {
-  /* background: rgba(20, 19, 19, 0.8); */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
-  padding-bottom: 10px;
+  transition: all 0.1s ease-in-out;
+ /* background: rgba(20, 19, 19, 0.8); */
+ /* box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23); */
+ background-color: #FFFFFF1A;
+ backdrop-filter: blur(200px);
+ /* filter: blur(200px); */
+ /* -webkit-filter: blur(200px); */
+ padding-bottom: 20px;
 }
+
 
 .title {
   line-height: 85px !important;
@@ -2898,9 +2906,21 @@ nav.single-block ul li .block_link.active{
   height: 1px;
 }
 
-.svg__main__wrapper svg{
-  /* width: 1920px; */
+
+.svg__main__wrapper {
+  width: 100%;
 }
+
+.svg__main__wrapper svg{
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* .svg__main__wrapper svg{
+  width: 1920px;
+} */
 
 .use_hover ~ defs g use {
   transition: fill .5s ease-in-out;
@@ -3050,6 +3070,12 @@ header {
   position: fixed;
   width: -webkit-fill-available;
   z-index: 10;
+}
+
+@media screen and (max-width: 1440px) {
+  .pattern_1 {
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -3578,7 +3604,7 @@ header {
   visibility: hidden;
   transition: all 1s ease-in-out;
   transform: translateX(100%);
-  z-index: 1000;
+  /* z-index: 1000; */
 }
 
 @media screen and (max-width: 480px) {
@@ -3718,4 +3744,15 @@ header {
    .floor__number__wrapper {
       min-width: 50px;
     }
+}
+
+
+#popup1 .popup__content, #popup4 .popup__content, #popup2 .popup__content,  #popup3 .popup__content{
+  max-width: 920px;
+  width: -webkit-fill-available;
+}
+
+#popup2 h2, #popup3 h2 {
+  padding-bottom: 35px;
+
 }
