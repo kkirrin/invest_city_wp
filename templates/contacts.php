@@ -45,7 +45,7 @@
                     </p>
                 </div>
 
-                <div class="md:hidden block circle__wrapper absolute top-[56%] right-[0%]">
+                <div class="md:hidden block circle__wrapper absolute top-[46%] right-[0%]" style="z-index: 100;">
                     <a href="#popup1" class="popup-link">
                         <button class="circle__btn circle__btn--contacts">
                             ОСТАВИТЬ <br> ЗАЯВКУ
@@ -56,4 +56,3 @@
         </div>
     </div>
 </section>
-

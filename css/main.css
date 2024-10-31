@@ -992,6 +992,12 @@ div.vertical__line::before {
   max-width: 1440px;
 }
 
+@media screen and (max-width: 480px) {
+  #ticker.after .container::after {
+    width: 96%;
+  }
+}
+
 @keyframes ticker {
   0% {
     transform: translateX(0);
@@ -1787,6 +1793,10 @@ h2, h3 {
 
 .right-\[0\%\]{
   right: 0%;
+}
+
+.top-\[46\%\]{
+  top: 46%;
 }
 
 .top-\[56\%\]{
@@ -2595,7 +2605,7 @@ h2, h3 {
 }
 
 #type {
-  padding: 60px 140px;
+  padding: 60px 0 140px;
 }
 
 /* #type h2::before {
@@ -2643,7 +2653,7 @@ h2, h3 {
 }
 
 #location {
-  padding: 60px 0;
+  padding: 140px 0;
   background-color: #383737;
   overflow-x: hidden;
 }
@@ -2659,7 +2669,7 @@ h2, h3 {
 }
 
 #contacts {
-  padding: 60px 0;
+  padding: 0px 0 80px;
   background-color: #383737 ;
 }
 
@@ -2673,7 +2683,7 @@ h2, h3 {
   background-color: #57504A;
 }
 
-@media scree and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   #contacts .container::before {
     width: 96%;
   }
@@ -2752,7 +2762,7 @@ h2, h3 {
 }
 
 #single-block-section {
-  padding: 120px 0 60px 0;
+  padding: 150px 0 50px 0;
 }
 
 nav.single-block ul {
@@ -2796,7 +2806,8 @@ nav.single-block ul li .block_link.active{
     width: max-content;
   }
   nav.single-block ul li .block_link.active {
-    padding: 15px 10px;
+    /* padding: 15px 10px; */
+    height: -webkit-fill-available;
     font-size: 20px;
     width: max-content;
   }
@@ -2813,6 +2824,10 @@ nav.single-block ul li .block_link.active{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.single-block-checkbox > span {
+  font-weight: 500;
 }
 
 .single-block-checkbox div label{
@@ -2846,6 +2861,15 @@ nav.single-block ul li .block_link.active{
   display: flex;
   padding-bottom: 30px;
   gap: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .single-apart-list li {
+    padding-bottom: 10px;
+  }
+  .modal__detail__img {
+    width: 200px;
+  }
 }
 
 .single-apart-list li p:first-of-type {
@@ -3281,8 +3305,16 @@ header {
     width: 140px;
   }
 
+  .md\:w-\[40\%\]{
+    width: 40%;
+  }
+
   .md\:w-\[50\%\]{
     width: 50%;
+  }
+
+  .md\:w-\[55\%\]{
+    width: 55%;
   }
 
   .md\:w-auto{
@@ -3536,11 +3568,14 @@ header {
   visibility: hidden;
   transition: all 1s ease-in-out;
   transform: translateX(100%);
+  z-index: 1000;
 }
 
 @media screen and (max-width: 480px) {
   .detail__apart {
-    position: absolute
+    position: absolute;
+    right: 0;
+    top: 64px;
   };
 }
 
@@ -3599,6 +3634,7 @@ header {
   .single-block .tab_btn, .single-block .tab_btn.active {
     font-size: 18px;
     padding: 5px 15px;
+    height: -webkit-fill-available;
   }
 }
 
@@ -3661,4 +3697,15 @@ header {
   position: absolute;
   right: 10px;
   top: 10px;
+}
+
+.floor__number__wrapper {
+  width: 100%;
+  min-width: 70px;
+}
+
+@media screen and (max-width: 480px) {
+   .floor__number__wrapper {
+      min-width: 50px;
+    }
 }
