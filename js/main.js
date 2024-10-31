@@ -3,7 +3,7 @@ import { initPopup } from './module/popup.js';
 import { initProgramSlider } from './module/sliders.js';
 import { initHorizontalScroll } from './module/horizontalScroll.js';
 import { initCounterAnimation } from './module/counter-animation.js';
-import { initAllComfortSlider } from './module/sliders.js';
+import { initSertificateSlider } from './module/sliders.js';
 import { initBtnOpenCardApart } from './module/btn-apart.js';
 import { initTabs } from './module/tabs.js';
 import { initHeaderFix } from './module/header-fix.js';
@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initProgramSlider();
     initHorizontalScroll();
     initCounterAnimation();
-    initAllComfortSlider();
+    initSertificateSlider();
     initBtnOpenCardApart();
     initTabs();
     initHeaderFix();

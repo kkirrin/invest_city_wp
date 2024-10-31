@@ -597,7 +597,7 @@ div.vertical__line::before {
 /*  */
 
 .circle__wrapper button {
-  /* font-size: clamp(0.75rem, 0.75vw + 0.6rem, 1.5rem); */
+  font-size: clamp(0.75rem, 0.75vw + 0.6rem, 1.5rem);
   font-size: 16px;
   font-weight: 700;
   font-family: 'Bahnschrift';
@@ -1163,7 +1163,7 @@ div.vertical__line::before {
 
 @media screen and (max-width: 480px) {
   .ff5 {
-    --float-factor: 0.1;
+    --float-factor: 0.0;
   }
 
   .floating {
@@ -2527,6 +2527,7 @@ h2, h3 {
  /* box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23); */
  background-color: #FFFFFF1A;
  backdrop-filter: blur(200px);
+-webkit-backdrop-filter: blur(200px);
  /* filter: blur(200px); */
  /* -webkit-filter: blur(200px); */
  padding-bottom: 20px;
@@ -2593,6 +2594,12 @@ h2, h3 {
 
 .comfort-wrapper > div {
   min-width: 400px;
+}
+
+@media screen and (max-width: 480px) {
+  .comfort-wrapper > div {
+    min-width: auto;
+  }
 }
 
 #variants {
@@ -2667,6 +2674,13 @@ h2, h3 {
   left: 0;
   height: 40px;
   background-color: var(--white);
+}
+
+@media screen and (max-width: 480px) {
+  .program-item p::before {
+    top: 111%;
+  }
+
 }
 
 #location {
@@ -3743,6 +3757,9 @@ header {
 @media screen and (max-width: 480px) {
    .floor__number__wrapper {
       min-width: 50px;
+    }
+    body.wrapper {
+      overflow: hidden;
     }
 }
 

@@ -1,12 +1,15 @@
 export const initHorizontalScroll = () => {
-
     const widthWindow = window.innerWidth;
-    
+
+    console.log(widthWindow);
+
+    if (widthWindow > 480) { 
+        console.log(widthWindow);
+
         const pinSection = document.querySelector('#all_for_comfort');
         const pinWrapper = document.querySelector('.comfort-wrapper');
 
         gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-
 
         if (pinSection) {
             const timelineScroll = gsap.timeline({
@@ -15,7 +18,6 @@ export const initHorizontalScroll = () => {
                     start: "top-=-140 top",
                     end: () => "+=" + pinWrapper.scrollWidth + "px",
                     pin: true,
-                    // markers: true,
                     scrub: true,
                 }
             });
@@ -24,8 +26,8 @@ export const initHorizontalScroll = () => {
                 x: () => -(pinWrapper.scrollWidth - pinWrapper.offsetWidth),
             }, "start");
         }
-    // }
-
-}
-
+    } else {
+     
+    }
+};
 

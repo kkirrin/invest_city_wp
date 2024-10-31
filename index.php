@@ -149,7 +149,7 @@
 
         <div class="relative flex justify-center">
             <div class="svg__main__wrapper">
-                <svg class="" viewBox="0 0 1920 1200" height="auto">
+                <svg class="" viewBox="0 0 1920 1200" width="100%" height="auto">
 
                     <use href="#image_svg--main__svg" x="0" y="0" />
 
@@ -523,7 +523,7 @@
         </div>
     </section>
 
-    <section id="all_for_comfort" class=" overflow-hidden relative">
+    <section id="all_for_comfort" class=" overflow-hidden relative md:block hidden">
         <div class="container">
             <h2 class="md:text-[60px] sm:text-[40px] text-[31px] uppercase md:pt-[60px] md:pb-[60px] sm:pt-[30px] sm:pb-[30px] pt-[30px] pb-[30px] relative z-[2]">Все необходимое для комфортной жизни в одном месте</h2>
 
@@ -601,6 +601,89 @@
             </div>
         </div>
     </section>
+
+
+    <section id="all_for_comfort" class=" overflow-hidden relative md:hidden block ">
+        <div class="container">
+            <h2 class="md:text-[60px] sm:text-[40px] text-[31px] uppercase md:pt-[60px] md:pb-[60px] sm:pt-[30px] sm:pb-[30px] pt-[30px] pb-[30px] relative z-[2]">Все необходимое для комфортной жизни в одном месте</h2>
+            <div class="comfort-swiper">
+                <div class="swiper-wrapper">
+                    <div class="relative comfort-item">
+                        <div style="width: -webkit-fill-available;">
+                            <div class="w-full md:h-[389px] h-[250px]">
+                                <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort3.webp" class="object-cover h-full w-full" alt="">
+                            </div>
+
+                            <div class="p-[30px] h-[311px]">
+                                <div class="bg-biege p-[30px] h-full">
+                                    <p>В жилом комплексе предусмотрено <span class="font-bold">наличие супермаркета, магазинов, офисных помещений, фитнес центра, спортивных площадок и зон для отдыха</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative comfort-item">
+                        <div style="width: -webkit-fill-available;">
+                            <div class="w-full md:h-[389px] h-[250px]">
+                                <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort5.webp" class="object-cover h-full w-full" alt="">
+                            </div>
+
+                            <div class="p-[30px] h-[311px]">
+                                <div class="bg-biege p-[30px] h-full">
+                                    <p>А так же на территории комплекса будет расположен <span class="font-bold">центр развития детей дошкольного возраста</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative comfort-item">
+                        <div style="width: -webkit-fill-available;">
+                            <div class="w-full md:h-[389px] h-[250px]">
+                                <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort6.webp" class="object-cover h-full w-full" alt="">
+                            </div>
+
+                            <div class="p-[30px] h-[311px]">
+                                <div class="bg-biege p-[30px] h-full">
+                                    <p class="font-bold">Подземный двухуровневый паркинг</p>
+                                    <p class="pt-[10px]"><span class="font-bold">Кладовые помещения</span> «сити-боксы» под ваши вещи, которые позволяют освободить пространство для жизни</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative comfort-item">
+                        <div style="width: -webkit-fill-available;">
+                            <div class="w-full md:h-[389px] h-[250px]">
+                                <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort1.webp" class="object-cover h-full w-full" alt="">
+                            </div>
+
+                            <div class="p-[30px] h-[311px]">
+                                <div class="bg-biege p-[30px] h-full">
+                                    <p class="pt-[10px]">Собственный <span class="font-bold">центральный парк 1 Га с променадом</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative comfort-item">
+                        <div style="width: -webkit-fill-available;">
+                            <div class="w-full md:h-[389px] h-[250px]">
+                                <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/comfort7.webp" class="object-cover h-full w-full" alt="">
+                            </div>
+
+                            <div class="p-[30px] h-[311px]">
+                                <div class="bg-biege p-[30px] h-full">
+                                    <p class="pt-[10px]">Одним из удобств, которое доступно жильцам ЖК Атриум является <span class="font-bold">фитнес-центр</span>. Который позволит вам постоянно находится в тонусе и хорошей форме</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <section id="variants">
         <div class="container">
