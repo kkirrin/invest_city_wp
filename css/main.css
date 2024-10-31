@@ -2838,7 +2838,7 @@ nav.single-block ul li .block_link.active{
   }
   nav.single-block ul li .block_link.active {
     /* padding: 15px 10px; */
-    height: -webkit-fill-available;
+    height: 100%;
     font-size: 20px;
     width: max-content;
   }
@@ -2971,25 +2971,25 @@ path.use_hover {
   }
 }
 
-.use_hover[href='#g_05']:hover,
-.use_hover[href='#g_06']:hover,
-.use_hover[href='#g_07']:hover,
-.use_hover[href='#g_08']:hover,
-.use_hover[href='#g_09']:hover,
-.use_hover[href='#g_10']:hover,
-.use_hover[href='#g_11']:hover,
-.use_hover[href='#g_12']:hover {
+.use_hover[href='#g_05']:hover, .use_hover[href='#g_05'].active
+.use_hover[href='#g_06']:hover, .use_hover[href='#g_06'].active
+.use_hover[href='#g_07']:hover, .use_hover[href='#g_07'].active
+.use_hover[href='#g_08']:hover, .use_hover[href='#g_08'].active
+.use_hover[href='#g_09']:hover, .use_hover[href='#g_09'].active
+.use_hover[href='#g_10']:hover, .use_hover[href='#g_10'].active
+.use_hover[href='#g_11']:hover, .use_hover[href='#g_11'].active
+.use_hover[href='#g_12']:hover  .use_hover[href='#g_12'].active{
   opacity: 1;
 }
 
-.use_hover[href='#g_05']:hover #g_05_info__inner, 
-.use_hover[href='#g_06']:hover #g_06_info__inner, 
-.use_hover[href='#g_07']:hover #g_07_info__inner, 
-.use_hover[href='#g_08']:hover #g_08_info__inner, 
-.use_hover[href='#g_09']:hover #g_09_info__inner, 
-.use_hover[href='#g_10']:hover #g_10_info__inner, 
-.use_hover[href='#g_11']:hover #g_11_info__inner, 
-.use_hover[href='#g_12']:hover #g_12_info__inner 
+.use_hover[href='#g_05']:hover #g_05_info__inner, .use_hover[href='#g_05'].active #g_05_info__inner.active, 
+.use_hover[href='#g_06']:hover #g_06_info__inner, .use_hover[href='#g_06'].active #g_06_info__inner.active, 
+.use_hover[href='#g_07']:hover #g_07_info__inner, .use_hover[href='#g_07'].active #g_07_info__inner.active, 
+.use_hover[href='#g_08']:hover #g_08_info__inner, .use_hover[href='#g_08'].active #g_08_info__inner.active, 
+.use_hover[href='#g_09']:hover #g_09_info__inner, .use_hover[href='#g_09'].active #g_09_info__inner.active, 
+.use_hover[href='#g_10']:hover #g_10_info__inner, .use_hover[href='#g_10'].active #g_10_info__inner.active, 
+.use_hover[href='#g_11']:hover #g_11_info__inner, .use_hover[href='#g_11'].active #g_11_info__inner.active, 
+.use_hover[href='#g_12']:hover #g_12_info__inner, .use_hover[href='#g_12'].active #g_12_info__inner.active 
 {
   opacity: 1;
 }
@@ -3040,7 +3040,7 @@ path.use_hover {
   font-weight: 700;
   color: var(--black);
 }
-
+/* 
 path.use_hover[href='#g_05']:hover use.use_hover[href='#g_05'],
 path.use_hover[href='#g_06']:hover use.use_hover[href='#g_06'],
 path.use_hover[href='#g_07']:hover use.use_hover[href='#g_07'],
@@ -3078,7 +3078,7 @@ path.use_hover[href='#g_12']:hover ~ #g_12_info__inner
 
 {
   opacity: 1;
-}
+} */
 
 header {
   position: fixed;
