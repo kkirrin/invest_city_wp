@@ -24,9 +24,11 @@
                     </div>
 
                     <div class="circle__wrapper">
-                        <button class="circle__btn">
-                            ВЫБРАТЬ <br> КВАРТИРУ
-                        </button>
+                        <a href="#popup1" class="popup-link">
+                            <button class="circle__btn">
+                                ВЫБРАТЬ <br> КВАРТИРУ
+                            </button>
+                        </a>
                     </div>
                 </div>
 
@@ -62,7 +64,9 @@
                         </div>
 
                         <div>
-                            <button class="button_main">Посмотреть на карте</button>
+                            <a href="https://2gis.ru/ussuriysk/search/%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20128%20%D1%83%D1%81%D1%81%D1%83%D1%80%D0%B8%D0%B9%D1%81%D0%BA/firm/70000001094160199/131.945548%2C43.808573?m=131.946581%2C43.808362%2F17.98" target="_blank">
+                                <button class="button_main">Посмотреть на карте</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -626,7 +630,7 @@
 
     <section id="type" class="relative">
         <div class="container">
-            <h2 class="md:text-[80px] sm:text-[40px] text-[31px] uppercase md:pt-[60px] md:pb-[60px] sm:pt-[30px] sm:pb-[30px] pt-[30px] pb-[30px] relative z-[2]">Типы планировок</h2>
+            <h2 class="md:text-[80px] sm:text-[40px] text-[31px] uppercase md:pb-[60px] sm:pb-[30px] pb-[30px] relative z-[2]">Типы планировок</h2>
 
             <div class="flex md:flex-row flex-col gap-[20px] justify-between">
                 <div class="flex flex-col gap-[30px] w-full max-w-[400px]">

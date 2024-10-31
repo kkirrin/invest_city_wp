@@ -61,7 +61,9 @@
                             <li class="px-4 mb-[18px]"><a class="text-white font-medium" href='mailto:invest-sity21@bk.ru'>invest-sity21@bk.ru</a></li>
                         </ul>
 
-                        <button class="button_main">Выбрать квартиру</button>
+                        <a href="#popup1" class="popup-link">
+                            <button class="button_main">Выбрать квартиру</button>
+                        </a>
                     </div>
                 </div>
 
@@ -111,7 +113,9 @@
                         <li class="px-4 mb-[18px]"><a class="text-white font-medium" href='mailto:invest-sity21@bk.ru'>invest-sity21@bk.ru</a></li>
                     </ul>
 
-                    <button class="button_main">Выбрать квартиру</button>
+                    <a href="#popup1" class="popup-link">
+                        <button class="button_main">Выбрать квартиру</button>
+                    </a>
                 </div>
 
                 <div class="mask">

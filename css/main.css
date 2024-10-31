@@ -975,7 +975,7 @@ div.vertical__line::before {
 }
 
 #ticker {
-  padding: 120px 0;
+  padding: 140px 0;
 }
 
 #ticker .container {
@@ -987,9 +987,9 @@ div.vertical__line::before {
   position: absolute;
   width: 100%;
   bottom: 0;
-  left: 0;
   height: 2px;
   background-color: var(--biege);
+  max-width: 1440px;
 }
 
 @keyframes ticker {
@@ -2460,8 +2460,9 @@ h2, h3 {
 }
 
 .pattern_6 {
+  height: 461px;
   position: absolute;
-  top: -25%;
+  top: -36%;
   left: 0;
   z-index: 0;
 }
@@ -2530,6 +2531,8 @@ h2, h3 {
 }
 
 #map_img {
+  margin: 60px 0;
+  padding: 60px 0;
   height: 100vh;
   width: -webkit-fill-available;
   background-image: url('../src/img/img/map.webp');
@@ -2551,9 +2554,9 @@ h2, h3 {
   position: absolute;
   width: 100%;
   bottom: 0;
-  left: 0;
   height: 2px;
   background-color: var(--biege);
+  max-width: 1440px;
 }
 
 #all_for_comfort {
@@ -2577,7 +2580,7 @@ h2, h3 {
 #variants {
   position: relative;
   background: #383737;
-  padding: 120px 0;
+  padding: 160px 0;
 }
 
 #variants .container::after {
@@ -2586,16 +2589,16 @@ h2, h3 {
   max-width: 1440px;
   width: -webkit-fill-available;
   bottom: 0;
-  top: 100px;
+  top: 140px;
   height: 2px;
   background-color: var(--brown-dark);
 }
 
 #type {
-  padding: 60px;
+  padding: 60px 140px;
 }
 
-#type h2::before {
+/* #type h2::before {
   content: '';
   position: absolute;
   max-width: 1440px;
@@ -2604,7 +2607,7 @@ h2, h3 {
   top: 0px;
   height: 1px;
   background-color: var(--biege);
-}
+} */
 
 #programs {
   padding: 0px 0px 140px 0;
@@ -3636,10 +3639,23 @@ header {
   width: 8px;
   border-radius: 100%;
   background-color: #86BD8E;
-  top: 6px;
+  top: 10px;
   left: -13px;
 }
 
+
+@media screen and (max-width: 480px) {
+    .access_to_ipoteka::before {
+      position: absolute;
+      content: '';
+      height: 8px;
+      width: 8px;
+      border-radius: 100%;
+      background-color: #86BD8E;
+      top: 6px;
+      left: -13px;
+  }
+}
 
 .close__modal__detail {
   position: absolute;
