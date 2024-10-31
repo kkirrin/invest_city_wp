@@ -960,7 +960,7 @@ div.vertical__line::before {
   }
 
   #info-section-3 svg {
-    max-height: 480px;
+    /* max-height: 480px; */
   }
 
   #info-section-3 svg image{
@@ -2930,6 +2930,13 @@ nav.single-block ul li .block_link.active{
   height: auto;
 }
 
+
+
+@media screen and (max-width: 480px) {
+  .svg__main__wrapper svg {
+    width: 1000px !important;
+  }
+}
 
 
 /* .svg__main__wrapper svg{
