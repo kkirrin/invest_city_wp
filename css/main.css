@@ -1161,10 +1161,22 @@ div.vertical__line::before {
   --float-factor: 1;
 }
 
+
 @media screen and (max-width: 480px) {
-  .ff5 {
-    --float-factor: 0.0;
+  .floating.reverse {
+    animation: none;
   }
+   .floating {
+    --float-range: 0vh;
+    --float-factor: 0;
+    --float-start: 0;
+    --float-end: 0;
+    animation: none;
+    animation-timeline: view();
+    animation-reveal: entry-crossing 50% exit-crossing 100%;
+  }
+}
+/* 
 
   .floating {
     --float-range: 3vh;
@@ -1175,7 +1187,7 @@ div.vertical__line::before {
     animation-timeline: view();
     animation-reveal: entry-crossing 50% exit-crossing 100%;
   }
-}
+} */
 
 /* Импорт TailWind */
 
@@ -2587,6 +2599,10 @@ h2, h3 {
   border: 1px solid var(--biege);
 }
 
+.comfort-item.swiper-slide {
+    border: 1px solid var(--biege);
+} 
+
 .comfort-wrapper {
   display: flex;
   gap: 30px;
@@ -3768,6 +3784,9 @@ header {
     body.wrapper {
       overflow: hidden;
     }
+    /* .grid.md\:grid-cols-3.grid-col-1.md\:gap-\[30px\].gap-\[15px\].relative.z-\[2\] .circle__wrapper  {
+      margin-bottom: 20px;
+    } */
 }
 
 
@@ -3780,3 +3799,4 @@ header {
   padding-bottom: 35px;
 
 }
+

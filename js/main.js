@@ -33,4 +33,15 @@ window.addEventListener('DOMContentLoaded', () => {
     
     wow.init();
 
+    const widthWindow = window.innerWidth;
+    console.log(widthWindow);
+    if (widthWindow < 480) {
+        const element = document.querySelectorAll('.floating.ff5');
+
+        element.forEach(item => {
+            item.classList.remove('floating', 'ff5');
+        })
+    }
+
+
 });

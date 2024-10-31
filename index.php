@@ -492,7 +492,7 @@
 
             <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_4.webp" class="pattern_4 wow fadeInLeft" alt="" data-wow-delay="1s">
 
-            <div class="grid md:grid-cols-3 grid-col-1 md:gap-[30px] gap-[15px] relative z-[2]">
+            <div class="grid md:grid-cols-3 grid-col-1 gap-[30px] relative z-[2]">
                 <div class=" md:order-0 order-0 flex flex-col md:gap-[76px] gap-[30px] floating ff5">
                     <h2 class="md:text-[80px] sm:text-[40px] text-[31px] uppercase relative z-[2]">АРХИТЕКТУРА</h2>
                     <div class="img-wrapper">
