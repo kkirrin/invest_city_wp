@@ -57,7 +57,7 @@
                         'area'              =>  get_field('area'),
                         'price'             =>  get_field('price'),
                         'status'            =>  get_field('status'),
-                        'name' =>  get_field('name_of_apartment'),
+                        'name'              =>  get_field('name_of_apartment'),
                         'number'            =>  get_field('number'),
                         'date'              =>  get_field('date'),
                         'floor'             =>  get_field('number_of_floor'),

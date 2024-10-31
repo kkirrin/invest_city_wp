@@ -159,7 +159,7 @@ error_reporting(E_ALL);
                                 );
                             }
 
-                            //         // Сортировка по убыванию
+                            // Сортировка по убыванию
                             krsort($apartments_by_floor);
 
                             foreach ($apartments_by_floor as $floor => $apartments_on_floor) {
