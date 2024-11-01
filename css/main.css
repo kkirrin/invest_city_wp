@@ -2927,13 +2927,15 @@ nav.single-block ul li .block_link.active{
   position: relative;
 }
 
-.single-apart-list:first-of-type::before {
-  position: absolute;
-  top: -20px;
-  content: '';
-  background-color: var(--biege);
-  width: 100%;
-  height: 1px;
+@media screen and (max-width: 480px) {
+  .detail__apart .single-apart-list:first-of-type::before {
+    display: none;
+  }
+  .button_main.button_main--bron.popup-link {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
 }
 
 
@@ -3580,10 +3582,10 @@ header {
   position: relative;
 }
 
-.btn__apart:hover {
+/* .btn__apart:hover {
   background-color: var(--brown-light);
   z-index: 1000;
-}
+} */
 
 .btn__apart:hover ~ .apartment-item {
     opacity: 1;
@@ -3641,7 +3643,7 @@ header {
   visibility: hidden;
   transition: all 1s ease-in-out;
   transform: translateX(100%);
-  /* z-index: 1000; */
+  z-index: 1;
 }
 
 @media screen and (max-width: 480px) {
@@ -3707,7 +3709,7 @@ header {
   .single-block .tab_btn, .single-block .tab_btn.active {
     font-size: 18px;
     padding: 5px 15px;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
   }
 }
 
