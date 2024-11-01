@@ -8,6 +8,7 @@ import { initBtnOpenCardApart } from './module/btn-apart.js';
 import { initTabs } from './module/tabs.js';
 import { initHeaderFix } from './module/header-fix.js';
 import { initPathOnSVGMobile } from './module/path-on-mobile.js';
+import { initScroll } from './module/scroll.js';
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initBtnOpenCardApart();
     initTabs();
     initHeaderFix();
+    initScroll();
 
     const wow = new WOW({
         boxClass: 'wow',

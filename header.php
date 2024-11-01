@@ -38,19 +38,19 @@
                 <div class="mobile-menu">
                     <div class=" max-h-[500px]">
                         <ul class="flex flex-col text-white mt-[30px]">
-                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">О жилом комплексе</a></li>
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="info-section-1">О жилом комплексе</a></li>
 
-                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Генплан</a></li>
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#info-section-3">Генплан</a></li>
 
-                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Архитектура</a></li>
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#architecture">Архитектура</a></li>
 
-                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Инфраструктура</a></li>
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#all_for_comfort">Инфраструктура</a></li>
 
-                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Отделка</a></li>
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#variants">Отделка</a></li>
 
-                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Типы планировок</a></li>
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#type">Типы планировок</a></li>
 
-                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Типы планировок</a></li>
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#programs">Программы</a></li>
                         </ul>
                     </div>
 
@@ -92,19 +92,19 @@
 
                 <div class="menu overflow-hidden line__horizontal">
                     <ul class="flex flex-col text-white mt-[30px]">
-                        <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">О жилом комплексе</a></li>
+                        <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#info-section-1">О жилом комплексе</a></li>
 
-                        <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Генплан</a></li>
+                        <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#info-section-3">Генплан</a></li>
 
-                        <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Архитектура</a></li>
+                        <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#architecture">Архитектура</a></li>
 
-                        <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Инфраструктура</a></li>
+                        <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#all_for_comfort">Инфраструктура</a></li>
 
-                        <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Отделка</a></li>
+                        <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#variants">Отделка</a></li>
 
-                        <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Типы планировок</a></li>
+                        <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#type">Типы планировок</a></li>
 
-                        <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Типы планировок</a></li>
+                        <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#programs">Программы</a></li>
                     </ul>
 
                     <ul class="gap-2 mt-[30px]">

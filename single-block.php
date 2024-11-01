@@ -164,7 +164,7 @@ error_reporting(E_ALL);
 
                             foreach ($apartments_by_floor as $floor => $apartments_on_floor) {
                                 echo '<div class="flex gap-[10px] text-black pb-[8px]">';
-                                echo '   <div class="flex flex-row md:gap-[10px] gap-[5px] relative flex-wrap">';
+                                echo '   <div class="flex flex-row md:gap-[10px] gap-[5px] items-center relative flex-wrap">';
                                 echo '       <div>';
                                 echo '           <div class="flex gap-[4px] font-Bahnschrift floor__number__wrapper">';
                                 echo '               <span class="font-medium md:text-[20px] text-[14px]">';

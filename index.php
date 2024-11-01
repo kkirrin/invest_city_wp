@@ -158,7 +158,6 @@
                         <g id="g_05_info">
                             <path class="use_hover" href="#g_05" d="M 439 1046 l-56 -718 l85 -83 l188 8 l10 637 l-60 82 h-58 l-43 79 с10 20 10 40 10 50  z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_05" x="550" y="400" />
-
                             <g id="g_05_info__inner">
                                 <rect x="550" y="500" width="367" height="454" fill="#fff" />
                                 <text class="g_05_info__title" x="570" y="550" width="100" height="50" fill="#000">Блок 5</text>
