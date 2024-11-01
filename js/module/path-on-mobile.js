@@ -37,7 +37,7 @@ export const initPathOnSVGMobile = () => {
                 info.classList.remove('active');
 
                 if (isInfoTouched) {
-                    window.location.href = `https://cz-invest-city.ru/?page_id=10&block="${infoId}"`;
+                    window.location.href = `https://cz-invest-city.ru/?page_id=10&block='${infoId}'`;
                 }
                 isInfoTouched = false; 
             });

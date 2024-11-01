@@ -3003,7 +3003,7 @@ path.use_hover {
 .use_hover[href='#g_09']:hover, .use_hover[href='#g_09'].active
 .use_hover[href='#g_10']:hover, .use_hover[href='#g_10'].active
 .use_hover[href='#g_11']:hover, .use_hover[href='#g_11'].active
-.use_hover[href='#g_12']:hover  .use_hover[href='#g_12'].active{
+.use_hover[href='#g_12']:hover  .use_hover[href='#g_12'].active {
   opacity: 1;
 }
 
