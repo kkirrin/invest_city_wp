@@ -14,7 +14,7 @@
                  </li>
 
                  <li class="md:pb-[18px] pb-[9px] flex items-center gap-4">
-                     <a class="" href="https://наш.дом.рф/сервисы/единый-реестр-застройщиков/застройщик/16828">Проектная документация</a>
+                     <a class="" href="https://наш.дом.рф/сервисы/единый-реестр-застройщиков/застройщик/16828">Проектная декларация</a>
                  </li>
 
                  <li class="md:text-[18px] text-[12px] md:pb-[18px] pb-[9px] flex items-center gap-4">
@@ -207,6 +207,11 @@
                  <li>
                      <a href="">
                          <img src="<?php echo get_template_directory_uri(); ?>src/img/img/dvb.webp" alt="">
+                     </a>
+                 </li>
+                 <li>
+                     <a href="">
+                         <img src="<?php echo get_template_directory_uri(); ?>src/img/img/pcb.webp" alt="">
                      </a>
                  </li>
              </ul>

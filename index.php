@@ -156,7 +156,7 @@
 
                     <a href="?page_id=10&block=05">
                         <g id="g_05_info">
-                            <path class="use_hover" href="#g_05" d="M 439 1046 l-56 -718 l85 -83 l188 8 l10 637 l-60 82 h-58 l-43 79 с10 20 10 40 10 50  z" fill="#54453EB2" opacity="1" />
+                            <path class="use_hover" href="#g_05" d="M436 1100 l-48 -765 l91 -95 l152 11 l38 634 l-60 84 h-59 l-39 78 10 21 0 -29 0 0 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_05" x="550" y="400" />
                             <g id="g_05_info__inner">
                                 <rect x="550" y="500" width="367" height="454" fill="#fff" />
@@ -187,7 +187,7 @@
                             <g id="g_08_info__inner">
                                 <rect x="750" y="500" width="367" height="454" fill="#fff" />
                                 <text class="g_08_info__title" x="770" y="550" width="100" height="50" fill="#000">Блок 8</text>
-                                <text class="g_08_info__text" x="770" y="590" width="100" height="50" fill="#000">20 этажей</text>
+                                <text class="g_08_info__text" x="770" y="590" width="100" height="50" fill="#000">3-8 этажей</text>
 
                                 <text class="g_08_info__text" x="770" y="630" width="100" height="50" fill="#000">Объектов в продаже: 36</text>
 
@@ -210,7 +210,7 @@
                     <a href="?page_id=10&block=07">
                         <g id="g_07_info">
 
-                            <path class="use_hover" href="#g_07" d="M571 123 l 40 -39 160 12 0 10 2 38 41 12 2 384 -30 120 -30 -532 z" fill="#54453EB2" opacity="1" />
+                            <path class="use_hover" href="#g_07" d="M764 151 l 56 0 -9 190 20 -4 0 213 -43 55 -4 0 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_07" x="760" y="190" />
 
                             <g id="g_07_info__inner">
@@ -236,7 +236,7 @@
 
                     <a href="?page_id=10&block=06">
                         <g id="g_06_info">
-                            <path class="use_hover" href="#g_06" d="M474 240 l 101 -122 179 9 21 579 -115 199 -39 -657 z" fill="#54453EB2" opacity="1" />
+                            <path class="use_hover" href="#g_06" d="M474 240 l 134 -159 157 12 21 579 -115 199 -39 -620 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_06" x="656" y="291" />
                             <g id="g_06_info__inner">
                                 <rect x="550" y="400" width="367" height="454" fill="#fff" />
@@ -254,7 +254,7 @@
                                 <text class="g_06_info__text" x="570" y="690" width="100" height="50" fill="#000">88.3 м², 10 кв</text> -->
 
                                 <text class="g_06_info__subtitle" x="570" y="660" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ КВАРТИРА </text>
-                                <text class="g_06_info__text" x="570" y="660" width="760" height="50" fill="#000">39,1 - 75,1 м², 60 кв</text>
+                                <text class="g_06_info__text" x="570" y="690" width="760" height="50" fill="#000">39,1 - 75,1 м², 60 кв</text>
                             </g>
                         </g>
                     </a>
@@ -312,25 +312,52 @@
                         </g>
                     </a>
 
+                    <a href="?page_id=10&block=12">
+                        <g id="g_12_info">
+                            <path class="use_hover" href="#g_12" d="M1343 469 l23 -68 77 10 17 -68 88 7 0 14 120 9 -12 120 -70 643 -280 -46 z" fill="#54453EB2" opacity="1" />
+                            <use class="use_hover" href="#g_12" x="1540" y="443" />
+
+                            <g id="g_12_info__inner">
+                                <rect x="1350" y="500" width="367" height="454" fill="#fff" />
+                                <text class="g_12_info__title" x="1370" y="550" width="100" height="50" fill="#000">Блок 12</text>
+                                <text class="g_12_info__text" x="1370" y="590" width="100" height="50" fill="#000">3-18 этажей</text>
+
+                                <text class="g_12_info__text" x="1370" y="630" width="100" height="50" fill="#000">Объектов в продаже: 144</text>
+
+                                <path d="M 1L274 2.01859" x="1370" y="630" stroke="#D7CDC9" />
+
+                                <text class="g_12_info__subtitle" x="1370" y="680" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
+                                <text class="g_12_info__text" x="1370" y="710" width="100" height="50" fill="#000">66,4 - 97,9 м², 48 кв</text>
+
+                                <text class="g_12_info__subtitle" x="1370" y="760" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ</text>
+                                <text class="g_12_info__text" x="1370" y="790" width="100" height="50" fill="#000">37,8 - 57,2 м², 96 кв</text>
+
+                                <!-- <text class="g_12_info__subtitle" x="1370" y="1040" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ КВАРТИРА </text>
+                                <text class="g_12_info__text" x="1370" y="1070" width="760" height="50" fill="#000">48.9 м², 10 кв</text> -->
+                            </g>
+
+                        </g>
+                    </a>
+
                     <a href="?page_id=10&block=11">
                         <g id="g_11_info">
-                            <path class="use_hover" href="#g_11" d="M 1521 280 l-19 5 17 -70 164 10 -3 60 57 7 -11 162 -67 -7 4 -73 -113 -10 0 -12 -80 -10 15 -66 z" fill="#54453EB2" opacity="1" />
+                            <path class="use_hover" href="#g_11" d=" M 1520 283 l-17 5 15 -70 166 10 -3 60 -11 89 -121 -12 1 -16 -75 -3 0 0 -5 0 15 -66 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_11" x="1546" y="264" />
 
                             <g id="g_11_info__inner">
-                                <rect x="1350" y="400" width="367" height="454" fill="#fff" />
-                                <text class="g_11_info__title" x="1370" y="450" width="100" height="50" fill="#000">Блок 11</text>
-                                <text class="g_11_info__text" x="1370" y="490" width="100" height="50" fill="#000">3-14 этажей</text>
+                                <rect x="1550" y="400" width="367" height="454" fill="#fff" />
+                                <text class="g_11_info__title" x="1570" y="450" width="100" height="50" fill="#000">Блок 11</text>
+                                <text class="g_11_info__text" x="1570" y="490" width="100" height="50" fill="#000">3-14 этажей</text>
 
-                                <text class="g_11_info__text" x="1370" y="530" width="100" height="50" fill="#000">Объектов в продаже: 96</text>
+                                <text class="g_11_info__text" x="1570" y="530" width="100" height="50" fill="#000">Объектов в продаже: 96</text>
 
-                                <path d="M 1L274 2.01859" x="1370" y="530" stroke="#D7CDC9" />
+                                <path d="M 1L274 2.01859" x="1570" y="530" stroke="#D7CDC9" />
 
-                                <text class="g_11_info__subtitle" x="1370" y="580" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
-                                <text class="g_11_info__text" x="1370" y="610" width="100" height="50" fill="#000">76,5 - 98,4 м², 48 кв</text>
+                                <text class="g_11_info__subtitle" x="1570" y="580" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
+                                <text class="g_11_info__text" x="1570" y="610" width="100" height="50" fill="#000">76,5 - 98,4 м², 48 кв</text>
 
-                                <text class="g_11_info__subtitle" x="1370" y="660" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ</text>
-                                <text class="g_11_info__text" x="1370" y="690" width="100" height="50" fill="#000">51,9 - 55,1 м², 48 кв</text>
+                                <text class="g_11_info__subtitle" x="1570" y="660" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ</text>
+                                <text class="g_11_info__text" x="1570" y="690" width="100" height="50" fill="#000">51,9 - 55,1 м², 48 кв</text>
 
 
                                 <!-- <text class="g_11_info__subtitle" x="1370" y="740" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ КВАРТИРА </text>
@@ -339,32 +366,7 @@
                         </g>
                     </a>
 
-                    <a href="?page_id=10&block=12">
-                        <g id="g_12_info">
-                            <path class="use_hover" href="#g_12" d="M1343 469 l23 -68 77 10 17 -68 88 7 0 14 120 9 -12 120 -70 643 -280 -46 z" fill="#54453EB2" opacity="1" />
-                            <use class="use_hover" href="#g_12" x="1540" y="443" />
 
-                            <g id="g_12_info__inner">
-                                <rect x="1350" y="700" width="367" height="454" fill="#fff" />
-                                <text class="g_12_info__title" x="1370" y="750" width="100" height="50" fill="#000">Блок 12</text>
-                                <text class="g_12_info__text" x="1370" y="790" width="100" height="50" fill="#000">3-18 этажей</text>
-
-                                <text class="g_12_info__text" x="1370" y="830" width="100" height="50" fill="#000">Объектов в продаже: 144</text>
-
-                                <path d="M 1L274 2.01859" x="1370" y="830" stroke="#D7CDC9" />
-
-                                <text class="g_12_info__subtitle" x="1370" y="880" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
-                                <text class="g_12_info__text" x="1370" y="910" width="100" height="50" fill="#000">66,4 - 97,9 м², 48 кв</text>
-
-                                <text class="g_12_info__subtitle" x="1370" y="960" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ</text>
-                                <text class="g_12_info__text" x="1370" y="990" width="100" height="50" fill="#000">37,8 - 57,2 м², 96 кв</text>
-
-                                <!-- <text class="g_12_info__subtitle" x="1370" y="1040" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ КВАРТИРА </text>
-                                <text class="g_12_info__text" x="1370" y="1070" width="760" height="50" fill="#000">48.9 м², 10 кв</text> -->
-                            </g>
-
-                        </g>
-                    </a>
 
                     <defs>
                         <image id="image_svg--main__svg" href="<?php echo get_template_directory_uri(); ?>/src/img/img/main__map.webp" width="1920" height="1200"></image>
@@ -801,7 +803,7 @@
                         <div class="swiper-slide ">
                             <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
                                 <p>Проектное финансирование <br> от сбербанка</p>
-                                <button class="button_main button_main__podrobnee">Узнать подробнее</button>
+                                <a href="#popup4" class="popup-link"><button class="button_main button_main__podrobnee">Узнать подробнее</button></a>
                             </div>
                         </div>
 
