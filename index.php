@@ -161,24 +161,24 @@
                             <g id="g_05_info__inner">
                                 <rect x="550" y="500" width="367" height="454" fill="#fff" />
                                 <text class="g_05_info__title" x="570" y="550" width="100" height="50" fill="#000">Блок 5</text>
-                                <text class="g_05_info__text" x="570" y="590" width="100" height="50" fill="#000">20 этажей</text>
+                                <text class="g_05_info__text" x="570" y="590" width="100" height="50" fill="#000">3-20 этажей</text>
 
-                                <text class="g_05_info__text" x="570" y="630" width="100" height="50" fill="#000">Объектов в продаже: 89</text>
+                                <text class="g_05_info__text" x="570" y="630" width="100" height="50" fill="#000">Объектов в продаже: 108</text>
 
                                 <path d="M 1L274 2.01859" x="570" y="630" stroke="#D7CDC9" />
 
                                 <text class="g_05_info__subtitle" x="570" y="680" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
-                                <text class="g_05_info__text" x="570" y="710" width="100" height="50" fill="#000">66.8 м², 15 кв</text>
+                                <text class="g_05_info__text" x="570" y="710" width="100" height="50" fill="#000">80,6 - 94,4 м², 36 кв</text>
 
-                                <text class="g_05_info__subtitle" x="570" y="760" width="100" height="50" fill="#000">ТРЕХКОМНАТНАЯ</text>
-                                <text class="g_05_info__text" x="570" y="790" width="100" height="50" fill="#000">88.3 м², 10 кв</text>
+                                <!-- <text class="g_05_info__subtitle" x="570" y="760" width="100" height="50" fill="#000">ТРЕХКОМНАТНАЯ</text>
+                                <text class="g_05_info__text" x="570" y="790" width="100" height="50" fill="#000">88.3 м², 10 кв</text> -->
 
-                                <text class="g_05_info__subtitle" x="570" y="840" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ КВАРТИРА </text>
-                                <text class="g_05_info__text" x="570" y="870" width="760" height="50" fill="#000">48.9 м², 10 кв</text>
+                                <text class="g_05_info__subtitle" x="570" y="760" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ </text>
+                                <text class="g_05_info__text" x="570" y="790" width="760" height="50" fill="#000">46,6 - 69,9 м², 72 кв</text>
                             </g>
                         </g>
                     </a>
-
+                    <!-- 
                     <a href="?page_id=10&block=08">
                         <g id="g_08_info">
                             <path class="use_hover" href="#g_08" d="M819 275 l29 -20 200 18 -10 290 -197 -17 0 -24 -20 43 z" fill="#54453EB2" opacity="1" />
@@ -205,12 +205,12 @@
 
 
                         </g>
-                    </a>
+                    </a> -->
 
                     <a href="?page_id=10&block=07">
                         <g id="g_07_info">
 
-                            <path class="use_hover" href="#g_07" d="M571 123 l 40 -39 160 12 0 10 2 38 41 12 2 384 -48 125 -20 -532 z" fill="#54453EB2" opacity="1" />
+                            <path class="use_hover" href="#g_07" d="M571 123 l 40 -39 160 12 0 10 2 38 41 12 2 384 -30 120 -30 -532 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_07" x="760" y="190" />
 
                             <g id="g_07_info__inner">
@@ -701,9 +701,9 @@
                     </div>
                 </div>
 
-                <div class="relative z-[2] floating ff5">
+                <!-- <div class="relative z-[2] floating ff5">
                     <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/Bitmap.webp" alt="">
-                </div>
+                </div> -->
             </div>
 
             <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_5.webp" class="pattern_5 wow fadeInRight" alt="" data-wow-delay="1s">
@@ -725,7 +725,7 @@
                                 ОДНОКОМНАТНАЯ КВАРТИРА
                             </div>
                             <div>
-                                от 36 м² до 74 м², 147 кв
+                                от 36 м² до 74 м², 352 кв
                             </div>
                         </button>
                     </div>
@@ -737,7 +737,7 @@
                                 ДВУХКОМНАТНАЯ квартира
                             </div>
                             <div>
-                                от 65 м² до 101 м², 86 кв
+                                от 65 м² до 101 м², 254 кв
                             </div>
                         </button>
                     </div>
@@ -749,7 +749,7 @@
                                 ТРЕХКОМНАТНАЯ квартира
                             </div>
                             <div>
-                                от 86 м² до 123 м², 3 кв
+                                от 86 м² до 123 м², 24 кв
                             </div>
                         </button>
                     </div>

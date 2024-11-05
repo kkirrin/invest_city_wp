@@ -6,7 +6,15 @@
          <div class="md:order-1 order-3">
              <ul class="flex flex-col">
                  <li class="md:text-[18px] text-[12px] md:pb-[18px] pb-[9px] flex items-center gap-4">
-                     г. Уссурийск, ул. Советская, 128
+                     Отдел продаж г. Уссурийск, ул. Советская, 149
+                 </li>
+
+                 <li class="md:text-[18px] text-[12px] md:pb-[18px] pb-[9px] flex items-center gap-4">
+                     Адрес ЖК г. Уссурийск, ул. Советская, 128
+                 </li>
+
+                 <li class="md:pb-[18px] pb-[9px] flex items-center gap-4">
+                     <a class="" href="https://наш.дом.рф/сервисы/единый-реестр-застройщиков/застройщик/16828">Проектная документация</a>
                  </li>
 
                  <li class="md:text-[18px] text-[12px] md:pb-[18px] pb-[9px] flex items-center gap-4">
@@ -25,39 +33,40 @@
                  <li class="md:pb-[18px] pb-[9px] flex items-center gap-4">
                      <a class="font-bold" href="mailto:invest-sity21@bk.ru">invest-sity21@bk.ru</a>
                  </li>
+
              </ul>
          </div>
          <div class="md:order-0 order-1">
 
              <ul class="text-gray md:text-base text-xs">
                  <li class="md:pb-[18px] pb-[9px]">
-                     О жилом комплексе
+                     <a href="" class="nav-link" data-goto="#info-section-1">О жилом комплексе</a>
                  </li>
                  <li class="md:pb-[18px] pb-[9px]">
-                     Генплан
+                     <a href="" class="nav-link" data-goto="#info-section-3">Генплан</a>
                  </li>
                  <li class="md:pb-[18px] pb-[9px]">
-                     Архитектура
+                     <a href="" class="nav-link" data-goto="#architecture">Архитектура</a>
                  </li>
                  <li class="md:pb-[18px] pb-[9px]">
-                     Инфраструктура
+                     <a href="" class="nav-link" data-goto="#all_for_comfort">Инфраструктура</a>
                  </li>
              </ul>
          </div>
          <div class="md:order-1 order-2">
              <ul class="text-gray md:text-base text-xs">
                  <li class="md:pb-[18px] pb-[9px]">
-                     Дизайн
+                     <a href="" class="nav-link" data-goto="#variants">Дизайн</a>
                  </li>
                  <li class="md:pb-[18px] pb-[9px]">
-                     Типы планировок
+                     <a href="" class="nav-link" data-goto="#type">Типы планировок</a>
                  </li>
                  <li class="md:pb-[18px] pb-[9px]">
-                     Программы
+                     <a href="" class="nav-link" data-goto="#programs">Программы</a>
                  </li>
-                 <li class="md:pb-[18px] pb-[9px]">
+                 <!-- <li class="md:pb-[18px] pb-[9px]" data-goto="info-section-1">
                      Расположение
-                 </li>
+                 </li> -->
              </ul>
          </div>
      </div>

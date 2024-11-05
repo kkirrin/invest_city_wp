@@ -17,7 +17,7 @@
             <div class="container md:gap-5 items-center justify-between flex md:pt-[20px] pt-[12px]">
 
                 <div>
-                    <a href="index.html">
+                    <a href="/">
                         <img class="m-auto md:w-[140px] sm:w-[70x] w-[94px]" src="<?php echo get_template_directory_uri(); ?>/src/img/icons/logo-main.svg" alt="Logo">
                     </a>
                 </div>
@@ -38,7 +38,7 @@
                 <div class="mobile-menu">
                     <div class=" max-h-[500px]">
                         <ul class="flex flex-col text-white mt-[30px]">
-                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="info-section-1">О жилом комплексе</a></li>
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#info-section-1">О жилом комплексе</a></li>
 
                             <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors nav-link" href="" data-goto="#info-section-3">Генплан</a></li>
 
@@ -56,7 +56,8 @@
 
                     <div class="flex flex-col justify-between max-h-[300px] vertical__line">
                         <ul class="gap-2 mt-[30px]">
-                            <li class="px-4 mb-[18px]"><a class="text-white">г. Уссурийск, ул. Советская, 128</a></li>
+                            <li class="px-4 mb-[18px]"><a class="text-white">Отдел продаж г. Уссурийск, ул. Советская, 149</a></li>
+                            <li class="px-4 mb-[18px]"><a class="text-white">Адрес ЖК г. Уссурийск, ул. Советская, 128</a></li>
                             <li class="px-4 mb-[18px]"><a class="text-white font-medium" href="tel:+79143424684">+7 (914) 342 46 84,</a> <a class="text-white font-medium" href="tel:+84234384455">+8 (4234) 38-44-55</a></li>
                             <li class="px-4 mb-[18px]"><a class="text-white font-medium" href='mailto:invest-sity21@bk.ru'>invest-sity21@bk.ru</a></li>
                         </ul>
@@ -69,7 +70,7 @@
 
 
                 <ul class="gap-2 pl-36 hidden md:flex items-center">
-                    <li class="mr-2"><a class="text-white">г. Уссурийск, ул. Советская, 149</a></li>
+                    <li class="mr-2"><a class="text-white">Отдел продаж г. Уссурийск, ул. Советская, 149</a></li>
                     <li class="mr-2"><a class="text-white" href="tel:+79143424684">+7 (914) 342 46 84,</a></li>
                     <li class="mr-2"><a class="text-white" href="tel:+84234384455">8 (4234) 38-44-55</a></li>
                     <li class="mr-2"><a class="text-white" href='mailto:invest-sity21@bk.ru'>invest-sity21@bk.ru</a></li>
@@ -108,7 +109,7 @@
                     </ul>
 
                     <ul class="gap-2 mt-[30px]">
-                        <li class="px-4 mb-[18px]"><a class="text-white">г. Уссурийск, ул. Советская, 128</a></li>
+                        <li class="px-4 mb-[18px]"><a class="text-white">Адрес ЖК г. Уссурийск, ул. Советская, 128</a></li>
                         <li class="px-4 mb-[18px]"><a class="text-white font-medium" href="tel:+79143424684">+7 914 342 46 84,</a> <a class="text-white font-medium" href="tel:+84234384455">8 (4234) 38-44-55</a></li>
                         <li class="px-4 mb-[18px]"><a class="text-white font-medium" href='mailto:invest-sity21@bk.ru'>invest-sity21@bk.ru</a></li>
                     </ul>
