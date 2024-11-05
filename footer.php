@@ -6,11 +6,11 @@
          <div class="md:order-1 order-3">
              <ul class="flex flex-col">
                  <li class="md:text-[18px] text-[12px] md:pb-[18px] pb-[9px] flex items-center gap-4">
-                     Отдел продаж г. Уссурийск, ул. Советская, 149
+                     Отдел продаж - г. Уссурийск, ул. Советская, 149
                  </li>
 
                  <li class="md:text-[18px] text-[12px] md:pb-[18px] pb-[9px] flex items-center gap-4">
-                     Адрес ЖК г. Уссурийск, ул. Советская, 128
+                     Адрес ЖК - г. Уссурийск, ул. Советская, 128
                  </li>
 
                  <li class="md:pb-[18px] pb-[9px] flex items-center gap-4">
@@ -188,30 +188,30 @@
 
              <p class="text-black pt-[15px] text-start">Рассчитайте ипотеку от банков-партнеров</p>
 
-             <ul class="grid md:grid-cols-4 grid-cols-2 md:pt-[50px] pt-[22px] gap-[12px]">
+             <ul class="grid md:grid-cols-5 grid-cols-2 md:pt-[50px] pt-[22px] gap-[12px]">
                  <li>
-                     <a href="">
+                     <a href="https://sberbank.com/ru/person/blog/vidi-lgotnoi-ipoteki">
                          <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/cber.webp" alt="">
                      </a>
                  </li>
                  <li>
-                     <a href="">
-                         <img src="<?php echo get_template_directory_uri(); ?>src/img/img/prim.webp" alt="">
+                     <a href="https://pskb.com/mortgage/">
+                         <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/prim.webp" alt="">
                      </a>
                  </li>
                  <li>
-                     <a href="">
-                         <img src="<?php echo get_template_directory_uri(); ?>src/img/img/vtb.webp" alt="">
+                     <a href="https://www.vtb.ru/personal/ipoteka/">
+                         <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/vtb.webp" alt="">
                      </a>
                  </li>
                  <li>
-                     <a href="">
-                         <img src="<?php echo get_template_directory_uri(); ?>src/img/img/dvb.webp" alt="">
+                     <a href="https://www.dvbank.ru/credit-products/ipoteka/">
+                         <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/dvb.webp" alt="">
                      </a>
                  </li>
                  <li>
-                     <a href="">
-                         <img src="<?php echo get_template_directory_uri(); ?>src/img/img/pcb.webp" alt="">
+                     <a href="https://www.psbank.ru/personal/mortgage">
+                         <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/psb.webp" alt="">
                      </a>
                  </li>
              </ul>

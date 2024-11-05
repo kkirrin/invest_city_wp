@@ -803,14 +803,14 @@
                         <div class="swiper-slide ">
                             <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
                                 <p>Проектное финансирование <br> от сбербанка</p>
-                                <a href="#popup4" class="popup-link"><button class="button_main button_main__podrobnee">Узнать подробнее</button></a>
+                                <a><button class="button_main button_main__podrobnee">Узнать подробнее</button></a>
                             </div>
                         </div>
 
                         <div class="swiper-slide ">
                             <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper2.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
                                 <p>Ипотека <br> по госпрограммам</p>
-                                <button class="button_main button_main__podrobnee">Узнать подробнее</button>
+                                <a href="#popup4" class="popup-link"><button class="button_main button_main__podrobnee">Узнать подробнее</button></a>
                             </div>
                         </div>
 
