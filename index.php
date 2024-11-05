@@ -91,7 +91,7 @@
                 <div class="md:max-w-[466px] max-w-[260px]">
                     <p class="md:text-[20px] sm:text-[14px] text-[14px] font-normal md:pb-[0] pb-[30px]">Объект предусматривает наличие всех
                         сфер, необходимых для комфортной жизни. Проект обладает высоким уровнем транспортной доступности, привлекательной архитектурой
-                        и широким выбором планировок.</p>
+                        и широким выбором планировок. <span class="font-medium">Варианты отделки </span> - черновая с бетонной стяжкой пола</p>
                 </div>
 
                 <div class="max-w-[750px]">
@@ -510,7 +510,7 @@
                 </div>
 
                 <div class="md:order-1 order-1 circle__wrapper floating reverse" style="display: flex; justify-content: center; align-items: center;">
-                    <a href="#popup1">
+                    <a href="#popup1" class="popup-link">
                         <button class="circle__btn">
                             ВЫБРАТЬ <br> квартиру
                         </button>
@@ -693,7 +693,7 @@
 
 
 
-    <section id="variants">
+    <!-- <section id="variants">
         <div class="container">
             <div class="flex md:flex-row flex-col gap-[20px]">
 
@@ -707,15 +707,15 @@
                     </div>
                 </div>
 
-                <!-- <div class="relative z-[2] floating ff5">
+                <div class="relative z-[2] floating ff5">
                     <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/Bitmap.webp" alt="">
-                </div> -->
+                </div>
             </div>
 
             <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/pattern_5.webp" class="pattern_5 wow fadeInRight" alt="" data-wow-delay="1s">
 
         </div>
-    </section>
+    </section> -->
 
     <?php @include 'templates/ticker_buy.php'; ?>
 
@@ -765,7 +765,7 @@
                 <div class="md:p-[110px] p-[20px] bg-white">
                     <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/map__type.webp" alt="">
                     <div class="text-center pt-[20px]">
-                        <button class="button_main button_main--watch w-full">Посмотреть квартиры данного типа</button>
+                        <a href="?page_id=10&block=05"><button class="button_main button_main--watch w-full">Посмотреть квартиры данного типа</button></a>
                     </div>
                 </div>
             </div>
