@@ -664,6 +664,39 @@ div.vertical__line::before {
   transition: all 0.2s ease-in-out;
 }
 
+
+#type .tab_btn.active {
+  background-color: var(--brown-light);
+  color: var(--white);
+}
+
+#type .tab_btn.active.button_main_variant > * {
+  color: var(--white);
+}
+
+#type .button_main_variant.tab_btn.active::before  {
+  background-color: var(--brown-light) !important;
+  color: var(--white) !important;
+}
+
+
+#type .tab-content {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s ease-in-out;
+ }
+ 
+ #type .tab-content.active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+ }
+ 
+#type .button_main_variant.tab_btn.active > :nth-child(2) {
+  color: var(--white) !important;
+}
+
 .button_main_variant::before {
   content: '';
   position: absolute;
@@ -2484,11 +2517,11 @@ h2, h3 {
 }
 
 .pattern_6 {
-  height: 461px;
-  position: absolute;
-  top: -36%;
-  left: 0;
-  z-index: 0;
+    height: 376px;
+    position: absolute;
+    top: -6%;
+    left: 0;
+    z-index: 0;
 }
 
 .pattern_7 {
@@ -3725,17 +3758,17 @@ header {
   }
 }
 
-.tab-content {
+#single-block-section .tab-content {
   opacity: 0;
   visibility: hidden;
   transition: all .6s ease-in-out;
  }
  
- .tab-content.active {
+ #single-block-section .tab-content.active {
   opacity: 1;
   visibility: visible;
  }
- 
+
 
 
 #single-block-main {

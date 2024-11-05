@@ -726,7 +726,7 @@
             <div class="flex md:flex-row flex-col gap-[20px] justify-between">
                 <div class="flex flex-col gap-[30px] w-full max-w-[400px]">
                     <div class="relative">
-                        <button class="button_main_variant">
+                        <button data-target-id="0" class="button_main_variant tab_btn">
                             <div class="uppercase font-bold">
                                 ОДНОКОМНАТНАЯ КВАРТИРА
                             </div>
@@ -738,7 +738,7 @@
 
 
                     <div class="relative">
-                        <button class="button_main_variant">
+                        <button data-target-id="1" class="button_main_variant tab_btn">
                             <div class="uppercase font-bold">
                                 ДВУХКОМНАТНАЯ квартира
                             </div>
@@ -750,7 +750,7 @@
 
 
                     <div class="relative">
-                        <button class="button_main_variant">
+                        <button data-target-id="2" class="button_main_variant tab_btn">
                             <div class="uppercase font-bold">
                                 ТРЕХКОМНАТНАЯ квартира
                             </div>
@@ -762,8 +762,25 @@
 
                 </div>
 
-                <div class="md:p-[110px] p-[20px] bg-white">
+                <div class="md:p-[110px] p-[20px] bg-white tab-content active" id="content-0" data-id="0">
+
                     <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/map__type.webp" alt="">
+                    <div class="text-center pt-[20px]">
+                        <a href="?page_id=10&block=05"><button class="button_main button_main--watch w-full">Посмотреть квартиры данного типа</button></a>
+                    </div>
+                </div>
+
+                <div class="md:p-[110px] p-[20px] bg-white tab-content" id="content-1" data-id="1">
+
+                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/map__type.webp" alt=""> -->
+                    <div class="text-center pt-[20px]">
+                        <a href="?page_id=10&block=05"><button class="button_main button_main--watch w-full">Посмотреть квартиры данного типа</button></a>
+                    </div>
+                </div>
+
+                <div class="md:p-[110px] p-[20px] bg-white tab-content" id="content-2" data-id="2">
+
+                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/map__type.webp" alt=""> -->
                     <div class="text-center pt-[20px]">
                         <a href="?page_id=10&block=05"><button class="button_main button_main--watch w-full">Посмотреть квартиры данного типа</button></a>
                     </div>
