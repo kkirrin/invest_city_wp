@@ -154,7 +154,7 @@
                     <use href="#image_svg--main__svg" x="0" y="0" />
 
 
-                    <a href="?page_id=10&block=05">
+                    <a href="?page_id=10&block=05" target="_blank">
                         <g id="g_05_info">
                             <path class="use_hover" href="#g_05" d="M436 1100 l-48 -765 l91 -95 l152 11 l38 634 l-60 84 h-59 l-39 78 10 21 0 -29 0 0 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_05" x="550" y="400" />
@@ -179,7 +179,7 @@
                         </g>
                     </a>
 
-                    <a href="?page_id=10&block=08">
+                    <a href="?page_id=10&block=08" target="_blank">
                         <g id="g_08_info">
                             <path class="use_hover" href="#g_08" d="M819 275 l29 -20 200 18 -10 290 -197 -17 0 -24 -20 43 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_08" x="912" y="369" />
@@ -207,7 +207,7 @@
                         </g>
                     </a>
 
-                    <a href="?page_id=10&block=07">
+                    <a href="?page_id=10&block=07" target="_blank">
                         <g id="g_07_info">
 
                             <path class="use_hover" href="#g_07" d="M764 151 l 56 0 -9 190 20 -4 0 213 -43 55 -4 0 z" fill="#54453EB2" opacity="1" />
@@ -234,7 +234,7 @@
                         </g>
                     </a>
 
-                    <a href="?page_id=10&block=06">
+                    <a href="?page_id=10&block=06" target="_blank">
                         <g id="g_06_info">
                             <path class="use_hover" href="#g_06" d="M474 240 l 134 -159 157 12 21 579 -115 199 -39 -620 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_06" x="656" y="291" />
@@ -259,7 +259,7 @@
                         </g>
                     </a>
 
-                    <a href="?page_id=10&block=09">
+                    <a href="?page_id=10&block=09" target="_blank">
                         <g id="g_09_info">
                             <path class="use_hover" href="#g_09" d="M1050 270 l187 18 -4 288 -188 -18 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_09" x="1094" y="384" />
@@ -287,7 +287,7 @@
                         </g>
                     </a>
 
-                    <a href="?page_id=10&block=10">
+                    <a href="?page_id=10&block=10" target="_blank">
                         <g id="g_10_info">
                             <path class="use_hover" href="#g_10" d="M 1240 287 l237 17 -1 10 -12 41 -12 -1 -11 55 -83 -5 -15 66 0 146 -119 -17 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_10" x="1272" y="392" />
@@ -312,7 +312,7 @@
                         </g>
                     </a>
 
-                    <a href="?page_id=10&block=12">
+                    <a href="?page_id=10&block=12" target="_blank">
                         <g id="g_12_info">
                             <path class="use_hover" href="#g_12" d="M1343 469 l23 -68 77 10 17 -68 88 7 0 14 120 9 -12 120 -70 643 -280 -46 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_12" x="1540" y="443" />
@@ -339,7 +339,7 @@
                         </g>
                     </a>
 
-                    <a href="?page_id=10&block=11">
+                    <a href="?page_id=10&block=11" target="_blank">
                         <g id="g_11_info">
                             <path class="use_hover" href="#g_11" d=" M 1520 283 l-17 5 15 -70 166 10 -3 60 -11 89 -121 -12 1 -16 -75 -3 0 0 -5 0 15 -66 z" fill="#54453EB2" opacity="1" />
                             <use class="use_hover" href="#g_11" x="1546" y="264" />

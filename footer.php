@@ -190,7 +190,7 @@
 
              <ul class="grid md:grid-cols-5 grid-cols-2 md:pt-[50px] pt-[22px] gap-[12px]">
                  <li>
-                     <a href="https://sberbank.com/ru/person/blog/vidi-lgotnoi-ipoteki">
+                     <a href="http://www.sberbank.ru/ru/person/credits/home/ipotechniy-kalkulyator">
                          <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/cber.webp" alt="">
                      </a>
                  </li>
