@@ -31,7 +31,7 @@
                  </li>
 
                  <li class="md:pb-[18px] pb-[9px] flex items-center gap-4">
-                     <a class="font-bold" href="mailto:invest-sity21@bk.ru">invest-sity21@bk.ru</a>
+                     <a class="font-bold" href="mailto:invest-city21@bk.ru">invest-city21@bk.ru</a>
                  </li>
 
              </ul>

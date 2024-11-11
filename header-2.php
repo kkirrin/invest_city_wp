@@ -59,7 +59,7 @@
                             <li class="px-4 mb-[18px]"><a class="text-white ">Отдел продаж - г. Уссурийск, ул. Советская, 149</a></li>
                             <li class="px-4 mb-[18px]"><a class="text-white ">Адрес ЖК - г. Уссурийск, ул. Советская, 128</a></li>
                             <li class="px-4 mb-[18px]"><a class="text-white font-medium" href="tel:+79143424684">+7 (914) 342 46 84,</a> <a class="text-white font-medium" href="tel:+84234384455">+8 (4234) 38-44-55</a></li>
-                            <li class="px-4 mb-[18px]"><a class="text-white font-medium" href='mailto:invest-sity21@bk.ru'>invest-sity21@bk.ru</a></li>
+                            <li class="px-4 mb-[18px]"><a class="text-white font-medium" href='mailto:invest-city21@bk.ru'>invest-city21@bk.ru</a></li>
                         </ul>
 
                         <button class="button_main">Выбрать квартиру</button>
@@ -71,7 +71,7 @@
                     <li class="mr-2"><a class="text-black">Отдел продаж - г. Уссурийск, ул. Советская, 149</a></li>
                     <li class="mr-2"><a class="text-black font-medium" href="tel:+79143424684">+7 (914) 342 46 84,</a></li>
                     <li class="mr-2"><a class="text-black font-medium" href="tel:+84234384455">8 (4234) 38-44-55</a></li>
-                    <li class="mr-2"><a class="text-black font-medium" href='mailto:invest-sity21@bk.ru'>invest-sity21@bk.ru</a></li>
+                    <li class="mr-2"><a class="text-black font-medium" href='mailto:invest-city21@bk.ru'>invest-city21@bk.ru</a></li>
 
                     <div class="btn__menu btn__menu--dark up md:flex hidden">
                         <button class="flex up items-center gap-2 bg-red pl-10 pr-2 py-1 rounded">
@@ -109,7 +109,7 @@
                     <ul class="gap-2 mt-[30px]">
                         <li class="px-4 mb-[18px]"><a class="text-white">Адрес ЖК - г. Уссурийск, ул. Советская, 128</a></li>
                         <li class="px-4 mb-[18px]"><a class="text-white font-medium" href="tel:+79143424684">+7 914 342 46 84,</a> <a class="text-white font-medium" href="tel:+84234384455">8 (4234) 38-44-55</a></li>
-                        <li class="px-4 mb-[18px]"><a class="text-white font-medium" href='mailto:invest-sity21@bk.ru'>invest-sity21@bk.ru</a></li>
+                        <li class="px-4 mb-[18px]"><a class="text-white font-medium" href='mailto:invest-city21@bk.ru'>invest-city21@bk.ru</a></li>
                     </ul>
 
                     <button class="button_main">Выбрать квартиру</button>

@@ -30,7 +30,7 @@
                         Напишите нам
                     </p>
                     <p class="text-white md:text-[18px] text-[12px]">
-                        на почту invest-sity21@bk.ru
+                        на почту invest-city21@bk.ru
                     </p>
                 </div>
                 <div class="custom__text--contacts relative">
@@ -41,7 +41,7 @@
                         или позвоните по номерам:
                     </p>
                     <p class="text-white md:text-[18px] text-[12px]">
-                        +7 (914) 650 44 55, +7 (924) 120 40 50
+                        <a href="tel:+79143424684">+7 (914) 342 46 84,</a> <a href="tel:84234384455"> 8 (4234) 38-44-55</a>
                     </p>
                 </div>
 
