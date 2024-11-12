@@ -99,19 +99,7 @@
 
              <h2 class="text-white uppercase md:text-[34px] sm:text-[30px] text-[30px] text-start">Получить консультацию</h2>
 
-             <div class="flex flex-col md:max-w-[300px] max-w-full">
-                 <input class="form__input" placeholder="Введите имя*" />
-                 <input class="form__input" placeholder="Введите телефон*" />
-
-                 <p class="text-biege text-start pt-[30px]">
-                     *Нажимая на кнопку, вы соглашаетесь <br> на обработку персональных данных
-                 </p>
-             </div>
-             <div class="circle__wrapper">
-                 <button class="circle__btn button-popup">
-                     ОСТАВИТЬ <br> ЗАЯВКУ
-                 </button>
-             </div>
+             <?php echo do_shortcode('[contact-form-7 id="315b61a" title="Консультация"]'); ?>
          </div>
      </div>
  </section>
@@ -127,20 +115,7 @@
              </button>
 
              <h2 class="text-white uppercase md:text-[34px] sm:text-[30px] text-[30px] text-start">Забронируйте квартиру</h2>
-
-             <div class="flex flex-col md:max-w-[300px] max-w-full gap-[30px]">
-                 <input class="form__input" placeholder="Введите имя*" />
-                 <input class="form__input" placeholder="Введите телефон*" />
-
-                 <p class="text-biege text-start pt-[30px]">
-                     *Нажимая на кнопку, вы соглашаетесь <br> на обработку персональных данных
-                 </p>
-             </div>
-             <div class="circle__wrapper">
-                 <button class="circle__btn button-popup">
-                     ЗАБРОНИРОВАТЬ
-                 </button>
-             </div>
+             <?php echo do_shortcode('[contact-form-7 id="7cb082e" title="Забронировать"]'); ?>
          </div>
      </div>
  </section>
@@ -156,24 +131,12 @@
              </button>
 
              <h2 class="text-white uppercase md:text-[34px] sm:text-[30px] text-[30px] text-start">Получите расчет стоимости</h2>
+             <?php echo do_shortcode('[contact-form-7 id="09867a3" title="Расчет стоимости"]'); ?>
 
-             <div class="flex flex-col md:max-w-[300px] max-w-full">
-                 <input class="form__input" placeholder="Введите имя*" />
-                 <input class="form__input" placeholder="Введите телефон*" />
-
-                 <p class="text-biege text-start pt-[30px]">
-                     *Нажимая на кнопку, вы соглашаетесь <br> на обработку персональных данных
-                 </p>
-             </div>
-             <div class="circle__wrapper">
-                 <button class="circle__btn button-popup">
-                     ПОЛУЧИТЬ <br> РАСЧЕТ
-                 </button>
-             </div>
          </div>
      </div>
  </section>
-
+ <!-- 
  <section id="popup4" class="popup">
      <div class="popup__body">
          <div class="popup__content popup__content--white">
@@ -217,7 +180,7 @@
              </ul>
          </div>
      </div>
- </section>
+ </section> -->
 
 
  <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/gsap.min.js"></script>
