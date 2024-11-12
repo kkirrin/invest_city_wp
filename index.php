@@ -47,7 +47,7 @@
             <div class="flex justify-between md:gap-[75] gap-[30px] md:flex-row flex-col">
 
                 <div class="flex flex-col max-w-[771px] w-full order-1">
-                    <div class="md:pb-[100px] sm:pb-[75px] pb-[75px]">
+                    <div class="md:pb-[110px] sm:pb-[75px] pb-[75px]">
                         <h2 class="font-bold md:text-[80px] sm:tex-[40px] text-[30px]">Жилой комплекс «Атриум»</h2>
                     </div>
 
@@ -699,7 +699,7 @@
 
                 <div class="flex flex-col ">
                     <div>
-                        <h2 class="md:text-[70px] sm:text-[40px] text-[31px] uppercase md:pt-[60px] md:pb-[100px] sm:pt-[30px] sm:pb-[30px] pt-[30px] pb-[30px] relative z-[2]"><span class="text-brown-dark">Варианты</span> <span class="text-white">отделки</span></h2>
+                        <h2 class="md:text-[70px] sm:text-[40px] text-[31px] uppercase md:pt-[60px] md:pb-[110px] sm:pt-[30px] sm:pb-[30px] pt-[30px] pb-[30px] relative z-[2]"><span class="text-brown-dark">Варианты</span> <span class="text-white">отделки</span></h2>
                     </div>
 
                     <div>
@@ -818,16 +818,54 @@
                 <div class="program-item">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide ">
-                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[50px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[20px]">
                                 <p>Проектное финансирование <br> от сбербанка</p>
                                 <a><button class="button_main button_main__podrobnee">Узнать подробнее</button></a>
                             </div>
                         </div>
 
-                        <div class="swiper-slide ">
-                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper2.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
+                        <div class="swiper-slide program-item--bank">
+                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper2.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[50px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[20px]">
                                 <p>Ипотека <br> по госпрограммам</p>
-                                <a href="#popup4" class="popup-link"><button class="button_main button_main__podrobnee">Узнать подробнее</button></a>
+                                <!-- <a href="#popup4" class="popup-link"><button class="button_main button_main__podrobnee">Узнать подробнее</button></a> -->
+                                <ul class="grid md:grid-cols-4 grid-cols-2 gap-[12px]" style="width: 506px;">
+                                    <li style="width: 110px;">
+                                        <a href="http://www.sberbank.ru/ru/person/credits/home/ipotechniy-kalkulyator">
+                                            <img style="background-color: #e8e4e2; border-radius: 50%; width: -webkit-fill-available;" src="<?php echo get_template_directory_uri(); ?>/src/img/img/cber.webp" alt="">
+                                        </a>
+                                    </li>
+                                    <li style="width: 110px;">
+                                        <a href="https://pskb.com/mortgage/">
+                                            <img style="background-color: #e8e4e2; border-radius: 50%; width: -webkit-fill-available;" src="<?php echo get_template_directory_uri(); ?>/src/img/img/prim.webp" alt="">
+                                        </a>
+                                    </li>
+                                    <li style="width: 110px;">
+                                        <a href="https://www.vtb.ru/personal/ipoteka/">
+                                            <img style="background-color: #e8e4e2; border-radius: 50%; width: -webkit-fill-available;" src="<?php echo get_template_directory_uri(); ?>/src/img/img/vtb.webp" alt="">
+                                        </a>
+                                    </li>
+                                    <li style="width: 110px;">
+                                        <a href="https://www.dvbank.ru/credit-products/ipoteka/">
+                                            <img style="background-color: #e8e4e2; border-radius: 50%; width: -webkit-fill-available;" src="<?php echo get_template_directory_uri(); ?>/src/img/img/dvb.webp" alt="">
+                                        </a>
+                                    </li>
+                                    <li style="width: 110px;">
+                                        <a href="https://sovcombank.ru/credits/ipoteka/ipotechnyj-kalkulyator/">
+                                            <img style="object-fit: none; background-color: #e8e4e2; border-radius: 50%; width: -webkit-fill-available;" src="<?php echo get_template_directory_uri(); ?>/src/img/img/sov.webp" alt="">
+                                        </a>
+                                    </li>
+                                    <li style="width: 110px;">
+                                        <a href="https://www.primbank.ru/ipoteka/novostroyka//">
+                                            <img style="object-fit: none; background-color: #e8e4e2; border-radius: 50%; width: -webkit-fill-available;" src="<?php echo get_template_directory_uri(); ?>/src/img/img/primore.webp" alt="">
+                                        </a>
+                                    </li>
+                                    <li style="width: 110px;">
+                                        <a href="https://www.psbank.ru/personal/mortgage">
+                                            <img style="background-color: #e8e4e2; border-radius: 50%; width: -webkit-fill-available;" src="<?php echo get_template_directory_uri(); ?>/src/img/img/psb.webp" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+
                             </div>
                         </div>
 

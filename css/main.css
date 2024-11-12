@@ -2710,9 +2710,13 @@ h2, h3 {
   position: relative;
   font-weight: 700;
   color: white;
-  font-size: clamp(1.125rem, 0.125vw + 0.9rem, 2rem);
+  font-size: clamp(1.125rem, 0.911rem + 1.071vw, 1.875rem);
   font-family: 'Bahnschrift';
   text-transform: uppercase;
+}
+
+.program-item--bank p::before {
+  content: none !important;
 }
 
 .program-item p::before {
@@ -3411,6 +3415,11 @@ header {
 
   .md\:w-\[140px\]{
     width: 140px;
+  }
+
+  .md\:py-\[50px\] {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .md\:w-\[40\%\]{
