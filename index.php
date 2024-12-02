@@ -167,14 +167,16 @@
 
                                 <path d="M 1L274 2.01859" x="570" y="630" stroke="#D7CDC9" />
 
-                                <text class="g_05_info__subtitle" x="570" y="680" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
-                                <text class="g_05_info__text" x="570" y="710" width="100" height="50" fill="#000">80,6 - 94,4 м², 36 кв</text>
+                                <text class="g_05_info__subtitle" x="570" y="680" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ </text>
+                                <text class="g_05_info__text" x="570" y="710" width="760" height="50" fill="#000">46,6 - 69,9 м², 72 кв</text>
+
+                                <text class="g_05_info__subtitle" x="570" y="760" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
+                                <text class="g_05_info__text" x="570" y="790" width="100" height="50" fill="#000">80,6 - 94,4 м², 36 кв</text>
 
                                 <!-- <text class="g_05_info__subtitle" x="570" y="760" width="100" height="50" fill="#000">ТРЕХКОМНАТНАЯ</text>
                                 <text class="g_05_info__text" x="570" y="790" width="100" height="50" fill="#000">88.3 м², 10 кв</text> -->
 
-                                <text class="g_05_info__subtitle" x="570" y="760" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ </text>
-                                <text class="g_05_info__text" x="570" y="790" width="760" height="50" fill="#000">46,6 - 69,9 м², 72 кв</text>
+
                             </g>
                         </g>
                     </a>
@@ -193,14 +195,16 @@
 
                                 <path d="M 1L274 2.01859" x="770" y="630" stroke="#D7CDC9" />
 
-                                <text class="g_08_info__subtitle" x="770" y="680" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
-                                <text class="g_08_info__text" x="770" y="710" width="100" height="50" fill="#000">84,5 - 98,8 м², 18 кв</text>
+                                <text class="g_08_info__subtitle" width="100" x="770" y="680" height="50" fill="#000">ОДНОКОМНАТНАЯ</text>
+                                <text class="g_08_info__text" width="760" x="770" y="710" height="50" fill="#000">64,4 м², 6 кв</text>
 
-                                <text class="g_08_info__subtitle" x="770" y="760" width="100" height="50" fill="#000">ТРЕХКОМНАТНАЯ</text>
-                                <text class="g_08_info__text" x="770" y="790" width="100" height="50" fill="#000">88,1 - 123,83 м², 12 кв</text>
+                                <text class="g_08_info__subtitle" x="770" y="760" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
+                                <text class="g_08_info__text" x="770" y="790" width="100" height="50" fill="#000">84,5 - 98,8 м², 18 кв</text>
 
-                                <text class="g_08_info__subtitle" x="770" y="840" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ</text>
-                                <text class="g_08_info__text" x="770" y="870" width="760" height="50" fill="#000">64,4 м², 6 кв</text>
+                                <text class="g_08_info__subtitle" x="770" y="840" width="100" height="50" fill="#000">ТРЕХКОМНАТНАЯ</text>
+                                <text class="g_08_info__text" x="770" y="870" width="100" height="50" fill="#000">88,1 - 123,83 м², 12 кв</text>
+
+
                             </g>
 
 
@@ -222,11 +226,12 @@
 
                                 <path d="M 1L274 2.01859" x="770" y="530" stroke="#D7CDC9" />
 
-                                <text class="g_07_info__subtitle" x="770" y="580" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
-                                <text class="g_07_info__text" x="770" y="610" width="100" height="50" fill="#000">75,8 - 90,2 м², 26 кв</text>
+                                <text class="g_07_info__subtitle" width="100" x="770" y="580" height="50" fill="#000">ОДНОКОМНАТНАЯ</text>
+                                <text class="g_07_info__text" width="100" x="770" y="610" height="50" fill="#000">37,8 - 55,3 м², 52 кв</text>
 
-                                <text class="g_07_info__subtitle" x="770" y="660" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ</text>
-                                <text class="g_07_info__text" x="770" y="690" width="100" height="50" fill="#000">37,8 - 55,3 м², 52 кв</text>
+
+                                <text class="g_07_info__subtitle" x="770" y="660" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
+                                <text class="g_07_info__text" x="770" y="690" width="100" height="50" fill="#000">75,8 - 90,2 м², 26 кв</text>
 
                                 <!-- <text class="g_07_info__subtitle" x="770" y="740" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ КВАРТИРА </text>
                                 <text class="g_07_info__text" x="770" y="770" width="760" height="50" fill="#000">48.9 м², 10 кв</text> -->
@@ -247,14 +252,16 @@
 
                                 <path d="M 1L274 2.01859" x="570" y="530" stroke="#D7CDC9" />
 
-                                <text class="g_06_info__subtitle" x="570" y="580" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
-                                <text class="g_06_info__text" x="570" y="610" width="100" height="50" fill="#000">77,1 - 102,1 м², 48 кв</text>
+                                <text class="g_06_info__subtitle" x="570" y="580" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ КВАРТИРА </text>
+                                <text class="g_06_info__text" x="570" y="610" width="760" height="50" fill="#000">39,1 - 75,1 м², 60 кв</text>
+
+
+                                <text class="g_06_info__subtitle" x="570" y="660" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
+                                <text class="g_06_info__text" x="570" y="690" width="100" height="50" fill="#000">77,1 - 102,1 м², 48 кв</text>
 
                                 <!-- <text class="g_06_info__subtitle" x="570" y="660" width="100" height="50" fill="#000">ТРЕХКОМНАТНАЯ</text>
                                 <text class="g_06_info__text" x="570" y="690" width="100" height="50" fill="#000">88.3 м², 10 кв</text> -->
 
-                                <text class="g_06_info__subtitle" x="570" y="660" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ КВАРТИРА </text>
-                                <text class="g_06_info__text" x="570" y="690" width="760" height="50" fill="#000">39,1 - 75,1 м², 60 кв</text>
                             </g>
                         </g>
                     </a>
@@ -272,14 +279,14 @@
 
                                 <path d="M 1L274 2.01859" x="970" y="630" stroke="#D7CDC9" />
 
-                                <text class="g_09_info__subtitle" x="970" y="680" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
-                                <text class="g_09_info__text" x="970" y="710" width="100" height="50" fill="#000">103,9 м², 12 кв</text>
+                                <text class="g_09_info__subtitle" x="970" y="680" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ КВАРТИРА </text>
+                                <text class="g_09_info__text" x="970" y="710" width="760" height="50" fill="#000">63,6 м², 12 кв</text>
+
+                                <text class="g_09_info__subtitle" x="970" y="760" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
+                                <text class="g_09_info__text" x="970" y="790" width="100" height="50" fill="#000">103,9 м², 12 кв</text>
 
                                 <!-- <text class="g_09_info__subtitle" x="970" y="760" width="100" height="50" fill="#000">ТРЕХКОМНАТНАЯ</text>
                                 <text class="g_09_info__text" x="970" y="790" width="100" height="50" fill="#000">63,6 м², 10 кв</text> -->
-
-                                <text class="g_09_info__subtitle" x="970" y="760" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ КВАРТИРА </text>
-                                <text class="g_09_info__text" x="970" y="790" width="760" height="50" fill="#000">63,6 м², 12 кв</text>
 
                                 <!-- <text class="g_09_info__subtitle" x="970" y="840" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ КВАРТИРА </text>
                                 <text class="g_09_info__text" x="970" y="870" width="760" height="50" fill="#000">48.9 м², 10 кв</text> -->
@@ -300,14 +307,15 @@
 
                                 <path d="M 1L274 2.01859" x="1170" y="630" stroke="#D7CDC9" />
 
-                                <text class="g_10_info__subtitle" x="1170" y="680" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
-                                <text class="g_10_info__text" x="1170" y="710" width="100" height="50" fill="#000">84,5 - 98,8 м², 18 кв</text>
+                                <text class="g_10_info__subtitle" x="1170" y="680" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ</text>
+                                <text class="g_10_info__text" x="1170" y="710" width="760" height="50" fill="#000">64,4 м², 6 кв</text>
 
-                                <text class="g_10_info__subtitle" x="1170" y="760" width="100" height="50" fill="#000">ТРЕХКОМНАТНАЯ</text>
-                                <text class="g_10_info__text" x="1170" y="790" width="100" height="50" fill="#000">88,1 - 123,83 м², 12 кв</text>
+                                <text class="g_10_info__subtitle" x="1170" y="760" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
+                                <text class="g_10_info__text" x="1170" y="790" width="100" height="50" fill="#000">84,5 - 98,8 м², 18 кв</text>
 
-                                <text class="g_10_info__subtitle" x="1170" y="840" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ</text>
-                                <text class="g_10_info__text" x="1170" y="870" width="760" height="50" fill="#000">64,4 м², 6 кв</text>
+                                <text class="g_10_info__subtitle" x="1170" y="840" width="100" height="50" fill="#000">ТРЕХКОМНАТНАЯ</text>
+                                <text class="g_10_info__text" x="1170" y="870" width="100" height="50" fill="#000">88,1 - 123,83 м², 12 кв</text>
+
                             </g>
                         </g>
                     </a>
@@ -326,11 +334,12 @@
 
                                 <path d="M 1L274 2.01859" x="1370" y="630" stroke="#D7CDC9" />
 
-                                <text class="g_12_info__subtitle" x="1370" y="680" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
-                                <text class="g_12_info__text" x="1370" y="710" width="100" height="50" fill="#000">66,4 - 97,9 м², 48 кв</text>
+                                <text class="g_12_info__subtitle" x="1370" y="680" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ</text>
+                                <text class="g_12_info__text" x="1370" y="710" width="100" height="50" fill="#000">37,8 - 57,2 м², 96 кв</text>
 
-                                <text class="g_12_info__subtitle" x="1370" y="760" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ</text>
-                                <text class="g_12_info__text" x="1370" y="790" width="100" height="50" fill="#000">37,8 - 57,2 м², 96 кв</text>
+                                <text class="g_12_info__subtitle" x="1370" y="760" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
+                                <text class="g_12_info__text" x="1370" y="790" width="100" height="50" fill="#000">66,4 - 97,9 м², 48 кв</text>
+
 
                                 <!-- <text class="g_12_info__subtitle" x="1370" y="1040" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ КВАРТИРА </text>
                                 <text class="g_12_info__text" x="1370" y="1070" width="760" height="50" fill="#000">48.9 м², 10 кв</text> -->
@@ -353,11 +362,12 @@
 
                                 <path d="M 1L274 2.01859" x="1570" y="530" stroke="#D7CDC9" />
 
-                                <text class="g_11_info__subtitle" x="1570" y="580" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
-                                <text class="g_11_info__text" x="1570" y="610" width="100" height="50" fill="#000">76,5 - 98,4 м², 48 кв</text>
+                                <text class="g_11_info__subtitle" x="1570" y="580" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ</text>
+                                <text class="g_11_info__text" x="1570" y="610" width="100" height="50" fill="#000">51,9 - 55,1 м², 48 кв</text>
 
-                                <text class="g_11_info__subtitle" x="1570" y="660" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ</text>
-                                <text class="g_11_info__text" x="1570" y="690" width="100" height="50" fill="#000">51,9 - 55,1 м², 48 кв</text>
+                                <text class="g_11_info__subtitle" x="1570" y="660" width="100" height="50" fill="#000">ДВУХКОМНАТНАЯ</text>
+                                <text class="g_11_info__text" x="1570" y="690" width="100" height="50" fill="#000">76,5 - 98,4 м², 48 кв</text>
+
 
 
                                 <!-- <text class="g_11_info__subtitle" x="1370" y="740" width="100" height="50" fill="#000">ОДНОКОМНАТНАЯ КВАРТИРА </text>
@@ -769,18 +779,13 @@
                         <a href="?page_id=10&block=05"><button class="button_main button_main--watch w-full">Посмотреть квартиры данного типа</button></a>
                     </div>
                 </div>
-
                 <div class="md:p-[110px] p-[20px] bg-white tab-content" id="content-1" data-id="1">
 
-                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/map__type.webp" alt=""> -->
                     <div class="text-center pt-[20px]">
                         <a href="?page_id=10&block=05"><button class="button_main button_main--watch w-full">Посмотреть квартиры данного типа</button></a>
                     </div>
                 </div>
-
                 <div class="md:p-[110px] p-[20px] bg-white tab-content" id="content-2" data-id="2">
-
-                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/src/img/img/map__type.webp" alt=""> -->
                     <div class="text-center pt-[20px]">
                         <a href="?page_id=10&block=05"><button class="button_main button_main--watch w-full">Посмотреть квартиры данного типа</button></a>
                     </div>
@@ -868,16 +873,6 @@
 
                             </div>
                         </div>
-
-                        <!-- <div class="swiper-slide ">
-                            <div style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/img/swiper1.webp'); background-position: center; background-repeat: no-repeat; background-size: cover;" class="md:h-[430px] h-[250px] md:py-[116px] md:px-[30px] py-[44px] px-[30px] flex flex-col justify-between gap-[40px]">
-                                <p>Проектное финансирование <br> от сбербанка</p>
-                                <button class="button_main button_main__podrobnee">Узнать подробнее</button>
-                            </div>
-                        </div> -->
-
-
-
                     </div>
 
 
